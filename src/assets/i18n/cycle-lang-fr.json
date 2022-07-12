@@ -1,0 +1,99 @@
+{
+    "cycle": {
+        "name": {
+            "title": "Cycle"
+        },
+        "list": {
+            "title": "Recherche cycle"
+        },
+        "edit": {
+            "title": "Editer cycle"
+        },
+        "add": {
+            "title": "Ajouter cycle"
+        },
+        "view": {
+            "title": "Consulter cycle"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations cycle"
+        },
+
+        "code": {
+            "label": "Code"
+        },
+        "enabled": {
+            "label": "Activer"
+        },
+        "resetPassword": {
+            "label": "Réinitialiser le mot de passe"
+        },
+        "oldPassword": {
+            "label": "Ancien mot de passe"
+        },
+        "newPassword": {
+            "label": "Nouveau mot de passe"
+        },
+        "personnel": {
+            "label": "Personnel"
+        },
+        "etablissement": {
+            "label": "Etablissement"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "libelle": {
+            "label": "Libelle"
+        },
+        "heureDebut": {
+            "label": "Heure début"
+        },
+        "heureFin": {
+            "label": "Heure fin"
+        },
+        "duree": {
+            "label": "Durée"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "semaineList": {
+            "label": "List des semaines"
+        },
+        "nombreSemaine": {
+            "label": "Nombre de semaine"
+        },
+        "listSemaines": {
+            "label": "List des semaines"
+        },
+        "horaireRamadan": {
+            "label": "Horaire ramadan"
+        },
+        "order": {
+            "label": "Ordre d'affichage"
+        },
+        "debutValidite": {
+            "label": "Début validité"
+        },
+        "finValidite": {
+            "label": "Fin validité"
+        },
+        "apercu": {
+            "label": "Aperçu horaire"
+        },
+        "shift": {
+            "label": "Shift"
+        },
+        "horaire": {
+            "label": "Horaire"
+        }
+    }
+
+}

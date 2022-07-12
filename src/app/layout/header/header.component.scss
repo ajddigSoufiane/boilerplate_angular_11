@@ -1,0 +1,60 @@
+@import "../../shared/styles/enova-theme/variables.scss";
+app-userblock {
+    float: right;
+    padding: 5px 12px;
+}
+
+.parametrage {
+    float: right;
+    font-size: $eno-typo-size-2;
+    padding: 13px;
+    color: $eno-principale-color;
+    height: 45px;
+    position: relative;
+    top: 4px;
+    padding-right: 15px;
+}
+
+.login_ {
+    float: right;
+    font-size: $eno-typo-size-2;
+    padding: 13px;
+    padding-right: 32px;
+    color: $eno-principale-color;
+    height: 45px;
+    position: relative;
+    top: 4px;
+}
+
+.trigger {
+    font-size: $eno-typo-size-1;
+    line-height: 50px;
+    padding: 0 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.trigger:hover {
+    color: $eno-purple-3;
+    font-size: $eno-typo-size-1;
+}
+
+.collapse-menu {
+    // position: relative;
+    // top: -6px;
+    // left: 135px;
+    font-size: $eno-typo-size-1;
+    padding-left: 20px;
+    top: -5px;
+    position: relative;
+}
+
+.collapse-menu-inverst {
+    // position: absolute;
+    // top: -5px;
+    // left: 100px;
+    font-size: $eno-typo-size-1;
+    padding-left: 19px;
+    top: -5px;
+    position: relative;
+}

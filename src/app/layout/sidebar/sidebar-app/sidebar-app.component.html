@@ -1,0 +1,38 @@
+<!-- End Title Page-->
+<div class="aside-inner mt-4">
+    <hr *ngIf="parent.isCollapsed && parent.isMobileDevice()==false" class="mb-0 mt-1" />
+    <nav class="sidebar" [class.show-scrollbar]="settings.getLayoutSetting('asideScrollbar')">
+        <ul nz-menu nzMode="inline" [nzInlineCollapsed]="parent.isCollapsed && parent.isMobileDevice()==false" class="w-100">
+            <ng-container *ngTemplateOutlet="menuTpl; context: { $implicit: menuItems }"></ng-container>
+            <ng-template #menuTpl let-menus>
+                <ng-container *ngFor="let menu of menus">
+                    <!-- jusqu'à on prepare les roles intergre ces commenter :  && ( menu.noRole || (menu.roles && !hasAnyRoles(menu.roles))) -->
+                    <li class="left-tag ant-single submenu-background" *ngIf="!menu.submenu " nz-menu-item [nzPaddingLeft]="((!parent.isCollapsed || parent.isMobileDevice())? menu.level * 16 : 24)" (click)="toLink(menu);parent.hideDrawer()" [nzDisabled]="menu.disabled" [nzSelected]="isSelectedUrl(menu.link)"
+                        [ngClass]="{'li_menu_clp': (parent.isCollapsed  && parent.isMobileDevice()==false)}">
+                        <i nz-icon *ngIf="(parent.isCollapsed && menu?.icon && parent.isMobileDevice()==false)" [nzTooltipTitle]="(menu.translate | translate) || (menu.text | translate)" nzTooltipPlacement="top" nz-tooltip [nzType]="menu?.icon" [ngClass]="{'icon_menu_clp': parent.isCollapsed}"></i>
+                        <i nz-icon *ngIf="menu?.icon && (!parent.isCollapsed || parent.isMobileDevice())" [nzType]="menu?.icon" [ngClass]="{'icon_menu':!parent.isCollapsed || parent.isMobileDevice()}"></i>
+
+                        <span [routerLink]="menu?.link" [attr.route]="menu.link" class="title_menu"> {{(menu.translate | translate) || (menu.text | translate)}}</span>
+                    </li>
+                    <!-- && !hasAnyCategorieRoles(menu) -->
+                    <li class="submenu-background" *ngIf="menu.submenu " nz-submenu [nzPaddingLeft]="((menu.level == 1)? 44: menu.level * 16)" [nzTitle]="titleMenu" [nzDisabled]="menu.disabled">
+                        <ng-template #titleMenu>
+                            <i nz-icon *ngIf="parent.isCollapsed && parent.isMobileDevice()==false" [nzTooltipTitle]="(menu.translate | translate) || (menu.text | translate)" nzTooltipPlacement="top" nz-tooltip [nzType]="menu?.icon" [ngClass]="{'icon_menu_clp': (parent.isCollapsed && parent.isMobileDevice()==false),'icon_menu':(!parent.isCollapsed || parent.isMobileDevice()),'ml-4': parent.isCollapsed,'ml-3':(!parent.isCollapsed || parent.isMobileDevice())}"
+                                class="ml-4"></i>
+                            <i nz-icon *ngIf="(!parent.isCollapsed || parent.isMobileDevice())" [nzType]="menu?.icon" [ngClass]="{'icon_menu_clp': (parent.isCollapsed && parent.isMobileDevice()==false),'icon_menu':(!parent.isCollapsed || parent.isMobileDevice()),'ml-4': parent.isCollapsed,'ml-3':(!parent.isCollapsed || parent.isMobileDevice())}"
+                                class="ml-4"></i>
+                            <span class="title_menu" *ngIf="(!parent.isCollapsed || parent.isMobileDevice())"> 
+                                {{(menu.translate | translate) || (menu.text | translate)}}
+                            </span>
+                        </ng-template>
+                        <ng-container>
+                            <ul>
+                                <ng-container *ngTemplateOutlet="menuTpl; context: { $implicit: menu.submenu }"></ng-container>
+                            </ul>
+                        </ng-container>
+                    </li>
+                </ng-container>
+            </ng-template>
+        </ul>
+    </nav>
+</div>

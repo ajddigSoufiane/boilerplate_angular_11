@@ -1,0 +1,56 @@
+{	
+	"mouvementcaisse": {
+		"name": {
+			"title": "Mouvementcaisse"
+		},
+		"list": {
+			"title": "Recherche mouvementcaisse"
+		},
+		"edit": {
+			"title": "Editer mouvementcaisse"
+		},
+		"add": {
+			"title": "Ajouter mouvementcaisse"
+		},
+		"view": {
+			"title": "Consulter mouvementcaisse"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations mouvementcaisse"
+		},
+		"date": {
+			"label": "Date"
+		},
+		"dateFrom": {
+			"label": "Date entre"
+		},
+		"dateTo": {
+			"label": "Et"
+		},
+		"montantPaye": {
+			"label": "MontantPaye"
+		},
+		"typeversement": {
+			"label": "Typeversement"
+		},
+		"banque": {
+			"label": "Banque"
+		},
+		"reference": {
+			"label": "Référence"
+		},
+		"demandeanalyse": {
+			"label": ""
+		},
+		"operateur": {
+			"label": "User"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}

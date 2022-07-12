@@ -1,0 +1,510 @@
+{
+    "accesControle": {
+        "title": "Priviléges Insuffisant",
+        "description": "Privilèges d'accès insuffisants."
+    },
+    "erreur": {
+        "title": "Erreur interne",
+        "message": "Une erreur est survenue. Veuillez contacter l'administrateur."
+    },
+    "login": {
+        "submit": {
+            "connexion": "Connexion"
+        },
+        "legend": {
+            "authentification": "Authentification"
+        },
+        "tooltip": {
+            "password": "Mot de passe de l'utilisateur",
+            "authentification": "Authentification",
+            "confirmPassword": "Confirmer votre nouveau mot de passe",
+            "connexion": "Connexion",
+            "label": "Page d'authentification",
+            "username": "Nom d'utilisateur"
+        },
+        "confirmPassword": {
+            "message": "Les mots de passe ne sont pas identiques"
+        },
+        "reset": "Mot de passe oublié ?",
+        "label": {
+            "password": "Mot de passe",
+            "confirmPassword": "Confirmer votre nouveau mot de passe",
+            "rememberme": "Garder ma session",
+            "username": "Nom d'utilisateur"
+        },
+        "message": {
+            "logout": "Vous vous êtes déconnectés",
+            "badCredentials": "Login ou mot de passe incorrecte !",
+            "accountDisabled": "Votre compte est désactivé. Veuillez contacter l'administrateur",
+            "accountExpired": "Mot de passe expiré",
+            "error": "Login ou mot de passe incorrecte"
+        },
+        "title": "Authentification"
+    },
+    "list": {
+        "loading": [
+            "Chargement en cours,veuillez patienter..."
+        ]
+    },
+    "version": {
+        "button": {
+            "close": "Fermer"
+        }
+    },
+    "accesDatabase": {
+        "message": {
+            "error": "Problème rencontré lors de la connexion à la base de données !"
+        }
+    },
+    "accesServeur": {
+        "message": {
+            "error": "Problème rencontré lors de la connexion au serveur !"
+        }
+    },
+    "home": {
+        "tooltip": {
+            "label": "Page d'accueil"
+        },
+        "title": "Accueil"
+    },
+    "form_error_status_n": " {0} erreurs trouvées dans le formulaire soumis.",
+    "password": {
+        "level": {
+            "label": {
+                "strong": "Elevé",
+                "week": "Faible",
+                "prompt": "Niveau de sécurité de mot de passe",
+                "good": "Bon"
+            }
+        }
+    },
+    "menu": {
+        "home": {
+            "title": "Accueil"
+        },
+        "application": {
+            "title": "boileplate"
+        },
+        "acceuil": {
+            "title": "Accueil"
+        },
+        "referentiel": {
+            "title": "Référentiel"
+        },
+        "administration": {
+            "title": "Administration"
+        },
+        "boileplate": {
+            "title": "boileplate"
+        },
+        "patient": {
+            "title": "Patient",
+            "historique": "Historique des activites",
+
+            "add": "Ajouter",
+            "list": "Liste",
+            "view": "Consulter",
+            "edit": "Modifier"
+        },
+        "demande": {
+            "title": "Demande",
+            "historique": "Historique des activites",
+            "add": "Ajouter",
+            "list": "Liste",
+            "view": "Consulter",
+            "edit": "Modifier",
+            "simple": "Simple"
+        },
+        "refDemoEntity": {
+            "title": "Demo entity",
+            "add": "Ajouter demo entity",
+            "list": "Liste demo entity",
+            "view": "Consulter demo entity",
+            "edit": "Modifier demo entity"
+        },
+        "categorieParametrage": {
+            "title": "Catégorie paramètrage",
+            "add": "Ajouter catégorie paramètrage",
+            "list": "Liste catégorie paramètrage",
+            "view": "Consulter catégorie paramètrage",
+            "edit": "Modifier catégorie paramètrage"
+        },
+        "categorieRole": {
+            "title": "Catégorie rôle",
+            "add": "Ajouter catégorie rôle",
+            "list": "Liste catégorie rôle",
+            "view": "Consulter catégorie rôle",
+            "edit": "Modifier catégorie rôle"
+        },
+        "chargement": {
+            "title": "Importation des résultats",
+            "add": "Ajouter importation des résultats",
+            "list": "Liste importation des résultats",
+            "view": "Consulter importation des résultats",
+            "edit": "Modifier importation des résultats"
+        },
+        "history": {
+            "title": "Historique des chargements",
+            "add": "Ajouter importation des résultats",
+            "list": "Liste importation des résultats",
+            "view": "Consulter importation des résultats",
+            "edit": "Modifier importation des résultats"
+        },
+        "etablissement": {
+            "title": "Etablissement",
+            "add": "Ajouter etablissement",
+            "list": "Liste etablissement",
+            "view": "Consulter etablissement",
+            "edit": "Modifier etablissement"
+        },
+        "typeDocument": {
+            "title": "Type document",
+            "add": "Ajouter type document",
+            "list": "Liste type document",
+            "view": "Consulter type document",
+            "edit": "Modifier type document"
+        },
+        "typeConge": {
+            "title": "Type conge",
+            "add": "Ajouter type conge",
+            "list": "Liste type conge",
+            "view": "Consulter type conge",
+            "edit": "Modifier type conge"
+        },
+        "shift": {
+            "title": "Shift",
+            "add": "Ajouter shift",
+            "list": "Liste shift",
+            "view": "Consulter shift",
+            "edit": "Modifier shift"
+        },
+        "cycle": {
+            "title": "Cycle",
+            "add": "Ajouter shift",
+            "list": "Liste shift",
+            "view": "Consulter shift",
+            "edit": "Modifier shift"
+        },
+        "employe": {
+            "title": "Employé",
+            "add": "Ajouter employé",
+            "list": "Liste employé",
+            "view": "Consulter employé",
+            "edit": "Modifier employé"
+        },
+        "horaire": {
+            "title": "Horaire",
+            "add": "Ajouter horaire",
+            "list": "Liste horaire",
+            "view": "Consulter horaire",
+            "edit": "Modifier horaire"
+        },
+        "laboratoire": {
+            "title": "Laboratoire",
+            "add": "Ajouter laboratoire",
+            "list": "Liste laboratoire",
+            "view": "Consulter laboratoire",
+            "edit": "Modifier laboratoire"
+        },
+        "parametrage": {
+            "title": "Paramètrage",
+            "add": "Ajouter paramètrage",
+            "list": "Liste paramètrage",
+            "view": "Consulter paramètrage",
+            "edit": "Modifier paramètrage"
+        },
+        "profile": {
+            "title": "Profils",
+            "add": "Ajouter profil",
+            "list": "Liste profil",
+            "view": "Consulter profil",
+            "edit": "Modifier profil"
+        },
+        "province": {
+            "title": "Province",
+            "add": "Ajouter province",
+            "list": "Liste province",
+            "view": "Consulter province",
+            "edit": "Modifier province"
+        },
+        "region": {
+            "title": "Region",
+            "add": "Ajouter region",
+            "list": "Liste region",
+            "view": "Consulter region",
+            "edit": "Modifier region"
+        },
+        "role": {
+            "title": "Role",
+            "add": "Ajouter role",
+            "list": "Liste role",
+            "view": "Consulter role",
+            "edit": "Modifier role"
+        },
+        "service": {
+            "title": "Service",
+            "add": "Ajouter service",
+            "list": "Liste service",
+            "view": "Consulter service",
+            "edit": "Modifier service"
+        },
+        "utilisateur": {
+            "title": "Utilisateurs",
+            "add": "Ajouter utilisateur",
+            "list": "Liste utilisateur",
+            "view": "Consulter utilisateur",
+            "edit": "Modifier utilisateur"
+        }
+    },
+    "common": {
+        "confirm": {
+            "removeFile": "Voulez-vous vraiment supprimer cette pièce jointe ?"
+        },
+        "select": {
+            "notset": "<< Non défini >>",
+            "empty": "Aucun élément sélectionné"
+        },
+        "copyrights": {
+            "label": "@ 2021 boileplate - Tous droits réservés."
+        },
+        "legend": {
+            "search": "Critères de recherche",
+            "results": "Résultats"
+        },
+        "label": {
+            "download": "Télécharger",
+            "delete": " Supprimer",
+            "actions": "Actions",
+            "update": "Modifier",
+            "updatedon": "Dernière modification le : ",
+            "createdon": "Créé le : ",
+            "by": " par : ",
+            "created": "Date de création",
+            "disable": "Désactiver",
+            "activate": "Activer",
+            "newFile": "Ajouter un nouveau",
+            "totalRowCount": " enregistrement(s) trouvé(s)",
+            "totalRow": " enregistrement(s) ",
+            "updated": "Date de modification"
+        },
+        "text": {
+            "no": "NON",
+            "yes": "OUI",
+            "false": "NON",
+            "true": "OUI",
+            "confirmation": "Confirmation",
+            "info": "Information",
+            "warning": "Attention"
+        },
+        "message": {
+            "sessionExpired": "Votre session a expiré !",
+            "noItem": "Aucun élément à consulter !",
+            "image": {
+                "error": "Aucune image sélectionnée"
+            },
+            "chooseFile": "Choisir un fichier",
+            "update": {
+                "info": "Modification effectuée avec succès"
+            },
+            "confirmation": "Voulez-vous continuer ?",
+            "required": "Ce champ est obligatoire !",
+            "valid": {
+                "nombre": "Veuillez saisir un nombre valide.",
+                "date": "Veuillez saisir une date valide,  format : jj/mm/aaaa",
+                "time": "Veuillez saisir une heure valide,  format : HH:mm"
+            },
+            "incorrectFormat": "Format incorrect !",
+            "fileNotFound": "Fichier introuvable !",
+            "invalidSizeMessage": "Fichier trop volumineux (10 MB maximum)",
+            "invalidSize": "Fichier vide",
+            "delete": {
+                "info": "Suppression effectuée avec succès"
+            },
+            "confirm": {
+                "delete": "Êtes-vous sûr de vouloir supprimer cet enregistrement ?",
+                "deleteAll": "Êtes-vous sûr de vouloir supprimer ces enregistrements ?",
+                "annuler": "Êtes-vous sûr de vouloir annuler la modifications ?",
+                "desactiver": "Êtes-vous sûr de vouloir desactiver cet enregistrement ?",
+                "activer": "Êtes-vous sûr de vouloir activer cet enregistrement ?"
+            },
+            "invalidFileMessage": "Seuls les formats de fichier : doc, docx, xls, xlsx, pdf, txt, zip, rar, png, gif, jpg, jpeg, xml sont supportés",
+            "file": {
+                "error": "Aucun fichier sélectionné"
+            },
+            "chooseImage": "Choisir une image",
+            "create": {
+                "info": "Enregistrement effectué avec succès"
+            },
+            "resetPassword": {
+                "info": "Mot de passe réinitialisé avec succès"
+            }
+        },
+        "list": {
+            "select": {
+                "empty": "Veuillez d'abord effectuer une sélection dans la liste"
+            },
+            "notset": "Non défini",
+            "empty": "Aucun enregistrement trouvé"
+        },
+        "error": {
+            "invalidChar": "Caractères invalides !",
+            "delete": "Impossible de supprimer cette enregistrement  car il est dèjà  utilisé"
+        },
+        "welcome": "Bienvenue",
+        "command": {
+            "historique": "Historique des modifications",
+            "plus": "Plus des filtres",
+            "moins": "Moins de filtres",
+            "csv": "CSV",
+            "sysDate": "Date système",
+            "cancel": "Annuler",
+            "endDate": "Date de fin",
+            "save": "Enregistrer",
+            "link": "Votre lien ici",
+            "back": "Retour",
+            "saveAndQuit": "Enregistrer et quitter",
+            "login": "Page de login",
+            "delete": "Supprimer",
+            "desactiver": "Desactiver",
+            "activer": "Activer",
+            "selectionItem": "Eléments à  sélectionner",
+            "refreshList": "Actualiser la liste",
+            "search": "Rechercher",
+            "download": "Télécharger",
+            "view": "Visualiser",
+            "selectableItem": "Elements à  sélectionnés",
+            "viewChart": "Visualiser le graphe",
+            "saveAndNew": "Enregistrer et nouveau",
+            "refrech": "Actualiser",
+            "details": "Détails",
+            "generate": "Démarrer la génération",
+            "others": "Autres",
+            "add": "Ajouter",
+            "upload": "Upload",
+            "close": "Fermer",
+            "new": "Nouveau",
+            "deselectAll": "Tout supprimer",
+            "edit": "Modifier",
+            "clear": "Effacer",
+            "refresh": "Actualiser",
+            "editMyProfil": "Modifier mon profil",
+            "champstouches": "Gestion des champs touches",
+            "home": "Page d'accueil",
+            "filter": "Filtrer",
+            "exit": "Quitter",
+            "selectAll": "Tout ajouter",
+            "print": "Imprimer",
+            "exporter": "Exporter",
+            "visualiser": "Visualiser",
+            "pdf": "PDF",
+            "editPassword": "Modifier le mot de passe",
+            "clone": "Copier",
+            "reset": "Réinitialiser",
+            "resetPassword": "Réinitialiser le mot de passe",
+            "actions": "Actions",
+            "startDate": "Date de début",
+            "xls": "XLS",
+            "statistics": "Statistiques",
+            "deconnecter": "Se déconnecter"
+        },
+        "entity": {
+            "label": {
+                "dateAction": "Date Action"
+            }
+        }
+    },
+    "application": {
+        "ar": "Arabe",
+        "logout": "Déconnecter",
+        "edit": {
+            "myprofil": "Mon profil"
+        },
+        "name": "boileplate",
+        "about": "A propos",
+        "description": "",
+        "header": {
+            "title": "boileplate"
+        },
+        "label": {
+            "help": "Aide ?",
+            "build": "Build :",
+            "version": "Version :"
+        },
+        "loading": [
+            "Traitement en cours, veuillez patienter..."
+        ],
+        "fr": "Français",
+        "welcome": "",
+        "home": "Accueil"
+    },
+    "listStatistique": {
+        "legend": {
+            "graphe": "Paramétrage graphique"
+        },
+        "label": {
+            "barchart": "graphique à  barres",
+            "requete": "Tableaux de bord",
+            "typeGraphe": "Type graphique",
+            "piechart": "camembert",
+            "yaxe": "Axe Y",
+            "xaxe": "Axe X",
+            "linechart": "graphique en ligne"
+        },
+        "title": "Tableaux de bord"
+    },
+    "reset": {
+        "button": {
+            "submit": "Envoyer"
+        },
+        "legend": {
+            "form": "Reset",
+            "success": "Congratulations"
+        },
+        "label": {
+            "email": "Email"
+        },
+        "message": {
+            "success": "An email has been sent to '{0}' describing to obtain your new password",
+            "error": "Your email is incorrect"
+        },
+        "title": {
+            "success": "Reset success",
+            "saisieEmail": "Mot de passe oublié"
+        }
+    },
+    "errors": {
+        "boolean": "{0} doit être un boolean",
+        "uploadfile": "Erreur lors du chargement du fichier",
+        "double": "{0} doit être un décimal",
+        "unique": "{0}  existe dèjà ",
+        "integer": "{0} doit être un entier",
+        "long": "{0} doit être un entier",
+        "required": "{0} est obligatoire",
+        "currentPassword": "Le mot de passe actuel est incorrect !"
+    },
+    "editPassword": {
+        "title": "Changer mon mot de passe",
+        "label": {
+            "password": "Nouveau mot de passe",
+            "confirmPassword": "Confirmer le nouveau mot de passe",
+            "minLengthPassword": "Les mots de passe doivent contenir au moins 6 caractères",
+            "notEqualPassword": "Ces mots de passe ne correspondent pas !!",
+            "currentPassword": "Mot de passe actuel",
+            "emailResetPassword": "Veuillez saisir votre email vers lequel votre nouveau mot de passe sera envoyé"
+        }
+    },
+    "editDefaultPassword": {
+        "title": "Changer le mot de passe par défaut",
+        "label": {
+            "password": "Nouveau mot de passe",
+            "oldPassword": "Ancien mot de passe",
+            "confirmPassword": "Confirmer le nouveau mot de passe"
+        }
+    },
+    "editMyProfil": {
+        "title": "Modifier mon profil",
+        "legend": {
+            "info": "Informations du profil"
+        }
+    }
+}

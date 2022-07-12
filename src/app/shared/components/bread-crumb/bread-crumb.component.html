@@ -1,0 +1,11 @@
+<span>
+  <span class="breadcrumb d-none d-sm-none d-md-none d-lg-block"> 
+      <span class="mr-2"><a [routerLink]="['/boileplate']"  ><!-- <em class="icon-home"></em> -->Accueil</a></span>
+<ng-container *ngFor="let item of breadCrum let last = last">
+    <span [class.active]="last" class="mr-2" *ngIf="['boileplate','Accueil'].indexOf((item.text | translate))==-1"> 
+            <a>{{item.text | translate }}</a>
+        </span>
+</ng-container>
+
+</span>
+</span>

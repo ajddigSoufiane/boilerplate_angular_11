@@ -1,0 +1,67 @@
+<div id="main" *ngIf="!changeDefaultPassword">
+    <div class="login-img-left" style="background: url('assets/enova-theme/img/login-bgs/2.jpg'); 
+    width: 100%;
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;"> 
+        <div class="overlay">
+        </div>
+    </div>
+    <div class="login-content">
+        <div class="mt-4 img-logo-login text-center">
+            <img src="assets/enova-theme/img/logo/logo.png" alt="App Logo" />
+        </div>
+
+        <hr>
+
+        <h4 class="header-card text-center" >Portail des collaborateurs</h4>
+
+        <div class="login-header">
+            <div class="title">
+                Connexion
+            </div>
+            <div class="small-title">
+                Entrez les données de connexion communiqués par l'administrateur
+            </div>
+        </div>
+
+        <form [formGroup]="loginForm" class="form-validate mb-lg margin-bottom-0" role="form" name="loginForm" novalidate="" (submit)="login(loginForm.value)">
+
+            <div class="group">
+                <label class=" col-form-label-form input-label-style label-form">Identifiant</label>
+                <input class="login-input" type="text" formControlName="username" placeholder="IDENTIFIANT" required="">
+                <span toggle="#password-field" class="icon-user field-icon"></span>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <span class="text-danger" *ngIf="loginForm.controls['username'].hasError('required') && (loginForm.controls['username'].dirty || loginForm.controls['username'].touched)">Ce champ est obligatoire</span>
+
+            </div>
+
+
+            <div class="group">
+                <label class=" col-form-label-form input-label-style label-form">Mot de Passe</label>
+                <input class="login-input" [type]="(togglePass) ? 'password' : 'text'" #passwordControl formControlName="password" placeholder="MOT DE PASSE" required="">
+                <span toggle="#password-field" (click)="togglePass = !togglePass" [class.icon-eye]="togglePass" [class.fa]="!togglePass" [class.fa-eye-slash]="!togglePass" class=" field-icon"></span>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <span class="text-danger" *ngIf="loginForm.controls['password'].hasError('required') && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)">Ce champ est obligatoire</span>
+            </div>
+
+
+
+            <div class="login-button">
+                <button type="submit" class="btn  btn-enova-primary btn-lg w-100 submit-login-btn" [disabled]="!loginForm.valid">SE CONNECTER</button>
+            </div>
+
+
+
+
+            <br>
+
+
+
+        </form>
+    </div>
+
+
+</div>
+<app-change-password changeDefaultPassword='true' *ngIf="changeDefaultPassword==true" (eventChangePassword)="eventChangeDefaultPassword($event)"></app-change-password>

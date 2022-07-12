@@ -1,0 +1,56 @@
+{
+    "refDemoEntity": {
+        "name": {
+            "title": "Demo Entity"
+        },
+        "list": {
+            "title": "Recherche demo entity"
+        },
+        "edit": {
+            "title": "Modifier demo entity"
+        },
+        "add": {
+            "title": "Ajouter demo entity"
+        },
+        "view": {
+            "title": "Consulter demo entity"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "libelle": {
+            "label": "Libellé"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "color": {
+            "label": "Couleur"
+        },
+        "list_": {
+            "label": "List"
+        },
+        "listMultiple_": {
+            "label": "List multi"
+        },
+        "date": {
+            "label": "Date picker"
+        },
+        "select": {
+            "label": "Select"
+        },
+        "multiSelect": {
+            "label": "Multi select"
+        },
+        "radio": {
+            "label": "Radio"
+        },
+        "input": {
+            "label": "Input"
+        },
+        "checkbox": {
+            "label": "Checkbox"
+        }
+
+    }
+}

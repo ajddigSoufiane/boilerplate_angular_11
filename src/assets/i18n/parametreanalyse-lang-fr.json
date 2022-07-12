@@ -1,0 +1,182 @@
+{	
+	"parametreanalyse": {
+		"name": {
+			"title": "Parametreanalyse"
+		},
+		"list": {
+			"title": "Recherche parametreanalyse"
+		},
+		"edit": {
+			"title": "Editer parametreanalyse"
+		},
+		"add": {
+			"title": "Ajouter parametreanalyse"
+		},
+		"view": {
+			"title": "Consulter parametreanalyse"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations parametreanalyse"
+		},
+		"codeRecu": {
+			"label": "CodeRecu"
+		},
+		"valeurRecu": {
+			"label": "ValeurRecu"
+		},
+		"valeurRecuFormater": {
+			"label": "ValeurRecuFormater"
+		},
+		"dateRecu": {
+			"label": "DateRecu"
+		},
+		"dateRecuFrom": {
+			"label": "DateRecu entre"
+		},
+		"dateRecuTo": {
+			"label": "Et"
+		},
+		"dateRecuFormater": {
+			"label": "DateRecuFormater"
+		},
+		"uniteRecu": {
+			"label": "UniteRecu"
+		},
+		"methodeRecu": {
+			"label": "MethodeRecu"
+		},
+		"commentaireMW": {
+			"label": "CommentaireMW"
+		},
+		"commentaireTech": {
+			"label": "CommentaireTech"
+		},
+		"commentaireBio": {
+			"label": "CommentaireBio"
+		},
+		"dateValTech": {
+			"label": "DateValTech"
+		},
+		"dateValTechFrom": {
+			"label": "DateValTech entre"
+		},
+		"dateValTechTo": {
+			"label": "Et"
+		},
+		"dateValBio": {
+			"label": "DateValBio"
+		},
+		"dateValBioFrom": {
+			"label": "DateValBio entre"
+		},
+		"dateValBioTo": {
+			"label": "Et"
+		},
+		"parametreDemande": {
+			"label": "ParametreDemande"
+		},
+		"ancienValeur": {
+			"label": "AncienValeur"
+		},
+		"dateAnteriorite1": {
+			"label": "DateAnteriorite1"
+		},
+		"dateAnteriorite1From": {
+			"label": "DateAnteriorite1 entre"
+		},
+		"dateAnteriorite1To": {
+			"label": "Et"
+		},
+		"dateAnteriorite2": {
+			"label": "DateAnteriorite2"
+		},
+		"dateAnteriorite2From": {
+			"label": "DateAnteriorite2 entre"
+		},
+		"dateAnteriorite2To": {
+			"label": "Et"
+		},
+		"dateAnteriorite3": {
+			"label": "DateAnteriorite3"
+		},
+		"dateAnteriorite3From": {
+			"label": "DateAnteriorite3 entre"
+		},
+		"dateAnteriorite3To": {
+			"label": "Et"
+		},
+		"uniteAnteriorite1": {
+			"label": "UniteAnteriorite1"
+		},
+		"uniteAnteriorite2": {
+			"label": "UniteAnteriorite2"
+		},
+		"uniteAnteriorite3": {
+			"label": "UniteAnteriorite3"
+		},
+		"valeurAnteriorite1": {
+			"label": "ValeurAnteriorite1"
+		},
+		"valeurAnteriorite2": {
+			"label": "ValeurAnteriorite2"
+		},
+		"valeurAnteriorite3": {
+			"label": "ValeurAnteriorite3"
+		},
+		"bornesBas": {
+			"label": "BornesBas"
+		},
+		"bornesHaut": {
+			"label": "BornesHaut"
+		},
+		"dseuil": {
+			"label": "Dseuil"
+		},
+		"dabs": {
+			"label": "Dabs"
+		},
+		"djours": {
+			"label": "Djours"
+		},
+		"dRelatif": {
+			"label": "DRelatif"
+		},
+		"widthtexterich": {
+			"label": "Widthtexterich"
+		},
+		"validerGarde": {
+			"label": "ValiderGarde"
+		},
+		"statutparametre": {
+			"label": "Statutparametre"
+		},
+		"validateurGarde": {
+			"label": "User"
+		},
+		"profilanalyse": {
+			"label": ""
+		},
+		"echantillon": {
+			"label": ""
+		},
+		"demandeanalyse": {
+			"label": ""
+		},
+		"parametre": {
+			"label": ""
+		},
+		"validateurTech": {
+			"label": "User"
+		},
+		"validateurBio": {
+			"label": "User"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}

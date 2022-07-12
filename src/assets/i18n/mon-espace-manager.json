@@ -1,0 +1,225 @@
+{
+    "mon_espace_manager": {
+        "title_espace_manager": {
+            "label": "Employés"
+        }, 
+         "order": {
+            "label": "ORDRE"
+        },
+        "de-a": {
+            "label": "DE-À"
+        },
+        "nomManager": {
+            "label": "Nom de l'employé"
+        },
+        "service": {
+            "label": "SERVICE"
+        },
+        "etablissement": {
+            "label": "Etablissement"
+        },
+        "poste": {
+            "label": "POSTE"
+        },
+        "aTraiter": {
+            "label": "A TRAITER"
+        },
+        "matricule": {
+            "label": "Matricule"
+        },
+        "email": {
+            "label": "Email"
+        },
+        "numTel": {
+            "label": "N Tél"
+        },
+        "adresse": {
+            "label": "Adresse"
+        },
+        "employeDepuis": {
+            "label": "Employé depuis"
+        }
+
+    },
+    "demandeConge": {
+        "name": {
+            "title": "Liste demandes congés"
+        },
+        "recapitulatif": {
+            "title": "Récapitulatif"
+        },
+        "list": {
+            "title": "Recherche categoriePersonnel"
+        },
+        "edit": {
+            "title": "Editer categoriePersonnel"
+        },
+        "add": {
+            "title": "Ajouter categoriePersonnel"
+        },
+        "view": {
+            "title": "Consulter categoriePersonnel"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations categoriePersonnel"
+        },
+        "libelle": {
+            "label": "Libellé"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "dateDebut": {
+            "label": "Date de debut"
+        },
+        "dateFin": {
+            "label": "Date de fin"
+        },
+        "motif": {
+            "label": "Motif"
+        },
+        "fichier": {
+            "label": "Fichier"
+        },
+        "fichierName": {
+            "label": "fichierName"
+        },
+        "fichierCheksum": {
+            "label": "fichierCheksum"
+        },
+        "reponse": {
+            "label": "Réponse"
+        },
+        "statutconge": {
+            "label": "statutcongé"
+        },
+        "dateReponse": {
+            "label": "Date de réponse"
+        },
+        "employe": {
+            "label": "Employé"
+        },
+        "typeConge": {
+            "label": "Type de congé"
+        },
+        "validateur": {
+            "label": "Validateur"
+        },
+        "order": {
+            "label": "Order"
+        },
+        "de-a": {
+            "label": "De-À"
+        },
+        "duree": {
+            "label": "Durée (j)"
+        },
+        "type": {
+            "label": "Type"
+        },
+        "statut": {
+            "label": "Statut"
+        },
+        "conge-annuel": {
+            "label": "Congé annuel"
+        },
+        "conge-exceptionnel": {
+            "label": "Congé exceptionnel"
+        },
+        "apercu": {
+            "label": "Aperçu"
+        },
+        "de": {
+            "label": "De"
+        },
+        "a": {
+            "label": "à"
+        },
+        "demander_conge": {
+            "label": "Demander congé"
+        },
+        "de_a": {
+            "label": "De - à"
+        },
+        "motif_conge": {
+            "label": "Motif congé"
+        },
+        "simulation": {
+            "label": "Simulation"
+        },
+        "date": {
+            "label": "Date"
+        },
+        "demandeEntrante": {
+            "label": "Demandes entrantes"
+        },
+        "demandeList": {
+            "label": "Liste des demandes"
+        },
+        "demandeListSortie":{
+            "label":"Liste des demandes de sortie"
+        },
+        "demandeListDocument":{
+            "label":"Liste des demandes de document"
+        },
+        "demandeListConge":{
+            "label":"Liste des demandes de congé"
+        },
+        "par": {
+            "label": "Par"
+        },
+        "le": {
+            "label": "Le"
+        },
+        "soldeAnnuel": {
+            "label": "Solde annuel actuel"
+        },
+        "soldeExceptionnelle": {
+            "label": "Solde annuel exceptionnel"
+        },
+        "apercuCongeDemande": {
+            "label": "Aperçu congé demandé"
+        },
+        "detail":{
+            "label":"Détail"
+        },
+        "demandePar":{
+            "label": "Demandé par"
+        },
+        "justtificatif":{
+            "label":"Justificatif"
+        },
+        "valideConge":{
+            "label":"Valider congé"
+        },
+        "refuserConge":{
+            "label":"Refuser congé"
+        },
+        "repondre_a_la_demande_conge":{
+            "label":"Répondre à la demande congé"
+        },
+        "repondre_a_la_demande_attestation_de_travail":{
+            "label":"Répondre à la demande de document :"
+        },
+        "sortieAnnuel":{
+            "label": "Sortie annuelle"
+        },"absence-annuel":{
+            "label":"ABSENCE ANNUELLE (H)"
+        },"valideSortie":{
+            "label":"Valider sortie"
+        },"typeDocument":{
+            "label":"Type document"
+        },"pret":{
+            "label":"Prêt"
+        },"incomplete":{
+            "label":"Incomplete"
+        },"typeDocumentEtmotif":{
+            "label":"Type document et motif"
+        },"infornmerCollborateur":{
+            "label":"Informer collaborateur"
+        }
+    }
+}

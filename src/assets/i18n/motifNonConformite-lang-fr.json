@@ -1,0 +1,50 @@
+{	
+	"motifNonConformite": {
+		"name": {
+			"title": "MotifNonConformite"
+		},
+		"list": {
+			"title": "Recherche motifNonConformite"
+		},
+		"edit": {
+			"title": "Editer motifNonConformite"
+		},
+		"add": {
+			"title": "Ajouter motifNonConformite"
+		},
+		"view": {
+			"title": "Consulter motifNonConformite"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations motifNonConformite"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"bloquant": {
+			"label": "Bloquant"
+		},
+		"actions": {
+			"label": "Actions"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"hl7": {
+			"label": "Hl7"
+		},
+		"naturenonconformite": {
+			"label": ""
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}

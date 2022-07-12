@@ -1,0 +1,73 @@
+<nz-layout>
+
+    <!-- mobile menu -->
+    <nz-drawer [nzMaskClosable]="false" id="nz-side-mobile" [nzPlacement]="'left'" [nzWrapClassName]="'nz-side-mobile-drawer'" class="nz-side-mobile" [nzVisible]="isCollapsed  && isMobileDevice()" [nzClosable]="true" (nzOnClose)="closeDrawerMenu()">
+        <div class="mt-3">
+            <img class="img-logo pt-2" src="assets/enova-theme/img/logo/enova.png" alt="App Logo" />
+            <ul nz-menu nzMode="horizontal" class="  mb-3">
+                <li nz-menu-item routerLink='/boileplate/mon_espace/mon_dossier/tab/infos_contact' [nzMatchRouter]="false" [nzSelected]="isSelectedUrl('/mon_espace')">Mon Espace</li>
+                <li *ngIf="currentUser?.employe?.manager == true" nz-menu-item routerLink='/boileplate/espace_manager/demande_entrante/redirect' [nzMatchRouter]="false" [nzSelected]="isSelectedUrl('/espace_manager')">Espace Admin</li>
+                <li *ngIf="currentUser?.employe?.manager == true" nz-menu-item routerLink='/referentiel' [nzMatchRouter]="false" [nzSelected]="isSelectedUrl('/referentiel')">Référentiel</li>
+
+            </ul>
+
+            <ng-container *ngTemplateOutlet="content_menu"></ng-container>
+        </div>
+
+    </nz-drawer>
+    <nz-header>
+        <app-header (isCollapsedEvent)="isCollapsedEvent($event)" [content_logo]="content_logo" [parent]="this"></app-header>
+    </nz-header>
+
+    <nz-layout>
+        <!-- header -->
+        <nz-sider nzWidth="250px" nzTheme="light" *ngIf="isMobileDevice()==false">
+            <ng-container *ngTemplateOutlet="content_menu"></ng-container>
+        </nz-sider>
+        <nz-content class="p-0">
+            <!-- content -->
+            <div class="inner-content" style="min-height: 100vh;">
+                <router-outlet></router-outlet>
+            </div>
+            <!-- end content -->
+        </nz-content>
+
+    </nz-layout>
+    <nz-footer>
+        <footer class="footer-container" app-footer></footer>
+    </nz-footer>
+</nz-layout>
+<!-- start logo -->
+<ng-template #content_logo let>
+    <ng-container *ngIf="isMobileDevice()==false">
+        <div class="logo">
+            <span *ngIf="!isCollapsed"> 
+                <img  class="img-logo pt-2" src="assets/enova-theme/img/logo/enova.png" alt="App Logo" />
+            </span>
+            <!-- <img  src="assets/enova-theme/img/logo/enova-boileplate.jpg" alt="App Logo" style="  height: 3.75rem;   " /> -->
+            <div class="brand-logo-collapsed" *ngIf="isCollapsed">
+
+                <img class="img-logo" src="assets/enova-theme/img/logo/logo-mobile.png" alt="App Logo" />
+            </div>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="isMobileDevice()">
+        <span class="logo-mobile w-20">
+            <span class="brand-logo-collapsed  w-100 mt-2">
+                <img  class="img-logo" src="assets/enova-theme/img/logo/logo-mobile.png" alt="App Logo" />
+            </span>
+        </span>
+
+    </ng-container>
+
+</ng-template>
+<!-- end logo -->
+<!-- start content menu -->
+<ng-template #content_menu>
+    <!-- <div class="home-content_menu" [ngStyle]="{'borderBottom': (isCollapsed)? 'none' :'' }">
+        <app-sidebar-home [parent]="this"></app-sidebar-home>
+    </div> -->
+    <app-sidebar-application [parent]="this"></app-sidebar-application>
+    <!-- <app-sidebar-referentiel [parent]="this"></app-sidebar-referentiel> -->
+</ng-template>
+<!-- end content menu -->

@@ -1,0 +1,119 @@
+{
+    "convention": {
+        "name": {
+            "title": "Convention"
+        },
+        "list": {
+            "title": "Recherche convention"
+        },
+        "edit": {
+            "title": "Editer convention"
+        },
+        "add": {
+            "title": "Ajouter convention"
+        },
+        "view": {
+            "title": "Consulter convention"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations convention"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "soustraitance": {
+            "label": "Soustraitance"
+        },
+        "reduction": {
+            "label": "Reduction"
+        },
+        "partPatient": {
+            "label": "PartPatient"
+        },
+        "arrondi": {
+            "label": "Arrondi"
+        },
+        "partTierPayeur": {
+            "label": "PartTierPayeur"
+        },
+        "valeurp": {
+            "label": "Valeurp"
+        },
+        "valeurb": {
+            "label": "Valeurb"
+        },
+        "nombreB": {
+            "label": "NombreB"
+        },
+        "majorationNuit": {
+            "label": "MajorationNuit"
+        },
+        "genererFacture": {
+            "label": "GenererFacture"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "email": {
+            "label": "Email"
+        },
+        "telephone": {
+            "label": "Téléphone"
+        },
+        "adresse": {
+            "label": "Adresse"
+        },
+        "visibleCr": {
+            "label": "VisibleCr"
+        },
+        "template": {
+            "label": "Template"
+        },
+        "envoiEmail": {
+            "label": "EnvoiEmail"
+        },
+        "factureGroupee": {
+            "label": "FactureGroupee"
+        },
+        "requiredNumAdherent": {
+            "label": "RequiredNumAdherent"
+        },
+        "requiredNumPec": {
+            "label": "RequiredNumPec"
+        },
+        "uniqueNumPec": {
+            "label": "UniqueNumPec"
+        },
+        "nombreDigits": {
+            "label": "NombreDigits"
+        },
+        "codeCompteClient": {
+            "label": "CodeCompteClient"
+        },
+        "codeComptePrestation": {
+            "label": "CodeComptePrestation"
+        },
+        "codeCompteBanque": {
+            "label": "CodeCompteBanque"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "etablissement": {
+            "label": "Etablissement"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    }
+
+}

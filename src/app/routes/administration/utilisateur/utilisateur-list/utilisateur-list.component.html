@@ -1,0 +1,237 @@
+<div style="padding: 12px 15px;">
+    <div class="mr-1 mb-2  search-button title-style  mr-0" style="padding-bottom: 5px;">
+        <b> 
+            {{
+            'utilisateur.name.titlePlural' |
+            translateUtilisateur }}</b>
+        <!-- -->
+        <button class="float-right mr-0 mb-1 btn btn-labeled height-button   border-radius-style button-primary-revert" type="button" (click)="addUtilisateur()">
+            <!-- <i class="fas fa-plus   font-weight-400"></i>  -->
+            <i nz-icon nzType="plus"   ></i>
+            <span class="btn-title">{{ 'common.command.add' | translate }}</span>
+        </button>
+        <div style="clear: both;"></div>
+    </div>
+    <!-- start : here you find all field of searching -->
+    <app-field-searching #field_searching (search)="nzSearch(field_searching.utilisateurForm.value)" (reset)="reset()"></app-field-searching>
+    <!-- end : here you find all field of searching -->
+
+    <div>
+        <div>
+            <ng-template #header>
+                <div class="nz-table-header-custom">
+                    <div class="mr-2 d-inline-block nz-table-header-total">
+                        {{nzTotalItem}} {{ 'common.label.totalRow' | translate }}
+                    </div>
+                    <!-- les valeurs de filters de rechercher  -->
+                    <span class="d-inline-block   border-left border-right  nz-table-header-tag" *ngIf="nzListTagCritier && nzListTagCritier.length>0"> 
+                        <!--  -->
+                         
+                        <app-horizontal-scroll #h_s> 
+                            <ng-container *ngFor="let item of nzListTagCritier">
+                                <nz-tag [nzMode]="'closeable'" (nzOnClose)="nzHandleReset(item.key,field_searching.utilisateurForm,field_searching.utilisateurCriteria)"  class="btn mr-2 pr-2 pl-2" [nzColor]="_colorsService.byName('eno-gray-10')"    >
+                                    {{  item?.title }}  
+                                    {{  item?.object?.value }} 
+                                    <ng-container [ngSwitch]="item?.key">
+                                        <ng-container *ngSwitchCase="'parametres'">
+                                            {{  item?.list  ? checkBoxListToStr(item?.list,'label') : "" }}   
+                                        </ng-container> 
+                                        <ng-container *ngSwitchDefault>
+                                            {{  item?.list  ? listToStr(item?.list,'value') : "" }}    
+                                        </ng-container>
+                                    </ng-container>
+                                </nz-tag>
+                            </ng-container> 
+                        </app-horizontal-scroll>
+                    </span>
+                    <span class="nz-table-header-btn">
+                        <!-- afficher les filters -->
+                        <button class="btn  btn-light float-right" type="button" (click)="showCompleteForm=!showCompleteForm" [ngClass]="{'btn-light-focused': showCompleteForm}">
+                            <i nz-icon nzType="filter" nzTheme="outline" ></i>
+                            <span class="btn-title">{{ 'common.command.filter' | translate }} </span>
+                    </button>
+                    <!-- export table  -->
+
+                    <!-- <button nz-dropdown [nzDropdownMenu]="exporter_menu" [nzPlacement]="'bottomLeft'" class="btn  btn-light float-right" type="button" [disabled]="!field_searching.utilisateurForm.valid">
+                            <i nz-icon nzType="cloud-download" nzTheme="outline" class="position-relative position-top-1 mr-2"  ></i> 
+                            <span class="btn-title">{{ 'common.command.exporter' | translate }}</span>
+                            <i nz-icon nzType="down" class="  ml-2" ></i>
+                        </button> -->
+                    <!-- supprimer les items   -->
+                    <!-- <button type="button" title="{{  'common.label.delete' | translate }}" *ngIf="hasRole('ROLE_DELETE_UTILISATEUR') && nzSelectedList && nzSelectedList?.length > 0" (click)="nzDeleteItem()" class="btn btn-red float-right  ">
+                        <i nz-icon nzType="delete" nzTheme="outline"  ></i>
+                        <span class="btn-title">{{ 'common.command.delete' | translate }}</span>
+                    </button> -->
+                    </span>
+
+
+
+
+
+
+                </div>
+                <!-- *ngIf="hasRole('ROLE_EXPORT') && nzItemList && nzItemList.length > 0" -->
+                <nz-dropdown-menu #exporter_menu="nzDropdownMenu">
+                    <ul nz-menu>
+                        <li nz-menu-item *ngIf="nzItemList && nzItemList.length > 0" (click)="nzExport('utilisateurDataTable','xls')"> {{ 'common.command.csv' | translate }}</li>
+                        <li nz-menu-item *ngIf="nzItemList && nzItemList.length > 0" (click)="nzExport('utilisateurDataTable','pdf')"> {{ 'common.command.pdf' | translate }}</li>
+                    </ul>
+                </nz-dropdown-menu>
+                <div *ngIf="showCompleteForm==true" class="container-form">
+                    <ng-container *ngTemplateOutlet="field_searching.form_search"></ng-container>
+                </div>
+            </ng-template>
+            <!--  [nzShowTotal]="dataSize"  -->
+            <nz-table id="utilisateurDataTable" [nzTableLayout]="'fixed'" [nzTitle]="header" class="label-style" #utilisateurDataTable nzBordered nzShowSizeChanger [nzLoading]="loading" [nzTotal]="nzTotalItem" [(nzPageIndex)]="nzFirstItem"
+                [nzFrontPagination]="false" (nzPageIndexChange)="loadUtilisateurData()" (nzPageSizeChange)="nzPageSizeChange($event)" [nzShowPagination]="true" [nzPageSize]="nzRowsItem" [nzPageSizeOptions]="[10, 50,100]" [nzData]="nzItemList" [nzSize]="'middle'">
+                <thead>
+                    <tr class="label-style enoLight">
+                        <!-- <th class="text-center ant-action" [nzChecked]="nzIsCheckedAll()" (nzCheckedChange)="nzCheckedChangeAll($event)" nzShowCheckbox>
+                        </th> -->
+                        <!-- <th class="column" columnName="nom" nzCustomFilter (nzSortOrderChange)="nzSortOrderChange($event,'nom')" nzSortKey="nom">
+                            {{ 'utilisateur.nom.label' | translateUtilisateur }}
+                            <nz-filter-trigger [nzDropdownMenu]="nz_dropdown_menu_nomLike" [nzActive]="nzIsActiveControl('nomLike',field_searching.utilisateurForm)">
+                                <i nz-icon nzType="search"></i>
+                            </nz-filter-trigger>
+                            <nz-dropdown-menu #nz_dropdown_menu_nomLike="nzDropdownMenu">
+                                <app-nz-table-dropdown-filter [nzNameSearch]="'common.command.search' | translate" [nzNameReset]="'common.command.reset' | translate" (nzSearch)="nzSearch(field_searching.utilisateurForm.value)" (nzReset)="nzHandleReset('nom',field_searching.utilisateurForm,field_searching.utilisateurCriteria)">
+                                    <div class="form-group">
+                                        <ng-container *ngTemplateOutlet="field_searching.nom"></ng-container>
+                                    </div>
+                                </app-nz-table-dropdown-filter>
+                            </nz-dropdown-menu>
+                        </th> -->
+                        <th class="column" columnName="nom" nzCustomFilter nzShowSort (nzSortOrderChange)="nzSortOrderChange($event,'nom')" nzSortKey="nom">
+                            {{ 'utilisateur.username.label' | translateUtilisateur }}
+                            <nz-filter-trigger [nzDropdownMenu]="nz_dropdown_menu_nomLike" [nzActive]="nzIsActiveControl('nomLike',field_searching.utilisateurForm)">
+                                <i nz-icon nzType="search"></i>
+                            </nz-filter-trigger>
+                            <nz-dropdown-menu #nz_dropdown_menu_nomLike="nzDropdownMenu">
+                                <app-nz-table-dropdown-filter [nzNameSearch]="'common.command.search' | translate" [nzNameReset]="'common.command.reset' | translate" (nzSearch)="nzSearch(field_searching.utilisateurForm.value)" (nzReset)="nzHandleReset('nomLike',field_searching.utilisateurForm,field_searching.utilisateurCriteria)">
+                                    <div class="form-group">
+                                        <ng-container *ngTemplateOutlet="field_searching.nom"></ng-container>
+                                    </div>
+                                </app-nz-table-dropdown-filter>
+                            </nz-dropdown-menu>
+                        </th>
+                        <th class="column" columnName="profil" nzCustomFilter nzShowSort (nzSortOrderChange)="nzSortOrderChange($event,'profil')" nzSortKey="profil">
+                            {{ 'utilisateur.profil.label' | translateUtilisateur }}
+                            <nz-filter-trigger [nzDropdownMenu]="nz_dropdown_menu_profil" [nzActive]="nzIsActiveControl('profil',field_searching.utilisateurForm)">
+                                <i nz-icon nzType="search"></i>
+                            </nz-filter-trigger>
+                            <nz-dropdown-menu #nz_dropdown_menu_profil="nzDropdownMenu">
+                                <app-nz-table-dropdown-filter [nzNameSearch]="'common.command.search' | translate" [nzNameReset]="'common.command.reset' | translate" (nzSearch)="nzSearch(field_searching.utilisateurForm.value)" (nzReset)="nzHandleReset('profilId',field_searching.utilisateurForm,field_searching.utilisateurCriteria)">
+                                    <div class="form-group">
+                                        <ng-container *ngTemplateOutlet="field_searching.profil"></ng-container>
+                                    </div>
+                                </app-nz-table-dropdown-filter>
+                            </nz-dropdown-menu>
+                        </th>
+                        <th class="column" columnName="employe" nzCustomFilter nzShowSort (nzSortOrderChange)="nzSortOrderChange($event,'employe')" nzSortKey="employe">
+                            {{ 'utilisateur.employe.label' | translateUtilisateur }}
+                            <nz-filter-trigger [nzDropdownMenu]="nz_dropdown_menu_employeLike" [nzActive]="nzIsActiveControl('employe',field_searching.utilisateurForm)">
+                                <i nz-icon nzType="search"></i>
+                            </nz-filter-trigger>
+                            <nz-dropdown-menu #nz_dropdown_menu_employeLike="nzDropdownMenu">
+                                <app-nz-table-dropdown-filter [nzNameSearch]="'common.command.search' | translate" [nzNameReset]="'common.command.reset' | translate" (nzSearch)="nzSearch(field_searching.utilisateurForm.value)" (nzReset)="nzHandleReset('employeId',field_searching.utilisateurForm,field_searching.utilisateurCriteria)">
+                                    <div class="form-group">
+                                        <ng-container *ngTemplateOutlet="field_searching.employe"></ng-container>
+                                    </div>
+                                </app-nz-table-dropdown-filter>
+                            </nz-dropdown-menu>
+                        </th>
+                        <!-- <th class="column" columnName="adresse" nzCustomFilter nzShowSort (nzSortOrderChange)="nzSortOrderChange($event,'adresse')" nzSortKey="adresse">
+                            {{ 'utilisateur.adresse.label' | translateUtilisateur }}
+                            <nz-dropdown-menu #nz_dropdown_menu_adresseLike="nzDropdownMenu">
+                                <app-nz-table-dropdown-filter [nzNameSearch]="'common.command.search' | translate" [nzNameReset]="'common.command.reset' | translate" (nzSearch)="nzSearch(field_searching.utilisateurForm.value)" (nzReset)="nzHandleReset('adresse',field_searching.utilisateurForm,field_searching.utilisateurCriteria)">
+                                    <div class="form-group">
+                                        <ng-container *ngTemplateOutlet="field_searching.adresse"></ng-container>
+                                    </div>
+                                </app-nz-table-dropdown-filter>
+                            </nz-dropdown-menu>
+                        </th> -->
+                        <th class="column" columnName="email" nzCustomFilter nzShowSort (nzSortOrderChange)="nzSortOrderChange($event,'email')" nzSortKey="email">
+                            {{ 'utilisateur.email.label' | translateUtilisateur }}
+                            <nz-filter-trigger [nzDropdownMenu]="nz_dropdown_menu_emailLike" [nzActive]="nzIsActiveControl('emailLike',field_searching.utilisateurForm)">
+                                <i nz-icon nzType="search"></i>
+                            </nz-filter-trigger>
+                            <nz-dropdown-menu #nz_dropdown_menu_emailLike="nzDropdownMenu">
+                                <app-nz-table-dropdown-filter [nzNameSearch]="'common.command.search' | translate" [nzNameReset]="'common.command.reset' | translate" (nzSearch)="nzSearch(field_searching.utilisateurForm.value)" (nzReset)="nzHandleReset('emailLike',field_searching.utilisateurForm,field_searching.utilisateurCriteria)">
+                                    <div class="form-group">
+                                        <ng-container *ngTemplateOutlet="field_searching.email"></ng-container>
+                                    </div>
+                                </app-nz-table-dropdown-filter>
+                            </nz-dropdown-menu>
+                        </th>
+                        <th class="column text-center ant-actif" columnName="actif">
+                            {{ 'utilisateur.actif.label' | translateUtilisateur }}
+                        </th>
+
+                        <th nzRight="0px" nzWidth="8em" class="pl-3 pr-3 ant-action">{{ 'common.label.actions' | translate }} </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of utilisateurDataTable.data">
+                        <!-- <td class="text-center" nzShowCheckbox [nzChecked]="nzIsChecked(item)" (nzCheckedChange)="nzCheckedChange($event,item)">
+                        </td> -->
+                        <td (click)="viewUtilisateur(item)">
+                            <span style="cursor: pointer;" class="text-center">{{ item?.username }}</span>
+                        </td>
+                        <td (click)="viewUtilisateur(item)">
+                            <span style="cursor: pointer;" class="text-center">{{ item?.profil?.label }}</span>
+                        </td>
+                        <td (click)="viewUtilisateur(item)">
+                            <span *ngIf="item?.employe && item?.employe?.civilite && item?.employe?.matricule" style="cursor: pointer;" class="text-center">{{ item?.employe?.civilite+ ' '+item?.employe?.nom+ ' '+ item?.employe?.prenom+' ('+item?.employe?.matricule+')'}}</span>
+                            <span *ngIf="item?.employe && item?.employe?.civilite && !item?.employe?.matricule" style="cursor: pointer;" class="text-center">{{ item?.employe?.civilite+ ' '+item?.employe?.nom+ ' '+ item?.employe?.prenom}}</span>
+                            <span *ngIf="item?.employe && !item?.employe?.civilite && item?.employe?.matricule" style="cursor: pointer;" class="text-center">{{ item?.employe?.nom+ ' '+ item?.employe?.prenom+' ('+item?.employe?.matricule+')'}}</span>
+                            <span *ngIf="item?.employe && !item?.employe?.civilite && !item?.employe?.matricule" style="cursor: pointer;" class="text-center">{{ item?.employe?.nom+ ' '+ item?.employe?.prenom}}</span>
+                        </td>
+                        <!-- <td (click)="viewUtilisateur(item)">
+                            <span style="cursor: pointer;" class="text-center">{{ item?.adresse }}</span>
+                        </td> -->
+                        <td (click)="viewUtilisateur(item)">
+                            <span style="cursor: pointer;" class="text-center">{{ item?.email }}</span>
+                        </td>
+                        <td class="text-center" (click)="viewUtilisateur(item)">
+                            <span *ngIf="item.enabled">
+                                <div class="fas fa-circle fa-circle-success"></div>
+                            </span>
+                            <span *ngIf="!item.enabled" (click)="viewUtilisateur(item)">
+                                <div class="fas fa-circle fa-circle-alert"></div>
+                            </span>
+                        </td>
+                        <td class="text-center" nzRight="0px">
+                            <i nz-icon nzType="ellipsis" nzTheme="outline" nz-dropdown [nzDropdownMenu]="menuAction" [nzPlacement]="'bottomCenter'"></i>
+                            <nz-dropdown-menu #menuAction="nzDropdownMenu">
+                                <ul nz-menu>
+                                    <li nz-menu-item (click)="viewUtilisateur(item)">{{ 'common.command.visualiser' | translate }}</li>
+                                    <li nz-menu-item *ngIf="hasRole('ROLE_UPDATE_UTILISATEUR')" (click)="editUtilisateur(item)">{{ 'common.command.edit' | translate }}</li>
+                                    <li *ngIf='item.enabled' nz-menu-item (click)="nzDeleteItem(item)">{{ 'common.command.desactiver' | translate }}</li>
+                                    <li *ngIf='!item.enabled' nz-menu-item (click)="nzDeleteItem(item)">{{ 'common.command.activer' | translate }}</li>
+                                </ul>
+                            </nz-dropdown-menu>
+                            <!-- <span title="Visualiser" class="btn btn-xs btn-outline-purple" (click)="viewUtilisateur(item)"><i class="fas fa-eye"></i></span> -->
+                        </td>
+
+                    </tr>
+                </tbody>
+            </nz-table>
+        </div>
+    </div>
+    <!-- END TABLE -->
+</div>
+
+<nz-drawer [nzMaskClosable]="false" [nzVisible]="visible_drawer" [nzClosable]="true" (nzOnClose)="closeUtilisateur()">
+    <ng-container [ngSwitch]="_action_ecran">
+        <ng-container *ngSwitchCase="entity_action.VIEW">
+            <app-utilisateur-view></app-utilisateur-view>
+        </ng-container>
+        <ng-container *ngSwitchCase="entity_action.EDIT">
+            <app-utilisateur-edit></app-utilisateur-edit>
+        </ng-container>
+        <ng-container *ngSwitchCase="entity_action.ADD">
+            <app-utilisateur-add></app-utilisateur-add>
+        </ng-container>
+    </ng-container>
+
+</nz-drawer>

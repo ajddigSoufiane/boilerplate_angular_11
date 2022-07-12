@@ -1,0 +1,173 @@
+<!-- START form for searching -->
+<ng-template #form_search>
+    <div class="card card-default col-12 ">
+        <div style="padding: 15px 15px 0px;">
+            <span class="eno-gray-1 eno-typo-size-18px-1rem font-weight-600">{{ 'common.legend.search' | translate
+                }}</span>
+
+        </div>
+
+        <form [formGroup]="utilisateurForm" (keydown.enter)="search.emit('')" (submit)="search.emit('')">
+            <!-- <div class="card-body bt"> -->
+
+            <div class="enoLight card-body ng-scope border-radius-style border-style box-shadow-style "
+                [collapse]="collapsedInfo">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="form-group row  ">
+                            <label class="col-12 col-form-label font-weight-normal">{{
+                                'utilisateur.nom.label' |
+                                translateUtilisateur }}</label>
+                            <div class="col-12">
+                                <ng-container *ngTemplateOutlet="nom"></ng-container>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="form-group row  ">
+                            <label class="col-12 col-form-label font-weight-normal">{{
+                                'utilisateur.employe.label' |
+                                translateUtilisateur }}</label>
+                            <div class="col-12">
+                                <ng-container *ngTemplateOutlet="employe"></ng-container>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="form-group row ">
+                            <label class="col-12 col-form-label font-weight-normal">{{
+                                'utilisateur.adresse.label' |
+                                translateUtilisateur }}</label>
+                            <div class="col-12">
+                                <ng-container *ngTemplateOutlet="adresse"></ng-container>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="form-group row  ">
+                            <label class="col-12 col-form-label font-weight-normal">{{
+                                'utilisateur.email.label' |
+                                translateUtilisateur }}</label>
+                            <div class="col-12">
+                                <ng-container *ngTemplateOutlet="email"></ng-container>
+
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="form-group row  ">
+                            <label class="col-12 col-form-label font-weight-normal">{{
+                                'utilisateur.profil.label' |
+                                translateUtilisateur }}</label>
+                            <div class="col-12">
+                                <ng-container *ngTemplateOutlet="profil"></ng-container>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="form-group row  ">
+                            <label class="col-12 col-form-label font-weight-normal">{{
+                                'utilisateur.actif.label' |
+                                translateUtilisateur }}</label>
+                            <div class="col-12">
+                                <ng-container *ngTemplateOutlet="actif"></ng-container>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" *ngIf="showMoreForm">
+                    
+                 
+
+                </div>
+
+            </div>
+            <!-- </div> -->
+
+            <div class="card-footer text-right enoLight d-flex justify-content-between align-items-center"
+                [collapse]="collapsedInfo">
+                <div class="text-left" *ngIf="!showMoreForm" style="color: #0052CC;cursor:pointer"> <span style="text-decoration: underline;font-size: 14.4px;" (click)="showMoreForm=!showMoreForm"></span></div>
+                <div class="text-left" *ngIf="showMoreForm" style="color: #0052CC;cursor:pointer"> <span style="text-decoration: underline;font-size: 14.4px;" (click)="showMoreForm=!showMoreForm"></span></div>
+                <div>
+                    <button class="btn ml-1 mr-2 button-secondary" type="button" (click)="reset.emit('')">
+                        <i class="fal fa-undo mr-2"></i>
+                        <span class="btn-title">{{ 'common.command.reset' | translate }}</span>
+                    </button>
+                    <button class="btn btn-secondary ml-2 mr-2 button-primary" type="submit"
+                        [disabled]="!utilisateurForm.valid">
+                        <i class="fal fa-search mr-2"></i>
+                        <span class="btn-title">{{ 'common.command.search' | translate }}</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</ng-template>
+<!-- END form for searching -->
+
+<!-- all input of form -->
+
+
+<ng-template #nom>
+    <div [formGroup]="utilisateurForm">
+        <input type="text" class="form-control input-text-style input-style w-100 eno-typo-size-18px-1rem"
+            placeholder="Nom" formControlName="nomLike">
+    </div>
+</ng-template>
+<ng-template #prenom>
+    <div [formGroup]="utilisateurForm">
+        <input type="text" class="form-control input-text-style input-style w-100 eno-typo-size-18px-1rem"
+            placeholder="Prenom" formControlName="prenom">
+    </div>
+</ng-template>
+<ng-template #cin>
+    <div [formGroup]="utilisateurForm">
+        <input type="text" class="form-control input-text-style input-style w-100 eno-typo-size-18px-1rem"
+            placeholder="CIN" formControlName="cin">
+    </div>
+</ng-template>
+<ng-template #adresse>
+    <div [formGroup]="utilisateurForm">
+        <input type="text" class="form-control input-text-style input-style w-100 eno-typo-size-18px-1rem"
+            placeholder="Adresse" formControlName="adresse">
+    </div>
+</ng-template>
+<ng-template #email>
+    <div [formGroup]="utilisateurForm">
+        <input type="text" class="form-control input-text-style input-style w-100 eno-typo-size-18px-1rem"
+            placeholder="Email" formControlName="emailLike">
+    </div>
+</ng-template>
+<ng-template #profil>
+    <div [formGroup]="utilisateurForm">
+        <nz-select nzPlaceHolder="Profil" formControlName="profilId" nzShowSearch nzAllowClear class="w-100 form-control eno-typo-size-0">
+            <nz-option *ngFor="let item of profilList" [nzLabel]="item.label" [nzValue]="item.id"></nz-option>
+        </nz-select> 
+    </div>
+</ng-template>
+<ng-template #employe>
+    <div [formGroup]="utilisateurForm">
+        <nz-select nzServerSearch nzShowSearch [nzFilterOption]="nzFilterOption"
+        [nzShowArrow]="false" (nzOnSearch)="getEmploye($event)"
+        formControlName="employeId" class="w-100 form-control eno-typo-size-0 border-error"
+        nzPlaceHolder="Employé" nzAllowClear>
+        <nz-option *ngFor="let item of employeList" [nzLabel]="item.civilite+' '+item.nom+ ' '+ item.prenom+' ('+item.matricule+')'"
+            [nzValue]="item.id" [compareWith]="nzCompareSelectedByID"></nz-option>
+    </nz-select>
+    </div>
+</ng-template>
+<ng-template #actif>
+    <div [formGroup]="utilisateurForm">
+        <nz-select formControlName="enabled" nzShowSearch nzAllowClear nzPlaceHolder="actif" class="w-100 form-control eno-typo-size-1">
+            <nz-option [nzLabel]="'common.select.notset' | translate" [nzValue]="null"></nz-option>
+            <nz-option [nzLabel]="'common.text.yes' | translate" [nzValue]="true"></nz-option>
+            <nz-option [nzLabel]="'common.text.no' | translate" [nzValue]="false"></nz-option>
+        </nz-select>
+    </div>
+</ng-template>
+<!-- end all input form -->

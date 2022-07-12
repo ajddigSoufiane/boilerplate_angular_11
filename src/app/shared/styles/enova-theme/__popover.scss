@@ -1,0 +1,19 @@
+ .ant-popover .ant-popover-message .ant-popover-message-title {
+     font-size: $eno-typo-size-0;
+ }
+ 
+ .ant-popover-message>.anticon-exclamation-circle {
+     display: none;
+ }
+ 
+ .ant-popover-message-title {
+     padding-left: 0px;
+ }
+ 
+ .ant-popover-buttons .ant-btn:not(.ant-btn-primary) {
+     background: none;
+     color: $eno-principale-color;
+     font-weight: normal;
+     box-shadow: none;
+     padding: 0px 30px;
+ }

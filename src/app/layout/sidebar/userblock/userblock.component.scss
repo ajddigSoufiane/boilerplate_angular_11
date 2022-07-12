@@ -1,0 +1,116 @@
+// Cutoms purple colors for theme
+$eno-principale-color: #2E1E7D;
+$eno-primaire: #0F0832;
+$eno-principale-color: #2E1E7D;
+$eno-purple-3: #423B9E;
+$eno-purple-4: #8184CB;
+$eno-purple-5: #E9E7FC;
+// Cutoms GRAY colors for theme 
+$eno-gray-1: #08080A;
+$eno-gray-2: #19191D;
+$eno-gray-8: #39393D;
+$eno-gray-4: #57575C;
+$eno-primaire: #6A6A70;
+$eno-gray-6: #939398;
+$eno-gray-7: #B3B3B8;
+$eno-gray-8: #D7D7DC;
+$eno-gray-9: #E7E7ED;
+$eno-secondaire-color: #F1F1F7;
+// Cutoms TAG BLUE colors for theme
+$eno-blue-primary-0: #2A5A9D;
+$eno-blue-1: #2A5A9D;
+$eno-blue-2: #397BC1;
+$eno-blue-3: #5498D4;
+$eno-blue-4: #93C1E6;
+$eno-blue-5: #BBD9F0;
+$eno-blue-6: #E3F0F8;
+// Cutoms TAG purple light colors for theme
+$eno-purple-light-primary-0: #5D1E7D;
+$eno-purple-light-1: #42166C;
+$eno-purple-light-2: #5D1E7D;
+$eno-purple-light-3: #7E288F;
+$eno-purple-light-4: #9B47A4;
+$eno-purple-light-5: #C490C9;
+$eno-purple-light-6: #F0E4F1;
+// Cutoms TAG purple lighter colors for theme
+$eno-purple-lighter-primary-0: #7D1E6D;
+$eno-purple-lighter-1: #7D1E6D;
+$eno-purple-lighter-2: #BB2283;
+$eno-purple-lighter-3: #E52192;
+$eno-purple-lighter-4: #E469BB;
+$eno-purple-lighter-5: #EFBEE1;
+$eno-purple-lighter-6: #F8E5F3;
+// Cutoms TAG green colors for theme
+$eno-green-primary-0: #83A431;
+$eno-green-1: #83A431;
+$eno-green-2: #8FBC3B;
+$eno-green-3: #A6E54E;
+$eno-green-4: #BEEE82;
+$eno-green-5: #E2F7C9;
+$eno-green-6: #F3FCE9;
+// Cutoms  green colors for feedback
+$eno-green-feedback-primary-0: #00A04A;
+$eno-green-feedback-second-0: #98d6a9;
+// Cutoms  yallow colors for feedback
+$eno-yallow-feedback-primary-0: #FDDC0D;
+$eno-yallow-feedback-second-0: #FBF269;
+// Cutoms  RED colors for feedback
+$eno-red-feedback-primary-0: #e01f3d;
+$eno-red-feedback-second-0: #ed717d;
+// Cutoms  blue colors for feedback
+$eno-blue-feedback-primary-0: #204496;
+$eno-blue-feedback-second-0: #4ea1ec;
+.eno-purple-primary-0 {
+    background-color: $eno-principale-color
+}
+
+.eno-purple-1 {
+    background-color: $eno-primaire
+}
+
+.eno-purple-2 {
+    background-color: $eno-principale-color
+}
+
+.eno-purple-3 {
+    background-color: $eno-purple-3
+}
+
+.eno-purple-4 {
+    background-color: $eno-purple-4
+}
+
+.eno-purple-5 {
+    background-color: $eno-purple-5
+}
+
+.eno-blue-primary-0 {
+    background-color: $eno-blue-primary-0
+}
+
+.eno-blue-1 {
+    background-color: $eno-blue-1
+}
+
+.eno-blue-2 {
+    background-color: $eno-blue-2
+}
+
+.eno-blue-3 {
+    background-color: $eno-blue-3
+}
+
+.eno-blue-4 {
+    background-color: $eno-blue-4
+}
+
+.eno-blue-5 {
+    background-color: $eno-blue-5
+}
+
+.r-10-10 {
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    margin-left: 5px;
+}

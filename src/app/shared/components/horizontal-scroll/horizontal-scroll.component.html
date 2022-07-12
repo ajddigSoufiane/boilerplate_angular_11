@@ -1,0 +1,12 @@
+<div class="center-line" [ngClass]="{'pl-3': (!appScrollElement.hasHorizontalScrollbar)}">
+    <!---->
+
+    <i *ngIf="(appScrollElement.hasHorizontalScrollbar)" nz-icon nzType="left" nzTheme="outline" class="btn p-1 icon_action_prv" (click)="onPreviousSearchPosition()"></i>
+    <div class="d-inline-block" [ngClass]="{'w-90': appScrollElement.hasHorizontalScrollbar,'w-100':!appScrollElement.hasHorizontalScrollbar}">
+        <div appCustom_scroll_bar #appScrollElement="appCustom_scroll_bar" #scrollx class="scroll-container" style="overflow: auto">
+
+            <ng-content></ng-content>
+        </div>
+    </div>
+    <i *ngIf="(appScrollElement.hasHorizontalScrollbar)" nz-icon nzType="right" nzTheme="outline" class="btn  p-1 icon_action_nxt" (click)="onNextSearchPosition()"></i>
+</div>

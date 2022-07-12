@@ -1,0 +1,156 @@
+<!-- soufiane :  this component juste help you to copy input field to use in new Entity -->
+<div style="padding: 12px 15px;">
+    <div class="mr-1 mb-3  search-button title-style-ref  mr-0 pb-2 pos-ntw-btn">
+        <b class="pos-ntw-btn">
+            {{
+            'service.add.title' |
+            translateService }}</b>
+        <div style="clear: both;"></div>
+    </div>
+    <div>
+        <form [formGroup]="serviceForm" class="form-validate" (submit)="saveService(serviceForm.value)"
+            novalidate="">
+            <div class="card card-default enoLight card-body ng-scope border-radius-style pb-2-rem mb-1">
+                <div class="row">
+                    <!-- start input text -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row ">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "service.code.label"
+                                | translateService
+                                }}</label>
+                            <div class="col-12">
+
+                                <input type="text" class="form-control input-value-style eno-typo-size-18px-1rem"
+                                    placeholder="code" formControlName="code" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row required">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "service.nom.label"
+                                | translateService
+                                }}</label>
+                            <div class="col-12">
+
+                                <input type="text" class="form-control input-value-style eno-typo-size-18px-1rem"
+                                    placeholder="nom" formControlName="nom" />
+                                <span class="message-requird" *ngIf="
+                                        serviceForm.controls['nom'].hasError(
+                                        'required'
+                                        ) &&
+                                        (serviceForm.controls['nom'].dirty ||
+                                        serviceForm.controls['nom'].touched)
+                                    ">{{ "common.message.required" | translate }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+
+                <div class="row">
+                    <!-- start input text -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row ">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "service.codeSIH.label"
+                                | translateService
+                                }}</label>
+                            <div class="col-12">
+                                <input type="text" class="form-control input-value-style eno-typo-size-18px-1rem"
+                                placeholder="Code SIH" formControlName="codeSIH" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row ">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "service.hopital.label"
+                                | translateService
+                                }}</label>
+                            <div class="col-12">
+
+                                    <nz-select formControlName="hopital" nzShowSearch nzAllowClear nzPlaceHolder="Hôpital" class="w-100 form-control eno-typo-size-1">
+                                        <nz-option [nzLabel]="'common.select.notset' | translate" nzValue="Non défini"></nz-option>
+                                        <nz-option [nzLabel]="'common.text.yes' | translate" [nzValue]="true"></nz-option>
+                                        <nz-option [nzLabel]="'common.text.no' | translate" [nzValue]="false"></nz-option>
+                                    </nz-select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- start input text -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row ">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "service.default.label"
+                                | translateService
+                                }}</label>
+                            <div class="col-12">
+                                <input type="text" class="form-control input-value-style eno-typo-size-18px-1rem"
+                                placeholder="Par défaut" formControlName="default" />
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+              
+                <!-- START BUTTONS -->
+
+            </div>
+            <div class="sumbit-btn" [ngClass]="{'sumbit-btn-drawer': _mode_ecran==this.mode_ecran.DRAWER}">
+                <div class="sumbit_btn_option">
+                    <button class="btn-1 btn btn-labeled button-primary-revert  mr-0 mb-1  float-left" type="button"
+                        debounceClick (debounceEvent)="saveService(serviceForm.value,saveAndQuit)">
+                        <i class="fal fa-save"></i>
+                        <span class="btn-title">{{ "common.command.save" | translate }}</span>
+                    </button>
+
+                    <button type="button" class="btn-2 btn btn-labeled button-primary-revert  mr-0 mb-1  float-left"
+                        nz-dropdown [nzDropdownMenu]="sumbit_btn_option" nzPlacement="bottomRight" [nzTrigger]="'click'"
+                        (nzVisibleChange)="upDownIcon=$event">
+                        <i nz-icon nzType="down" *ngIf="!upDownIcon" style="font-size: 1rem;"></i>
+                        <i nz-icon nzType="up" nzTheme="outline" *ngIf="upDownIcon"></i>
+                    </button>
+                    <nz-dropdown-menu #sumbit_btn_option="nzDropdownMenu">
+                        <ul nz-menu>
+                            <li nz-menu-item class=" btn-subline-parent">
+                                <div class="w-100 btn text-left btn-subline" debounceClick (debounceEvent)="
+                saveService(serviceForm.value)
+                            ">
+                                    <i class="fal fa-save mr-2"></i>
+                                    <span class="btn-title">{{ "common.command.saveAndNew" | translate }}</span>
+                                </div>
+                            </li>
+                            <!-- <li nz-menu-item class=" btn-subline-parent">
+                <div class="w-100 btn text-left btn-subline " (click)="reset()">
+                    <i class="fas fa-undo  mr-2"></i>
+                    <span> {{ "common.command.reset" | translate }}</span>
+                </div>
+            </li> -->
+                        </ul>
+                    </nz-dropdown-menu>
+                </div>
+
+
+                <button class="btn button-secondary-white-bg ml-2 mr-2  float-left" type="button" (click)="retour()">
+                    {{ "common.command.exit" | translate }}
+                </button>
+                <!-- <button class="btn btn-secondary ml-2 mr-2 button-primary float-right" debounceClick (debounceEvent)="
+                saveService(serviceForm.value)
+            ">
+          <span class="btn-label span-float-left"><i class="fas fa-save"></i></span>
+          {{ "common.command.saveAndNew" | translate }}
+      </button> -->
+                <!-- <button class="btn button-secondary-white-bg ml-2 mr-2  float-right" id="reset" type="button" (click)="reset()">
+          <span class="btn-label span-float-left"><i class="fas fa-undo"></i></span>
+          {{ "common.command.reset" | translate }}
+      </button> -->
+            </div> <!-- END BUTTONS -->
+        </form>
+    </div>
+</div>

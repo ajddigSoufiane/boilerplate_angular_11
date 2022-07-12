@@ -1,0 +1,31 @@
+<div class="p-5">
+    <h5 class="bienvenue-title    mb-5"> {{ "acceuil.bienvenue.label" | translateAcceuil }}
+    </h5>
+
+    <!-- start Toutes les applications-->
+    <h5 class="tout-application-title   mb-3"> {{ "acceuil.toutApplication.label" | translateAcceuil }}</h5>
+    <div class="mb-3">
+        <!-- d-flex flex-column bd-highlight  flex-md-row flex-lg-row flex-xl-row flex-wrap  -->
+        <div class=" row">
+            <!-- flex-fill bd-highlight align-self-stretch mr-2 ml-2-->
+            <div class="col-lg-4 col-md-6 col-sm-12 card-respansive" *ngFor="let item of menuItems">
+                <div class="card    eno-card ">
+                    <div class="card-body">
+                        <img *ngIf="item.img" class="img-fluid eno-card-img" [attr.src]="item.img" alt="patient" />
+                        <div *ngIf="!item.img" class="eno-card-img"></div>
+                        <h5 class="card-title eno-card-title">{{item.text}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted block-with-text">
+                            <!-- later -->
+                        </h6>
+                        <button class="mr-1 mb-1 btn btn-labeled height-button  border-radius-style m-0 p-0 eno-card-btn float-right" type="button" [routerLink]="[item.link]"> 
+                            ALLER
+                            <i class="fal fa-arrow-right  font-weight-bold" ></i>
+                        </button>
+                        <!-- This is some text within a card body. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start Toutes les applications-->
+</div>

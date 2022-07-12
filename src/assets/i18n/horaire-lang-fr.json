@@ -1,0 +1,98 @@
+{
+    "horaire": {
+        "name": {
+            "title": "Horaire"
+        },
+        "list": {
+            "title": "Recherche horaire"
+        },
+        "edit": {
+            "title": "Editer horaire"
+        },
+        "add": {
+            "title": "Ajouter horaire"
+        },
+        "view": {
+            "title": "Consulter horaire"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations horaire"
+        },
+        "nom": {
+            "label": "Nom"
+        },
+        "prenom": {
+            "label": "Prénom"
+        },
+        "username": {
+            "label": "Nom d'horaire"
+        },
+        "password": {
+            "label": "Mot de passe"
+        },
+        "enabled": {
+            "label": "Activer"
+        },
+        "resetPassword": {
+            "label": "Réinitialiser le mot de passe"
+        },
+        "oldPassword": {
+            "label": "Ancien mot de passe"
+        },
+        "newPassword": {
+            "label": "Nouveau mot de passe"
+        },
+        "personnel": {
+            "label": "Personnel"
+        },
+        "etablissement": {
+            "label": "Etablissement"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        },
+        "service": {
+            "label": "Service"
+        },
+        "matricule": {
+            "label": "Matricule"
+        },
+        "sexe": {
+            "label": "Sexe"
+        },
+        "dateNaissance": {
+            "label": "Date de naissance"
+        },
+        "profil": {
+            "label": "Profil"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "jours": {
+            "label": "Jours"
+        },
+        "heureDebut": {
+            "label": "Heure début"
+        },
+        "heureFin": {
+            "label": "Heure fin"
+        },
+        "pause": {
+            "label": "Pause"
+        },
+        "description": {
+            "label": "Description"
+        }
+    }
+
+}

@@ -1,0 +1,44 @@
+<!-- <div class="item user-block" *ngIf="userBlockIsVisible()"> -->
+<!-- User picture-->
+<!--     <div class="user-block-picture"> -->
+<!--         <div class="user-block-status"> -->
+<!--             <img class="img-thumbnail rounded-circle" [src]="'assets/img/user/01.jpg'" alt="Avatar" /> -->
+<!--             <div class="circle bg-success circle-lg"></div> -->
+<!--         </div> -->
+<!--     </div> -->
+<!-- <div class="user-block-picture"> -->
+
+
+
+<!-- <div class="row text-dark mr-2"> 
+    <div style="border-radius: 6px;border: 1px solid #000;background-color: darkblue;width: 35.13px;height: 35.13px;position: relative;top: 6px;"></div>
+    <i nz-icon nzType="logout" class="h4 pl-2 pt-3"></i>
+</div> -->
+<!-- </div> -->
+<!-- Name and Job-->
+<!-- <div class="user-block-info">
+        <span class="user-block-name">{{ 'common.welcome' | translate }} {{ user?.nomComplet }}</span>
+        <span class="user-block-role">{{ user?.profil?.label }}</span>
+    </div> -->
+<!-- </div> -->
+<div>
+    <div>
+        <input type="text" placeholder="Libelle" class="form-control input-text-style input-style {{itemSelected?.class}}">
+    </div>
+    <div>
+        <span *ngFor="let item of list" (click)="selectClass(item)" class="{{item.class}} r-10-10">
+
+        </span>
+    </div>
+
+    <ng-container *ngIf="itemSelected">
+        <hr/>
+        <div>
+            <span *ngFor="let item of itemSelected.subList" class="{{item}} r-10-10">
+
+            </span>
+        </div>
+    </ng-container>
+
+
+</div>

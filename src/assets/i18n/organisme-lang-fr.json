@@ -1,0 +1,44 @@
+{	
+	"organisme": {
+		"name": {
+			"title": "Organisme"
+		},
+		"list": {
+			"title": "Recherche organisme"
+		},
+		"edit": {
+			"title": "Editer organisme"
+		},
+		"add": {
+			"title": "Ajouter organisme"
+		},
+		"view": {
+			"title": "Consulter organisme"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations organisme"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"hl7": {
+			"label": "Hl7"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}

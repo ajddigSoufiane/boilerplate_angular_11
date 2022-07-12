@@ -1,0 +1,119 @@
+{	
+	"analysesDossier": {
+		"name": {
+			"title": "AnalysesDossier"
+		},
+		"list": {
+			"title": "Recherche analysesDossier"
+		},
+		"edit": {
+			"title": "Editer analysesDossier"
+		},
+		"add": {
+			"title": "Ajouter analysesDossier"
+		},
+		"view": {
+			"title": "Consulter analysesDossier"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations analysesDossier"
+		},
+		"datesaisie": {
+			"label": "Datesaisie"
+		},
+		"datesaisieFrom": {
+			"label": "Datesaisie entre"
+		},
+		"datesaisieTo": {
+			"label": "Et"
+		},
+		"npc": {
+			"label": "Npc"
+		},
+		"nf": {
+			"label": "Nf"
+		},
+		"pr": {
+			"label": "Pr"
+		},
+		"nombreB": {
+			"label": "NombreB"
+		},
+		"valeurB": {
+			"label": "ValeurB"
+		},
+		"remise": {
+			"label": "Remise"
+		},
+		"majorationNuit": {
+			"label": "MajorationNuit"
+		},
+		"parPatient": {
+			"label": "ParPatient"
+		},
+		"partOrganisme": {
+			"label": "PartOrganisme"
+		},
+		"dateRetrait": {
+			"label": "DateRetrait"
+		},
+		"dateRetraitFrom": {
+			"label": "DateRetrait entre"
+		},
+		"dateRetraitTo": {
+			"label": "Et"
+		},
+		"retard": {
+			"label": "Retard"
+		},
+		"datePec": {
+			"label": "DatePec"
+		},
+		"datePecFrom": {
+			"label": "DatePec entre"
+		},
+		"datePecTo": {
+			"label": "Et"
+		},
+		"valeurP": {
+			"label": "ValeurP"
+		},
+		"datePrelev": {
+			"label": "DatePrelev"
+		},
+		"datePrelevFrom": {
+			"label": "DatePrelev entre"
+		},
+		"datePrelevTo": {
+			"label": "Et"
+		},
+		"profilValGarde": {
+			"label": "ProfilValGarde"
+		},
+		"statutProfil": {
+			"label": "StatutProfil"
+		},
+		"saisiePar": {
+			"label": "User"
+		},
+		"destination": {
+			"label": ""
+		},
+		"dossier": {
+			"label": ""
+		},
+		"profilanalyse": {
+			"label": ""
+		},
+		"echantillon": {
+			"label": ""
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}

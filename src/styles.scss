@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+//== Vendor
+@import '~@fortawesome/fontawesome-free/css/brands.css';
+@import '~@fortawesome/fontawesome-free/css/regular.css';
+@import '~@fortawesome/fontawesome-free/css/solid.css';
+@import '~@fortawesome/fontawesome-free/css/fontawesome.css';
+// @import '~simple-line-icons/css/simple-line-icons.css';
+//== Bootstrap
+@import "./app/shared/styles/bootstrap.scss";
+//== Application
+// @import "./app/shared/styles/app.scss";
+@import "./app/shared/styles/enova-theme.scss";
+//== Styles Override
+@import "./app/shared/styles/styles-override.scss";
+@import '~angular-tree-component/dist/angular-tree-component.css';
+//ajouter font d'ecriture
+@font-face {
+    font-family: 'Poppins';
+    src: url("assets/enova-theme/typo/Poppins/Poppins-Regular.ttf") format("truetype"), url("/assets/enova-theme/typo/Poppins/Poppins-Light.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}

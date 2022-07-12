@@ -1,0 +1,450 @@
+{
+    "demandeanalyse": {
+        "name": {
+            "title": "Demandeanalyse"
+        },
+        "list": {
+            "title": "Recherche demandeanalyse"
+        },
+        "edit": {
+            "title": "Editer demandeanalyse"
+        },
+        "add": {
+            "title": "Ajouter demandeanalyse"
+        },
+        "view": {
+            "title": "Consulter demandeanalyse"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations demandeanalyse"
+        },
+        "numero": {
+            "label": "Numéro"
+        },
+        "numeroOrigine": {
+            "label": "NumeroOrigine"
+        },
+        "datedemande": {
+            "label": "Datedemande"
+        },
+        "datedemandeFrom": {
+            "label": "Datedemande entre"
+        },
+        "datedemandeTo": {
+            "label": "Et"
+        },
+        "nom": {
+            "label": "Nom"
+        },
+        "prenom": {
+            "label": "Prénom"
+        },
+        "dateNaissance": {
+            "label": "DateNaissance"
+        },
+        "dateNaissanceFrom": {
+            "label": "DateNaissance entre"
+        },
+        "dateNaissanceTo": {
+            "label": "Et"
+        },
+        "age": {
+            "label": "Age"
+        },
+        "genre": {
+            "label": "Genre"
+        },
+        "origine": {
+            "label": "Origine"
+        },
+        "telephone": {
+            "label": "Téléphone"
+        },
+        "telephone2": {
+            "label": "Telephone2"
+        },
+        "email": {
+            "label": "Email"
+        },
+        "envoiResultatEmail": {
+            "label": "EnvoiResultatEmail"
+        },
+        "envoiResultatPrescripteur": {
+            "label": "EnvoiResultatPrescripteur"
+        },
+        "numeroIdentite": {
+            "label": "NumeroIdentite"
+        },
+        "typeIdentite": {
+            "label": "TypeIdentite"
+        },
+        "numeroAdherent": {
+            "label": "NumeroAdherent"
+        },
+        "numHospit": {
+            "label": "NumHospit"
+        },
+        "documentsDemande": {
+            "label": "DocumentsDemande"
+        },
+        "adresse": {
+            "label": "Adresse"
+        },
+        "commentaire": {
+            "label": "Commentaire"
+        },
+        "instruction": {
+            "label": "Instruction"
+        },
+        "urgence": {
+            "label": "Urgence"
+        },
+        "civilite": {
+            "label": "Civilite"
+        },
+        "montantPaye": {
+            "label": "MontantPaye"
+        },
+        "montantRestant": {
+            "label": "MontantRestant"
+        },
+        "avance": {
+            "label": "Avance"
+        },
+        "montantDue": {
+            "label": "MontantDue"
+        },
+        "totalApaye": {
+            "label": "TotalApaye"
+        },
+        "montantPayeOrganisme": {
+            "label": "MontantPayeOrganisme"
+        },
+        "interne": {
+            "label": "Interne"
+        },
+        "motifAnnulation": {
+            "label": "MotifAnnulation"
+        },
+        "autreMotif": {
+            "label": "AutreMotif"
+        },
+        "dateAnnulation": {
+            "label": "DateAnnulation"
+        },
+        "dateAnnulationFrom": {
+            "label": "DateAnnulation entre"
+        },
+        "dateAnnulationTo": {
+            "label": "Et"
+        },
+        "datePrelevement": {
+            "label": "DatePrelevement"
+        },
+        "datePrelevementFrom": {
+            "label": "DatePrelevement entre"
+        },
+        "datePrelevementTo": {
+            "label": "Et"
+        },
+        "numeroFacture": {
+            "label": "NumeroFacture"
+        },
+        "dateRetrait": {
+            "label": "DateRetrait"
+        },
+        "dateRetraitFrom": {
+            "label": "DateRetrait entre"
+        },
+        "dateRetraitTo": {
+            "label": "Et"
+        },
+        "nombreB": {
+            "label": "NombreB"
+        },
+        "prelevement": {
+            "label": "Prelevement"
+        },
+        "nc": {
+            "label": "Nc"
+        },
+        "statutDemande": {
+            "label": "StatutDemande"
+        },
+        "etablissement": {
+            "label": "Etablissement"
+        },
+        "service": {
+            "label": ""
+        },
+        "patient": {
+            "label": ""
+        },
+        "organisme": {
+            "label": ""
+        },
+        "laboratoire": {
+            "label": ""
+        },
+        "preleveur": {
+            "label": "User"
+        },
+        "soustraitance": {
+            "label": ""
+        },
+        "saisiePar": {
+            "label": "User"
+        },
+        "convention": {
+            "label": ""
+        },
+        "tarifsupplementaires": {
+            "label": "Tarifsupplementaires"
+        },
+        "prescripteurs": {
+            "label": "Prescripteurs"
+        },
+        "tarifprelevements": {
+            "label": "Tarifprelevements"
+        },
+        "profilanalyses": {
+            "label": "Profilanalyses"
+        }
+    },
+    "profilanalyse": {
+        "name": {
+            "title": "Profilanalyse"
+        },
+        "add": {
+            "title": "Ajouter profilanalyse"
+        },
+        "view": {
+            "title": "Consulter profilanalyse"
+        },
+        "legend": {
+            "info": "Informations profilanalyse"
+        },
+        "intituleP": {
+            "label": "intituleP"
+        },
+        "intituleCR": {
+            "label": "intituleCR"
+        },
+        "ordreP": {
+            "label": "OrdreP"
+        },
+        "ordreCR": {
+            "label": "OrdreCR"
+        },
+        "griserLabo": {
+            "label": "GriserLabo"
+        },
+        "griserPresc": {
+            "label": "GriserPresc"
+        },
+        "nombreB": {
+            "label": "NombreB"
+        },
+        "quotationB": {
+            "label": "QuotationB"
+        },
+        "commentaire": {
+            "label": "Commentaire"
+        },
+        "commentaireP": {
+            "label": "CommentaireP"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "nombreB1": {
+            "label": "NombreB1"
+        },
+        "nombreB2": {
+            "label": "NombreB2"
+        },
+        "nombreB3": {
+            "label": "NombreB3"
+        },
+        "nombreB4": {
+            "label": "NombreB4"
+        },
+        "delai": {
+            "label": "Delai"
+        },
+        "instrunctionPrelev": {
+            "label": "InstrunctionPrelev"
+        },
+        "instrunctionPrelevHtml": {
+            "label": "InstrunctionPrelevHtml"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "destination": {
+            "label": "Destination"
+        },
+        "typeEchantilon": {
+            "label": "TypeEchantilon"
+        },
+        "tarifprelevement": {
+            "label": "Tarifprelevement"
+        },
+        "discipline": {
+            "label": "Discipline"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    },
+    "tarifsupplementaire": {
+        "name": {
+            "title": "Tarifsupplementaire"
+        },
+        "add": {
+            "title": "Ajouter tarifsupplementaire"
+        },
+        "view": {
+            "title": "Consulter tarifsupplementaire"
+        },
+        "legend": {
+            "info": "Informations tarifsupplementaire"
+        },
+        "libelle": {
+            "label": "Libellé"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "valeur": {
+            "label": "Valeur"
+        },
+        "modecalcul": {
+            "label": "Modecalcul"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    },
+    "personnel": {
+        "name": {
+            "title": "Personnel"
+        },
+        "add": {
+            "title": "Ajouter personnel"
+        },
+        "view": {
+            "title": "Consulter personnel"
+        },
+        "legend": {
+            "info": "Informations personnel"
+        },
+        "nom": {
+            "label": "Nom"
+        },
+        "prenom": {
+            "label": "Prénom"
+        },
+        "titre": {
+            "label": "Titre"
+        },
+        "photo": {
+            "label": "Photo"
+        },
+        "photoName": {
+            "label": "Fichier"
+        },
+        "photoCheksum": {
+            "label": "PhotoCheksum"
+        },
+        "telephone": {
+            "label": "Téléphone"
+        },
+        "email": {
+            "label": "Email"
+        },
+        "matricule": {
+            "label": "Matricule"
+        },
+        "adresse": {
+            "label": "Adresse"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "signature": {
+            "label": "Signature"
+        },
+        "signatureName": {
+            "label": "Fichier"
+        },
+        "signatureCheksum": {
+            "label": "SignatureCheksum"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "specliate": {
+            "label": ""
+        },
+        "categoriePersonnel": {
+            "label": ""
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    },
+    "tarifprelevement": {
+        "name": {
+            "title": "Tarifprelevement"
+        },
+        "add": {
+            "title": "Ajouter tarifprelevement"
+        },
+        "view": {
+            "title": "Consulter tarifprelevement"
+        },
+        "legend": {
+            "info": "Informations tarifprelevement"
+        },
+        "libelle": {
+            "label": "Libellé"
+        },
+        "nbr": {
+            "label": "Nbr"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    }
+}

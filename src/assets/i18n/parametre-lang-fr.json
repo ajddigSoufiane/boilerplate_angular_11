@@ -1,0 +1,246 @@
+{
+    "parametre": {
+        "name": {
+            "title": "Parametre"
+        },
+        "list": {
+            "title": "Recherche parametre"
+        },
+        "edit": {
+            "title": "Editer parametre"
+        },
+        "add": {
+            "title": "Ajouter parametre"
+        },
+        "view": {
+            "title": "Consulter parametre"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations parametre"
+        },
+        "intituleV": {
+            "label": "intituleV"
+        },
+        "intituleCR": {
+            "label": "intituleCR"
+        },
+        "intituleCRHtml": {
+            "label": "intituleCRHtml"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "codeMiddleWare": {
+            "label": "CodeMiddleWare"
+        },
+        "destinationMiddleWare": {
+            "label": "DestinationMiddleWare"
+        },
+        "ordreV": {
+            "label": "OrdreV"
+        },
+        "ordreCR": {
+            "label": "OrdreCR"
+        },
+        "unite": {
+            "label": "Unite"
+        },
+        "uniteHtml": {
+            "label": "UniteHtml"
+        },
+        "envoiMiddleXware": {
+            "label": "EnvoiMiddleXware"
+        },
+        "obligatoire": {
+            "label": "Obligatoire"
+        },
+        "anteriorite": {
+            "label": "Anteriorite"
+        },
+        "statistique": {
+            "label": "Statistique"
+        },
+        "delaiAnteriorite": {
+            "label": "DelaiAnteriorite"
+        },
+        "image": {
+            "label": "Image"
+        },
+        "calculer": {
+            "label": "Calculer"
+        },
+        "validationAuto": {
+            "label": "ValidationAuto"
+        },
+        "expert": {
+            "label": "Expert"
+        },
+        "valeurparDefault": {
+            "label": "ValeurparDefault"
+        },
+        "typevaleur": {
+            "label": "Typevaleur"
+        },
+        "valeurs": {
+            "label": "Valeurs"
+        },
+        "assujettiqc": {
+            "label": "Assujettiqc"
+        },
+        "codeqc": {
+            "label": "Codeqc"
+        },
+        "afficherLigneCR": {
+            "label": "AfficherLigneCR"
+        },
+        "typeFormat": {
+            "label": "TypeFormat"
+        },
+        "format": {
+            "label": "Format"
+        },
+        "precoche": {
+            "label": "Precoche"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "descriptionHtml": {
+            "label": "DescriptionHtml"
+        },
+        "marginTop": {
+            "label": "MarginTop"
+        },
+        "marginLeft": {
+            "label": "MarginLeft"
+        },
+        "afficherCourbe": {
+            "label": "AfficherCourbe"
+        },
+        "visiblePatient": {
+            "label": "VisiblePatient"
+        },
+        "visiblePresc": {
+            "label": "VisiblePresc"
+        },
+        "visibleCorresp": {
+            "label": "VisibleCorresp"
+        },
+        "visiblePortail": {
+            "label": "VisiblePortail"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "methodeanalyse": {
+            "label": "Methodeanalyse"
+        },
+        "groupeParametre": {
+            "label": "GroupeParametre"
+        },
+        "parent": {
+            "label": "Parametre"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        },
+        "profilanalyses": {
+            "label": "Profilanalyses"
+        }
+    },
+    "profilanalyse": {
+        "name": {
+            "title": "Profilanalyse"
+        },
+        "add": {
+            "title": "Ajouter profilanalyse"
+        },
+        "view": {
+            "title": "Consulter profilanalyse"
+        },
+        "legend": {
+            "info": "Informations profilanalyse"
+        },
+        "intituleP": {
+            "label": "intituleP"
+        },
+        "intituleCR": {
+            "label": "intituleCR"
+        },
+        "ordreP": {
+            "label": "OrdreP"
+        },
+        "ordreCR": {
+            "label": "OrdreCR"
+        },
+        "griserLabo": {
+            "label": "GriserLabo"
+        },
+        "griserPresc": {
+            "label": "GriserPresc"
+        },
+        "nombreB": {
+            "label": "NombreB"
+        },
+        "quotationB": {
+            "label": "QuotationB"
+        },
+        "commentaire": {
+            "label": "Commentaire"
+        },
+        "commentaireP": {
+            "label": "CommentaireP"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "nombreB1": {
+            "label": "NombreB1"
+        },
+        "nombreB2": {
+            "label": "NombreB2"
+        },
+        "nombreB3": {
+            "label": "NombreB3"
+        },
+        "nombreB4": {
+            "label": "NombreB4"
+        },
+        "delai": {
+            "label": "Delai"
+        },
+        "instrunctionPrelev": {
+            "label": "InstrunctionPrelev"
+        },
+        "instrunctionPrelevHtml": {
+            "label": "InstrunctionPrelevHtml"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "destination": {
+            "label": "Destination"
+        },
+        "typeEchantilon": {
+            "label": "TypeEchantilon"
+        },
+        "tarifprelevement": {
+            "label": "Tarifprelevement"
+        },
+        "discipline": {
+            "label": "Discipline"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    }
+}

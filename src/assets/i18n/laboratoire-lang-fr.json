@@ -1,0 +1,111 @@
+{
+    "laboratoire": {
+        "name": {
+            "title": "Laboratoire"
+        },
+        "list": {
+            "title": "Recherche laboratoire"
+        },
+        "edit": {
+            "title": "Editer laboratoire"
+        },
+        "add": {
+            "title": "Ajouter laboratoire"
+        },
+        "view": {
+            "title": "Consulter laboratoire"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations laboratoire"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "intituleHtml": {
+            "label": "intituleHtml"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "nom": {
+            "label": "Nom"
+        },
+        "specialite": {
+            "label": "Spécialité "
+        },
+        "activeValab": {
+            "label": "Valab activé"
+        },
+        "activeSih": {
+            "label": "SIH activé"
+        },
+        "telephone": {
+            "label": "Téléphone"
+        },
+        "email": {
+            "label": "Email"
+        },
+        "adresse": {
+            "label": "Adresse"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "headerReport": {
+            "label": "HeaderReport"
+        },
+        "footerReport": {
+            "label": "FooterReport"
+        },
+        "headerApp": {
+            "label": "HeaderApp"
+        },
+        "footerApp": {
+            "label": "FooterApp"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "specliates": {
+            "label": "Specliates"
+        }
+    },
+    "specliate": {
+        "name": {
+            "title": "Specliate"
+        },
+        "add": {
+            "title": "Ajouter specliate"
+        },
+        "view": {
+            "title": "Consulter specliate"
+        },
+        "legend": {
+            "info": "Informations specliate"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    }
+}

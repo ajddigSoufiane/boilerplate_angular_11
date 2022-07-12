@@ -1,0 +1,252 @@
+.theme-green .bs-datepicker-head {
+    background-color: $eno-principale-color;
+}
+
+.theme-green .bs-datepicker-body table td.week span {
+    color: $eno-principale-color;
+}
+
+.ant-picker-header button {
+    padding: 0;
+    background: 0 0;
+    transition: color .3s;
+    height: 2.2em;
+    margin-top: 6px;
+    padding-left: 8px;
+    padding-right: 12px;
+    line-height: 33px;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 25%);
+    background-color: $eno-vertical;
+    /* font-size: 1rem; */
+}
+
+.ant-picker-header .ant-picker-header-view button:after {
+    content: "\01D14D"; //'\25BA';
+    color: #005792;
+    font-size: 20px;
+    display: inline-block;
+    // transform: rotate( 41deg);
+}
+
+.ant-picker-header>button {
+    min-width: 2.2em;
+    font-size: 14px;
+    /* border: 1px solid #000; */
+    margin-left: 4px;
+    padding: 0px;
+    border-radius: 25px;
+    height: 2.2em;
+    margin-top: 5px;
+    background-color: $eno-vertical;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 25%);
+}
+
+.ant-picker-next-icon {
+    left: -1px;
+}
+
+.ant-picker-prev-icon {
+    left: 1px;
+}
+
+.ant-picker-super-next-icon {
+    left: 2px;
+}
+
+.ant-picker-super-prev-icon {
+    left: -1px;
+}
+
+.ant-picker-next-icon,
+.ant-picker-prev-icon,
+.ant-picker-super-next-icon,
+.ant-picker-super-prev-icon {
+    bottom: 0px;
+}
+
+.ant-picker-panel-container {
+    background: $eno-vertical;
+}
+
+.ant-picker-header>button:hover {
+    color: rgb(0 87 146);
+}
+
+nz-range-picker.nz-day-inline .ant-picker-date-panel .ant-picker-body,
+.ant-picker-week-panel .ant-picker-body {
+    padding: 0px 0px;
+}
+
+nz-range-picker.nz-day-inline .ant-picker-date-panel,
+.ant-picker-decade-panel,
+.ant-picker-month-panel,
+.ant-picker-quarter-panel,
+.ant-picker-time-panel,
+.ant-picker-week-panel,
+.ant-picker-year-panel {
+    width: 260px;
+}
+
+.events {
+    position: absolute;
+    top: 0px;
+    width: 25px;
+    height: 25px;
+    background-color: $eno-secondaire-color;
+    // z-index: -1;
+    box-shadow: 0px 0px 9px 2px rgb(0 0 0 / 8%);
+    color: #000;
+    border-radius: 20%;
+}
+
+.events-start {
+    background-color: $eno-principale-color;
+    color: #fff;
+    border-radius: 20%;
+}
+
+.events-end {
+    background-color: $eno-principale-color;
+    color: #fff;
+    border-radius: 20%;
+}
+
+.nz-calendar-style {
+    width: auto;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+}
+
+.nz-calendar-style nz-calendar .ant-picker-calendar-mode-switch {
+    display: none;
+}
+
+nz-calendar nz-select-arrow.ant-select-arrow,
+nz-calendar nz-select-arrow.ant-select-clear {
+    margin-top: -12px;
+}
+
+//------------
+nz-calendar.line-calendar .ant-picker-body .ant-picker-content tbody tr {
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+nz-calendar.line-calendar .ant-picker-body .ant-picker-content tbody td {
+    height: 73px;
+    min-width: 80px;
+}
+
+nz-calendar.line-calendar .ant-picker-body .ant-picker-content tbody td .ant-picker-calendar-date .ant-picker-calendar-date-value {
+    width: 78px;
+    height: 78px;
+    font-size: $eno-typo-size-3;
+    line-height: 110px;
+    color: $eno-secondaire;
+}
+
+nz-calendar.line-calendar .ant-picker-body .ant-picker-content thead {
+    display: none !important;
+}
+
+nz-calendar.line-calendar .ant-fullcalendar-header {
+    display: none !important;
+}
+
+nz-calendar.line-calendar .ant-picker-body .ant-picker-content tbody {
+    width: auto;
+    display: flex;
+    height: auto;
+    overflow-y: auto;
+}
+
+nz-calendar.line-calendar .ant-picker-content {
+    height: auto !important;
+    padding: 0px;
+}
+
+nz-calendar.line-calendar ::-webkit-scrollbar {
+    height: 8px;
+}
+
+nz-calendar.line-calendar .ant-picker-cell {
+    display: none;
+}
+
+nz-calendar.line-calendar .ant-picker-cell.ant-picker-cell-in-view {
+    display: table-cell;
+}
+
+nz-calendar.line-calendar .ant-picker-cell-inner {
+    width: auto;
+    height: auto;
+    line-height: 80px;
+    color: $eno-secondaire;
+    background-color: $eno-vertical;
+    border: 1px solid #bebebecf;
+    margin: 0px 5px;
+    border-radius: 8px;
+}
+
+nz-calendar.line-calendar .ant-picker-cell-in-view.ant-picker-cell-disabled .ant-picker-cell-inner {
+    color: #d9d9d9;
+    background: #FCFCFC;
+    border-color: #d9d9d9;
+    border-radius: 8px;
+    .ant-picker-calendar-date-value{
+        color: #d9d9d9 !important;   
+    }
+}
+
+
+
+nz-calendar.line-calendar .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner,
+nz-calendar.line-calendar .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+nz-calendar.line-calendar .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+    color: #fff;
+    background: #f5fdff;
+    box-shadow: 0px 0px 10px 0px #0057928f;
+    border-color: $eno-principale-color;
+    border-radius: 8px;
+}
+
+nz-calendar.line-calendar .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+    border-color: $eno-principale-color;
+    border-radius: 8px;
+}
+
+nz-calendar.line-calendar .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+nz-calendar.line-calendar .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner .ant-picker-calendar-date-value,
+nz-calendar.line-calendar .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner .ant-picker-calendar-date-value,
+nz-calendar.line-calendar .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner .ant-picker-calendar-date-value,
+nz-calendar.line-calendar .ant-picker-cell-today .ant-picker-calendar-date-value {
+    color: $eno-principale-color !important;
+    font-size: $eno-typo-size-4 !important;
+}
+
+nz-calendar.line-calendar .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-calendar-date-content,
+nz-calendar.line-calendar .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-calendar-date-content,
+nz-calendar.line-calendar .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-calendar-date-content,
+nz-calendar.line-calendar .ant-picker-cell-today .ant-picker-calendar-date-content {
+    color: $eno-principale-color !important;
+    font-size: $eno-typo-size-1 !important;
+}
+
+nz-calendar.line-calendar .ant-picker-calendar-date-content {
+    line-height: 1px;
+    position: relative;
+    bottom: 60px;
+}
+
+// nz-calendar.line-calendar .ant-picker-body .ant-picker-content tbody .ant-picker-cell {
+//     display: none;
+// }
+// nz-calendar.line-calendar .ant-picker-body .ant-picker-content tbody .ant-picker-cell-in-view {
+//     display: block
+// }
+
+/*https://angularscript.com/horizontal-date-picker-angular-2/*/

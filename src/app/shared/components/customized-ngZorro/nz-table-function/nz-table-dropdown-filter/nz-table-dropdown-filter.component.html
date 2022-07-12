@@ -1,0 +1,12 @@
+<div class="ant-dropdown search-box ant-table-filter-dropdown">
+    <ng-content></ng-content>
+    <div>
+        <button nz-button nzSize="small" (click)="actionSearch()" class="btn-1 btn btn-labeled button-primary-revert mr-0 mb-1 float-right ant-btn ant-btn-sm p-0 pl-2 pr-2">
+            {{ nzNameSearch}}
+            </button>
+        <button nz-button nzSize="small" class="btn btn-light float-right mr-2 ant-btn ant-btn-sm p-0" (click)=" actionReset()">
+            {{ nzNameReset }}  
+        </button>
+        <div style="clear: both;"></div>
+    </div>
+</div>

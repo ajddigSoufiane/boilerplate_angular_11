@@ -1,0 +1,62 @@
+{	
+	"anteriorite": {
+		"name": {
+			"title": "Anteriorite"
+		},
+		"list": {
+			"title": "Recherche anteriorite"
+		},
+		"edit": {
+			"title": "Editer anteriorite"
+		},
+		"add": {
+			"title": "Ajouter anteriorite"
+		},
+		"view": {
+			"title": "Consulter anteriorite"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations anteriorite"
+		},
+		"date": {
+			"label": "Date"
+		},
+		"dateFrom": {
+			"label": "Date entre"
+		},
+		"dateTo": {
+			"label": "Et"
+		},
+		"valeur": {
+			"label": "Valeur"
+		},
+		"ipp": {
+			"label": "Ipp"
+		},
+		"nom": {
+			"label": "Nom"
+		},
+		"prenom": {
+			"label": "Prénom"
+		},
+		"dateNaissance": {
+			"label": "DateNaissance"
+		},
+		"genre": {
+			"label": "Genre"
+		},
+		"dossier": {
+			"label": "Dossier"
+		},
+		"parametre": {
+			"label": ""
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}

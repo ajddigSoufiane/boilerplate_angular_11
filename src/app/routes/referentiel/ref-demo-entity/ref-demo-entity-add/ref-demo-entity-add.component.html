@@ -1,0 +1,297 @@
+<!-- soufiane :  this component juste help you to copy input field to use in new Entity -->
+<div style="padding: 12px 15px;">
+    <div class="mr-1 mb-3  search-button title-style-ref  mr-0 pb-2 pos-ntw-btn">
+        <b class="pos-ntw-btn"> 
+            {{
+            'refDemoEntity.add.title' |
+            translateRefDemoEntity }}</b>
+        <div style="clear: both;"></div>
+    </div>
+    <div>
+        <form [formGroup]="refDemoEntityForm" class="form-validate" (submit)="saveRefDemoEntity(refDemoEntityForm.value)" novalidate="">
+            <div class="card card-default enoLight card-body ng-scope border-radius-style pb-2-rem mb-1">
+                <div class="row">
+                    <!-- start input text -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row required">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                    "refDemoEntity.libelle.label"
+                                    | translateRefDemoEntity
+                                }}</label>
+                            <div class="col-12">
+
+                                <input type="text" class="form-control input-value-style eno-typo-size-1" placeholder="libelle" formControlName="libelle" />
+                                <span class="message-requird" *ngIf="
+                                        refDemoEntityForm.controls['libelle'].hasError(
+                                        'required'
+                                        ) &&
+                                        (refDemoEntityForm.controls['libelle'].dirty ||
+                                        refDemoEntityForm.controls['libelle'].touched)
+                                    ">{{ "common.message.required" | translate }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end input text -->
+                    <!-- start input text -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row required">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "refDemoEntity.code.label"
+                                | translateRefDemoEntity
+                            }}</label>
+                            <div class="col-12">
+                                <input type="text" class="form-control input-value-style eno-typo-size-1" placeholder="code" formControlName="code" />
+                                <span class="message-requird" *ngIf="
+                                    refDemoEntityForm.controls['code'].hasError(
+                                    'required'
+                                    ) &&
+                                    (refDemoEntityForm.controls['code'].dirty ||
+                                    refDemoEntityForm.controls['code'].touched)
+                                ">{{ "common.message.required" | translate }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- start input text -->
+                </div>
+                <div class="row">
+                    <!-- start  upload fichier -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row required">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">File</label>
+                            <div class="col-12" *ngIf="!this.uploadModel.fileAlreadyUploaded">
+                                <nz-upload [nzAction]="uploadModel.uploadUrl" [nzHeaders]="uploadModel.uploadHeaders" [nzLimit]="1" [nzFileList]="uploadModel.fileList" [nzBeforeUpload]="beforeUpload" [nzMultiple]="false" [nzAction]="uploadUrl" [nzHeaders]="uploadHeaders" [nzShowUploadList]="false"
+                                    (nzChange)="handleChange($event)">
+                                    <button class="btn upload-button" type="button">{{ "common.command.upload" | translate }}</button>
+                                </nz-upload>
+                            </div>
+                            <ng-container *ngIf="uploadModel.fileList && uploadModel.fileList.length>0">
+                                <div class="col-12  control-label mt-3 " [ngClass]="{'text-danger': item.status=='error'}" *ngFor="let item of uploadModel.fileList; let index = index">
+                                    <span *ngIf="!refDemoEntityForm?.value?.fileName && item?.name"><i class="fal fa-file mr-2"></i> {{item?.name}}</span>
+                                    <span *ngIf="refDemoEntityForm?.value?.fileName"><i class="fal fa-file mr-2"></i> {{refDemoEntityForm?.value?.fileName}}</span>
+                                    <span *ngIf="item?.name " class="float-right" (click)="removeUpload(index)">
+                                            <i class="fal fa-times "></i>
+                                    </span>
+                                </div>
+                            </ng-container>
+                        </div>
+                    </div>
+                    <!-- end input text -->
+                </div>
+                <div class="row">
+                    <!-- start input boolean -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "refDemoEntity.actif.label"
+                                | translateRefDemoEntity
+                            }}</label>
+                            <div class="col-12 other-input-center">
+                                <label class="switch  input-label-style ">
+                                <input type="checkbox" formControlName="actif" class="input-value-style eno-typo-size-1"/>
+                                <span></span>
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end input boolean -->
+                    <!-- start radiobox -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">Radio</label>
+                            <div class="col-12 other-input-center">
+                                <nz-radio-group formControlName="radio">
+                                    <label nz-radio [nzValue]="o.name" *ngFor="let o of radioList" class="eno-typo-size-1">{{ o.displayText }}</label>
+                                </nz-radio-group>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end radiobox-->
+
+                </div>
+
+                <div class="row">
+
+                    <!-- start nz-select -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">Select</label>
+                            <div class="col-12">
+                                <!-- [nzPlaceHolder]="'patient.convention.label' |  translateDemandeExterne" -->
+                                <nz-select [compareWith]="nzCompareSelectedByID" nzPlaceHolder="select" formControlName="convention" nzShowSearch nzAllowClear class="w-100 form-control eno-typo-size-1">
+                                    <nz-option *ngFor="let item of conventionList" [nzLabel]="item.value" [nzValue]="item"></nz-option>
+                                </nz-select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end nz-select-->
+
+                    <!-- start checkbox -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">Checkbox</label>
+                            <div class="col-12 other-input-center">
+                                <!-- [placeholder]="'patient.textarea.label' |  translateDemandeExterne" -->
+                                <nz-checkbox-group formControlName="parametres">
+                                    <div>
+                                        <span *ngFor="let item of parametresList">
+                                            <label nz-checkbox [nzValue]="item.id"  class="w-100 eno-typo-size-1" >
+                                            {{ item.label }}
+                                            </label>
+                                        </span>
+                                    </div>
+                                </nz-checkbox-group>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end check -->
+                </div>
+                <div class="row">
+                    <!-- start date -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">Date</label>
+                            <div class="col-12">
+                                <!-- [nzPlaceHolder]="'patient.convention.label' |  translateDemandeExterne" -->
+                                <nz-date-picker [nzFormat]="nzDateConfig.dateTime" formControlName="date" class="form-control eno-typo-size-1" nzShowTime></nz-date-picker>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end date-->
+                    <!-- start timer -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">Timer</label>
+                            <div class="col-12">
+                                <!-- [nzPlaceHolder]="'patient.convention.label' |  translateDemandeExterne" -->
+                                <nz-time-picker formControlName="timer" class="form-control eno-typo-size-1" [nzFormat]="nzDateConfig.time"></nz-time-picker>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end timer-->
+                </div>
+                <div class="row">
+                    <!-- start textarea -->
+                    <div class="col-12">
+                        <div class="form-group row">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">Textarea</label>
+                            <div class="col-12">
+                                <!-- [placeholder]="'patient.textarea.label' |  translateDemandeExterne" -->
+                                <textarea rows="3" cols="2" formControlName="textarea" class="form-control eno-typo-size-1" placeholder="Textarea"></textarea>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end textarea -->
+                </div>
+                <div class="row">
+                    <!-- start summernote -->
+                    <div class="col-12">
+                        <div class="form-group row sumernote-form">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">Summernote</label>
+                            <div class="col-12">
+                                <!-- [placeholder]="'patient.textarea.label' |  translateDemandeExterne" -->
+                                <div formControlName="summernote" [ngxSummernote]="config"> </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end summernote -->
+                </div>
+                <div class="row">
+                    <!-- start  Multiple select eager List -->
+                    <div class="col-12">
+                        <div class="form-group row">
+
+                            <div class="col-12">
+                                <app-ref-demo-entity-select-list-table [refDemoEntityList]="refDemoEntitysSelected" (refDemoEntityListSelected)="putRefDemoEntitysList($event)" (removeDomaineFromSelectedList)="updateRefDemoEntitysList($event)"></app-ref-demo-entity-select-list-table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end  Multiple select eager List -->
+                </div>
+                <div class="row">
+                    <!-- start  create nouvel list -->
+                    <div class="col-12">
+                        <div class="form-group row">
+
+                            <div class="col-12">
+                                <app-ref-demo-entity-form-add-list-table (refDemoEntityListSelected)="putRefDemoEntitysList($event)" (removeDomaineFromSelectedList)="updateRefDemoEntitysList($event)"></app-ref-demo-entity-form-add-list-table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end create nouvel list-->
+                </div>
+                <!-- <div class="row">
+                   
+                    <div class="col-12">
+                        <div class="form-group row">
+
+                            <div class="col-12">
+                                <nz-upload nzType="drag"
+                                [nzMultiple]="false"
+                                [nzAction]="uploadUrl"
+                                [nzHeaders]="uploadHeaders"
+                                [nzShowUploadList]="true"
+                                (nzChange)="handleChange($event)">
+                                    <div class="p-3">
+                                        <span class="h3 text-muted"> Glisser ou sélectionner un fichier </span>
+                                    </div>
+                                </nz-upload>
+                         </div>
+                        </div>
+                    </div> 
+                </div> -->
+            </div>
+
+            <!-- START BUTTONS -->
+            <div class="sumbit-btn" [ngClass]="{'sumbit-btn-drawer': _mode_ecran==this.mode_ecran.DRAWER}">
+                <div class="sumbit_btn_option">
+                    <button class="btn-1 btn btn-labeled button-primary-revert  mr-0 mb-1  float-left" type="button" debounceClick (debounceEvent)="saveRefDemoEntity(refDemoEntityForm.value,saveAndQuit)">
+                            <i class="fal fa-save"></i>
+                            <span class="btn-title">{{ "common.command.save" | translate }}</span>
+                    </button>
+
+                    <button type="button" class="btn-2 btn btn-labeled button-primary-revert  mr-0 mb-1  float-left" nz-dropdown [nzDropdownMenu]="sumbit_btn_option" nzPlacement="bottomRight" [nzTrigger]="'click'" (nzVisibleChange)="upDownIcon=$event">
+                        <i nz-icon nzType="down" *ngIf="!upDownIcon" style="font-size: 1rem;"></i>
+                        <i nz-icon nzType="up" nzTheme="outline" *ngIf="upDownIcon"></i> 
+                    </button>
+                    <nz-dropdown-menu #sumbit_btn_option="nzDropdownMenu">
+                        <ul nz-menu>
+                            <li nz-menu-item class=" btn-subline-parent">
+                                <div class="w-100 btn text-left btn-subline" debounceClick (debounceEvent)="
+                                saveRefDemoEntity(refDemoEntityForm.value)
+                                            ">
+                                    <i class="fal fa-save mr-2"></i>
+                                    <span class="btn-title">{{ "common.command.saveAndNew" | translate }}</span>
+                                </div>
+                            </li>
+                            <!-- <li nz-menu-item class=" btn-subline-parent">
+                                <div class="w-100 btn text-left btn-subline " (click)="reset()">
+                                    <i class="fas fa-undo  mr-2"></i>
+                                    <span> {{ "common.command.reset" | translate }}</span>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </nz-dropdown-menu>
+                </div>
+
+
+                <button class="btn button-secondary-white-bg ml-2 mr-2  float-left" type="button" (click)="retour()">
+                     {{ "common.command.exit" | translate }}
+                      </button>
+                <!-- <button class="btn btn-secondary ml-2 mr-2 button-primary float-right" debounceClick (debounceEvent)="
+                                saveRefDemoEntity(refDemoEntityForm.value)
+                            ">
+                          <span class="btn-label span-float-left"><i class="fas fa-save"></i></span>
+                          {{ "common.command.saveAndNew" | translate }}
+                      </button> -->
+                <!-- <button class="btn button-secondary-white-bg ml-2 mr-2  float-right" id="reset" type="button" (click)="reset()">
+                          <span class="btn-label span-float-left"><i class="fas fa-undo"></i></span>
+                          {{ "common.command.reset" | translate }}
+                      </button> -->
+            </div>
+
+            <!-- END BUTTONS -->
+        </form>
+    </div>
+</div>

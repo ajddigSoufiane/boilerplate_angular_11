@@ -1,0 +1,96 @@
+{
+    "etablissement": {
+        "name": {
+            "title": "Etablissement"
+        },
+        "list": {
+            "title": "Recherche etablissement"
+        },
+        "edit": {
+            "title": "Editer etablissement"
+        },
+        "add": {
+            "title": "Ajouter etablissement"
+        },
+        "view": {
+            "title": "Consulter etablissement"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations etablissement"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "intituleHtml": {
+            "label": "intituleHtml"
+        },
+        "telephone": {
+            "label": "Téléphone"
+        },
+        "adresse": {
+            "label": "Adresse"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        },
+        "nom": {
+            "label": "Nom"
+        },
+        "identificationFisc": {
+            "label": "Identification fiscale"
+        },
+        "fax": {
+            "label": "Fax"
+        },
+        "numCompte": {
+            "label": "N° de compte"
+        },
+        "label": {
+            "label": "Label"
+        },
+        "generation": {
+            "label": "Géneration"
+        },
+        "site": {
+            "label": "Site"
+        },
+        "ordre": {
+            "label": "Ordre"
+        },
+        "ville": {
+            "label": "Ville"
+        },
+        "nomBanque": {
+            "label": "Nom de banque"
+        },
+        "rib": {
+            "label": "RIB"
+        },
+        "cimr": {
+            "label": "CIMR"
+        },
+        "hI7": {
+            "label": "hI7"
+        },"detailGeneration":{
+            "label":"Détail géneration"
+        },"cnss":{
+            "label":"CNSS"
+        }
+    }
+
+}

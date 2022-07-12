@@ -1,0 +1,84 @@
+<div style="padding: 12px 15px;">
+    <div class="mr-1 mb-3  search-button title-style-ref  mr-0" style="padding-bottom: 5px;">
+        <b class="pos-w-btn"> 
+            {{ 'service.view.title' | translateService }}</b>
+        <!-- <button class="float-right mr-0 mb-1 btn btn-labeled height-button   border-radius-style button-primary-revert" type="button" routerLink="/referentiel/service/add">
+     
+            <i nz-icon nzType="plus"  class="mr-2" ></i>
+            {{ 'common.command.add' | translate }}
+        </button> -->
+        <button class="btn btn-secondary ml-2 mr-2 button-primary  mr-0 mb-1  float-right" type="button " (click)="editService(service)">
+            <!-- <span class="btn-label "><i class="fas fa-edit "></i></span>-->
+            
+            <i class="fal fa-edit  "></i>
+            <span class="btn-title">{{ 'common.command.edit' | translate }} </span>
+          </button>
+        <button class="btn ml-2 mr-2 float-right button-alert-feedback" type="button " (click)="deleteService(service.id) ">
+            <!-- <span class="btn-label "><i class="fas fa-trash "></i></span>
+            {{ 'common.command.delete' | translate }} -->
+            <i class="fal fa-trash   "></i>
+            <span class="btn-title">{{ 'common.command.delete' | translate }}</span>
+          </button>
+        <div style="clear: both;"></div>
+    </div>
+    <div>
+        <div class="card card-default  card-body ng-scope border-radius-style pb-2-rem mb-1 form-view">
+            <div class=row>
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">{{ "service.code.label" | translateService }}</label>
+                        <div class="col-12 input-label-style">
+                            {{ service?.nom }}
+                            <input value="{{ service?.nom }}" type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-18px-1rem" disabled="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">{{ "service.nom.label" | translateService }}</label>
+                        <div class="col-12 input-label-style">
+                            <input value="{{ service?.code }}" type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-18px-1rem" disabled="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=row>
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">{{ "service.codeSIH.label" | translateService }}</label>
+                        <div class="col-12 input-label-style">
+                            <input value="{{ service?.codeSIH }}" type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-18px-1rem" disabled="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">{{ "service.hopital.label" | translateService }}</label>
+                        <div class="col-12 input-label-style">
+                            <input value="{{ service?.hopital }}" type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-18px-1rem" disabled="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=row>
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">{{ "service.default.label" | translateService }}</label>
+                        <div class="col-12 input-label-style">
+                            <input value="{{ service?.default }}" type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-18px-1rem" disabled="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+        <!-- START BUTTONS -->
+        <div class="sumbit-btn" [ngClass]="{'sumbit-btn-drawer': _mode_ecran==this.mode_ecran.DRAWER}">
+
+            <button class="btn button-secondary-white-bg ml-2 mr-2  float-left" type="button " (click)="retour() ">
+                <span class="btn-title">{{ 'common.command.exit' | translate }}</span>
+            </button>
+        </div>
+    </div>
+</div>

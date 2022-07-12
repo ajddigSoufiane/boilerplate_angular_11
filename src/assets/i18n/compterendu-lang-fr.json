@@ -1,0 +1,62 @@
+{	
+	"compterendu": {
+		"name": {
+			"title": "Compterendu"
+		},
+		"list": {
+			"title": "Recherche compterendu"
+		},
+		"edit": {
+			"title": "Editer compterendu"
+		},
+		"add": {
+			"title": "Ajouter compterendu"
+		},
+		"view": {
+			"title": "Consulter compterendu"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations compterendu"
+		},
+		"numero": {
+			"label": "Numéro"
+		},
+		"date": {
+			"label": "Date"
+		},
+		"dateFrom": {
+			"label": "Date entre"
+		},
+		"dateTo": {
+			"label": "Et"
+		},
+		"fichier": {
+			"label": "Fichier"
+		},
+		"fichierName": {
+			"label": "Fichier"
+		},
+		"fichierCheksum": {
+			"label": "FichierCheksum"
+		},
+		"commentaire": {
+			"label": "Commentaire"
+		},
+		"chargementManuel": {
+			"label": "ChargementManuel"
+		},
+		"utilisateur": {
+			"label": "User"
+		},
+		"dossier": {
+			"label": ""
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}

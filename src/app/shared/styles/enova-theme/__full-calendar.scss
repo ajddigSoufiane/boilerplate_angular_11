@@ -1,0 +1,247 @@
+ .fc-button-primary {
+     background-color: $eno-principale-color !important;
+     border-color: $eno-principale-color !important;
+ }
+ 
+ .fc .fc-col-header-cell-cushion {
+     font-size: $eno-typo-size-2 !important;
+     text-transform: capitalize;
+ }
+ 
+ .fc .fc-day-today .fc-col-header-cell-cushion {
+     color: $eno-principale-color !important;
+ }
+ 
+ // calendar event card - handling too long text
+ .fc-time {
+     width: 28%;
+     width: 70px;
+     // min-width: 58px;
+ }
+ 
+ .fc-title {
+     padding-left: 2px;
+     width: 68%;
+     div {
+         text-overflow: ellipsis;
+         overflow: hidden;
+     }
+ }
+ 
+ .fc-event-main {
+     overflow: hidden;
+ }
+ 
+ .hachure {
+     background: linear-gradient(45deg, #fff 5%, #F8E5F3 5%, #F8E5F3 45%, #fff 45%, #fff 55%, #F8E5F3 55%, #F8E5F3 95%, #fff 95%);
+     background-size: 19px 19px;
+     background-position: 50px 50px;
+     //  background: linear-gradient(left, white 20%, #8b0 80%);
+ }
+ 
+ .event-tag {
+     box-sizing: border-box;
+     margin: 4px 0 0 0;
+     font-variant: tabular-nums;
+     list-style: none;
+     font-feature-settings: 'tnum';
+     display: inline-block;
+     height: auto;
+     padding: 0 7px;
+     font-size: 12px;
+     line-height: 20px;
+     white-space: nowrap;
+     border-radius: 2px;
+     cursor: default;
+     transition: all .3s;
+     color: #00000090;
+ }
+ 
+ .event-title {
+     font-size: 16px;
+     color: #000;
+     text-overflow: ellipsis;
+     -webkit-line-clamp: 2;
+     overflow: hidden;
+     display: block;
+     line-height: 1.5;
+     max-height: 3rem;
+ }
+ 
+ .presents-title {
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     line-height: 1.5;
+     color: #000;
+     font-size: $eno-typo-size-1;
+ }
+ 
+ .absente-title {
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     line-height: 1.5;
+     color: $eno-red-feedback-primary-0;
+     font-size: $eno-typo-size-1;
+ }
+ 
+ .event-footer-employe {
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     color: #19191D;
+     font-size: $eno-typo-size-0;
+     i {
+         font-size: $eno-typo-size-1;
+         width: 20px;
+         text-align: center;
+     }
+ }
+ 
+ .event-footer {
+     font-size: 13px;
+     color: #000;
+     width: 100%;
+ }
+ 
+ .event-avatar {
+     vertical-align: middle;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     border: 1px solid #000;
+ }
+ 
+ @media (max-width: 900px) {
+     .menu-left-mobile {
+         padding-top: 70px;
+     }
+ }
+ 
+ .event-body {
+     width: 90px;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     overflow: hidden;
+ }
+ 
+ .eventBorderTop {
+     border-top: #805390 4px solid !important;
+ }
+ 
+ .shift_color {
+     color: $eno-secondaire;
+ }
+ 
+ //-----------------------------------------------------------------
+ .fc-timegrid-event .fc-event-main {
+     padding: 0 !important;
+ }
+ 
+ .fc-timegrid-event,
+ .fc-timeline-event-harness,
+ .fc-daygrid-dot-event {
+     box-shadow: 0px 0px 11px 5px rgb(42 90 157 / 38%) !important
+ }
+ 
+ .fc-daygrid-dot-event {
+     margin-bottom: 2rem;
+ }
+ 
+ .hidden_arrow>div>i.ant-menu-submenu-arrow {
+     display: none !important;
+ }
+ 
+ .ant-layout-sider {
+     background-color: #f8f8f8 !important;
+ }
+ 
+ .resource_badge {
+     color: #000;
+     font-weight: 700;
+     min-width: 30px;
+     height: 30px;
+     padding: 0 6px;
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 30px;
+     white-space: nowrap;
+     text-align: center;
+     border-radius: 15px;
+     cursor: pointer;
+ }
+ 
+ div.fc-popover-body>div>a.fc-event>div {
+     width: 100%;
+ }
+ 
+ div.fc-popover-body>div>a.fc-event {
+     padding: 0;
+ }
+ 
+ div.fc-popover-body>div>a.fc-event>div>div.card>div:nth-child(1)>span {
+     text-overflow: ellipsis;
+     -webkit-line-clamp: 2;
+     overflow: hidden;
+     display: block;
+ }
+ 
+ .fc .fc-more-popover {
+     min-width: 350px;
+ }
+ 
+ .calendar_current_date {
+     position: relative;
+     top: 2px;
+     margin-right: 5px;
+ }
+ 
+ .clendar_grid label {
+     height: 2.25rem;
+     padding-top: 2px;
+ }
+ 
+ .event-footer-employe {
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     color: #19191D;
+     font-size: $eno-typo-size-0;
+     i {
+         font-size: $eno-typo-size-1;
+         width: 20px;
+         text-align: center;
+     }
+ }
+ 
+ .event-header-employe {
+     background-color: $eno-principale-color;
+ }
+ 
+ .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-disabled):first-child {
+     border-color: $eno-principale-color;
+ }
+ 
+ .ant-radio-button-wrapper:not([class*=' ant-radio-button-wrapper-disabled']).ant-radio-button-wrapper:first-child {
+     border-right-color: $eno-principale-color;
+ }
+ 
+ .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-disabled) {
+     color: $eno-principale-color;
+     border-color: $eno-principale-color;
+ }
+ 
+ .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-disabled)::before {
+     background-color: $eno-principale-color;
+ }
+ 
+ .ant-radio-button-wrapper:hover {
+     color: $eno-principale-color;
+ }
+ 
+ .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-disabled):hover {
+     color: $eno-principale-color;
+ }

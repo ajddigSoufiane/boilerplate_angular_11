@@ -1,0 +1,20 @@
+{
+    "acceuil": {
+        "name": {
+            "title": "Etablissement"
+        },
+        "bienvenue": {
+            "label": "Bienvenue à votre espace de travail"
+        },
+        "toutApplication": {
+            "label": "Toutes les applications"
+        },
+        "plusUtilises": {
+            "label": "les plus utilisés"
+        },
+
+        "description": {
+            "label": "Description"
+        }
+    }
+}

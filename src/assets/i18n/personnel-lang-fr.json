@@ -1,0 +1,83 @@
+{	
+	"personnel": {
+		"name": {
+			"title": "Personnel"
+		},
+		"list": {
+			"title": "Recherche personnel"
+		},
+		"edit": {
+			"title": "Editer personnel"
+		},
+		"add": {
+			"title": "Ajouter personnel"
+		},
+		"view": {
+			"title": "Consulter personnel"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations personnel"
+		},
+		"nom": {
+			"label": "Nom"
+		},
+		"prenom": {
+			"label": "Prénom"
+		},
+		"titre": {
+			"label": "Titre"
+		},
+		"photo": {
+			"label": "Photo"
+		},
+		"photoName": {
+			"label": "Fichier"
+		},
+		"photoCheksum": {
+			"label": "PhotoCheksum"
+		},
+		"telephone": {
+			"label": "Téléphone"
+		},
+		"email": {
+			"label": "Email"
+		},
+		"matricule": {
+			"label": "Matricule"
+		},
+		"adresse": {
+			"label": "Adresse"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"signature": {
+			"label": "Signature"
+		},
+		"signatureName": {
+			"label": "Fichier"
+		},
+		"signatureCheksum": {
+			"label": "SignatureCheksum"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"hl7": {
+			"label": "Hl7"
+		},
+		"specliate": {
+			"label": ""
+		},
+		"categoriePersonnel": {
+			"label": ""
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}

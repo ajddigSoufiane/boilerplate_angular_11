@@ -1,0 +1,44 @@
+{	
+	"categoriePersonnel": {
+		"name": {
+			"title": "CategoriePersonnel"
+		},
+		"list": {
+			"title": "Recherche categoriePersonnel"
+		},
+		"edit": {
+			"title": "Editer categoriePersonnel"
+		},
+		"add": {
+			"title": "Ajouter categoriePersonnel"
+		},
+		"view": {
+			"title": "Consulter categoriePersonnel"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations categoriePersonnel"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"hl7": {
+			"label": "Hl7"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}

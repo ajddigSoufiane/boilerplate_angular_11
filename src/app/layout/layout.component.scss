@@ -1,0 +1,231 @@
+// Variables
+@import "../shared/styles/enova-theme/variables.scss";
+.logo {
+    height: 53px;
+    background: $eno-vertical;
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.logo-mobile {
+    display: inline-flex;
+    width: 4.2rem;
+    position: relative;
+    width: 60px;
+    float: left;
+}
+
+.img-logo {
+    height: auto;
+    width: auto;
+    position: relative;
+    bottom: 5px;
+    left: 15px;
+}
+
+nz-header {
+    background: #fff;
+    padding: 0;
+}
+
+nz-content {
+    margin: 0 0px;
+}
+
+nz-breadcrumb {
+    margin: 16px 0;
+}
+
+.inner-content {
+    padding: 6px;
+    background: #fff;
+    min-height: 360px;
+}
+
+nz-footer {
+    text-align: center;
+}
+
+.ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {
+    border-right: unset;
+}
+
+.ant-menu-vertical .ant-menu-item:not(:last-child),
+.ant-menu-vertical-left .ant-menu-item:not(:last-child),
+.ant-menu-vertical-right .ant-menu-item:not(:last-child),
+.ant-menu-inline .ant-menu-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.title_general {
+    width: 90%;
+    text-align: left;
+    flex-grow: 1;
+    height: 29px;
+    padding-left: 15px;
+    font-size: 0.8rem!important;
+    font-weight: 600;
+    color: $eno-principale-color;
+    padding-top: 6px;
+}
+
+.wrapper .titlePage {
+    text-align: center;
+    border-bottom: 1px solid #c3c3c3;
+    margin: 2px 0px 7px 0px;
+    font-size: 14px;
+    color: #1a0f4a;
+    text-transform: uppercase;
+}
+
+.wrapper .titlePage .titlePage__content {
+    position: relative;
+    top: -1px;
+    background-color: $eno-vertical;
+    padding: 0px 8px;
+}
+
+.main_icon {
+    width: 10%;
+    position: relative;
+    top: 9px;
+    flex-grow: 1;
+    height: 23px;
+    text-align: center;
+    text-align: right;
+    color: #401e7d;
+    font-weight: bold;
+    font-size: 14.1px;
+    left: 2px;
+}
+
+.titlePage__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 36px;
+}
+
+.titlePage {
+    border-bottom: 1px solid #E7E7ED;
+}
+
+.w-60-l-10 {
+    width: 60% !important;
+    position: relative;
+    left: -5px;
+}
+
+.ant-layout-header {
+    border-bottom: 1px solid $eno-gray-8;
+    padding-bottom: 0px;
+    height: auto;
+}
+
+.titlePage__content:hover {
+    background-color: $eno-purple-3;
+}
+
+.titlePage__content:hover .icon_menu,
+.titlePage__content:hover .icon_menu_clp {
+    color: #ffffff !important;
+}
+
+.titlePage__content:hover .title_general {
+    color: #ffffff !important;
+}
+
+.ant-menu-submenu-title:hover {
+    background-color: $eno-purple-3 !important;
+}
+
+.ant-menu-submenu-title:hover .icon_menu,
+.ant-menu-submenu-title:hover .icon_menu_clp {
+    color: #ffffff !important;
+}
+
+.ant-menu-submenu-title:hover .title_general {
+    color: #ffffff !important;
+}
+
+li.ant-menu-submenu.ant-menu-submenu-inline:hover {
+    background-color: $eno-purple-3 !important;
+}
+
+.home-menu {
+    margin-top: 24px;
+    border-bottom: 1px solid #D7D7DC;
+}
+
+.brand-logo {
+    color: #fff;
+    font-weight: 900;
+    font-size: 33.95px;
+    padding: 0px;
+    padding-left: 0px;
+}
+
+.brand-logo .logo-title-2 {
+    font-size: 2rem;
+    margin-left: 2px;
+    font-weight: 100;
+}
+
+.brand-logo .logo-title-1 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.logo-title-container {
+    line-height: 0.5;
+}
+
+.logo-sub-title-1 {
+    font-size: $eno-typo-size--2
+}
+
+.logo-sub-title-container {
+    font-size: $eno-typo-size-0;
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+    background: $eno-vertical;
+    margin: 0px;
+    float: left;
+}
+
+.header-menu {
+    box-shadow: 0 -5px 6px -4px rgb(0 0 0 / 12%), 0 6px 8px 0 rgb(0 0 0 / 8%), 0 9px 6px -5px rgb(0 0 0 / 5%);
+    border-bottom: 0px;
+}
+
+.sider-menu {
+    height: 100%;
+    border-right: 0;
+}
+
+.inner-layout {
+    padding: 0 24px 24px;
+}
+
+nz-breadcrumb {
+    margin: 16px 0;
+}
+
+nz-content {
+    background: #fff;
+    padding: 24px;
+    min-height: 280px;
+}
+
+nz-header {
+    z-index: 2;
+    // position: fixed;
+    // width: 100%;
+    box-shadow: 0 0px 5px -4px rgb(0 0 0 / 12%), 0 3px 10px 0 rgb(0 0 0 / 8%), 0 0px 18px 0px rgb(0 0 0 / 5%);
+}

@@ -1,0 +1,191 @@
+{
+    "mon_dossier": {
+        "infos_contact": {
+            "label": "Infos de contact"
+        },
+        "matricule": {
+            "label": "Matricule"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "civilite": {
+            "label": "Civilité"
+        },
+        "nom": {
+            "label": "Nom"
+        },
+        "prenom": {
+            "label": "Prénom"
+        },
+        "sexe": {
+            "label": "Sexe"
+        },
+        "dateNaissance": {
+            "label": "Date de naissance"
+        },
+        "lieu_naissance": {
+            "label": "Lieu de naissance"
+        },
+        "piece_identite": {
+            "label": "Pièce d'identité"
+        },
+        "num_piece_identite": {
+            "label": "Numéro de la pièce d'identité"
+        },
+        "date_expiration_piece_identite": {
+            "label": "Date expiration pièce identité"
+        },
+        "num_affiliation_cnops": {
+            "label": "N° Affiliation CNOPS"
+        },
+        "date_affiliation_cnops": {
+            "label": "Date affiliation CNOPS"
+        },
+        "adresse": {
+            "label": "Adresse"
+        },
+        "ville": {
+            "label": "Ville"
+        },
+        "cp": {
+            "label": "CP"
+        },
+        "pays": {
+            "label": "Pays"
+        },
+        "tel": {
+            "label": "Téléphone"
+        },
+        "email": {
+            "label": "Email"
+        },
+        "urgences": {
+            "label": "Urgences"
+        },
+        "personne_1_prevoir": {
+            "label": "Personne 1 à prévoir"
+        },
+        "lien_parente": {
+            "label": "Lien de parenté"
+        },
+        "personne_2_prevoir": {
+            "label": "Personne 2 à prévoir"
+        },
+        "famille": {
+            "label": "Famille"
+        },
+        "mon_poste": {
+            "label": "Mon poste"
+        },
+        "identite_bancaire": {
+            "label": "Identité bancaire"
+        },
+        "situation_familiale": {
+            "label": "Situation familiale"
+        },
+        "depuis_le": {
+            "label": "Depuis le"
+        },
+        "nom_complet_conjoint": {
+            "label": "Nom complet conjoint"
+        },
+        "enfants": {
+            "label": "Enfants"
+        },
+        "ordre": {
+            "label": "ORDRE"
+        },
+        "date_naissance": {
+            "label": "DATE NAISSANCE"
+        },
+        "mon_dossier":{
+            "label":"Mon Dossier"
+        },
+        "rib":{
+            "label":"RIB actuel"
+        },
+        "rib_number": {
+            "label": "RIB"
+        },
+        "banque": {
+            "label": "Banque"
+        },
+        "agence":{
+            "label":"Agence"
+        },
+        "domiciliation":{
+            "label":"Domiciliation"
+        },
+        "poste":{
+            "label":"Mon poste"
+        },
+        "prise_fonction": {
+            "label": "Prise de fonction"
+        },
+        "date_recrutement": {
+            "label": "Date de recrutement"
+        },
+        "date_prise_fonction":{
+            "label":"Date prise de fonction"
+        },
+        "etablissement_origine":{
+            "label":"Etablissement origine"
+        },
+        "classification":{
+            "label":"Classification"
+        },
+        "corps": {
+            "label": "Corps"
+        },
+        "categorie": {
+            "label": "Catégorie"
+        },
+        "specialite_option":{
+            "label":"Spécialité/Option"
+        },
+        "grade":{
+            "label":"Grade"
+        },
+        "echelon":{
+            "label":"Echelon"
+        },
+        "imputation_budgetaire":{
+            "label":"Imputation budgétaire"
+        },
+        "depuis": {
+            "label": "Depuis"
+        },
+        "entite_rattachement": {
+            "label": "Entité rattachement"
+        },
+        "unite_organisationnelle":{
+            "label":"Unité organisationnelle"
+        },
+        "manager_entite":{
+            "label":"Manager de l'entité"
+        },
+        "poste_rattachement":{
+            "label":"Poste"
+        },
+        "fonction":{
+            "label":"Fonction"
+        },
+        "cycle_travail":{
+            "label":"Cycle de travail"
+        } ,
+        "deA":{
+            "label":"DE-A"
+        },
+        "poste_historique":{
+            "label":"POSTE"
+        },
+        "service":{
+            "label":"SERVICE"
+        },
+        "actuel":{
+            "label":"ACTUEL"
+        }    
+
+    }
+}

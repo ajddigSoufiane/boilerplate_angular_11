@@ -1,0 +1,158 @@
+<!-- soufiane :  this component juste help you to copy input field to use in new Entity -->
+<div style="padding: 12px 15px;">
+    <div class="mr-1 mb-3  search-button title-style-ref  mr-0 pb-2 pos-ntw-btn">
+        <b class="pos-ntw-btn">
+            {{
+            'profil.edit.title' |
+            translateProfil }}</b>
+
+        <div style="clear: both;"></div>
+    </div>
+    <div>
+        <form [formGroup]="profilForm" class="form-validate" (submit)="updateProfil()" novalidate="">
+            <div class="card card-default enoLight card-body ng-scope border-radius-style pb-2-rem mb-1">
+                <div class="row">
+                    <!-- start input text -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row required">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "profil.code.label"
+                                | translateProfil
+                                }}</label>
+                            <div class="col-12">
+
+                                <input type="text" class="form-control input-value-style eno-typo-size-18px-1rem"
+                                    placeholder="Code" formControlName="code" />
+
+                            </div>
+                            <span class="message-requird col-12  col-form" *ngIf="
+                profilForm.controls['code'].hasError(
+                'required'
+                ) &&
+                (profilForm.controls['code'].dirty ||
+                profilForm.controls['code'].touched)
+            ">{{ "common.message.required" | translate }}</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row required">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "profil.libelle.label"
+                                | translateProfil
+                                }}</label>
+                            <div class="col-12">
+
+                                <input type="text" class="form-control input-value-style eno-typo-size-18px-1rem"
+                                    placeholder="Libellé" formControlName="libelle" />
+                            </div>
+                            <span class="message-requird col-12  col-form" *ngIf="
+                profilForm.controls['libelle'].hasError(
+                'required'
+                ) &&
+                (profilForm.controls['libelle'].dirty ||
+                profilForm.controls['libelle'].touched)
+            ">{{ "common.message.required" | translate }}</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <!-- start input text -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "profil.description.label"
+                                | translateProfil
+                                }}</label>
+                            <div class="col-12">
+
+                                <textarea type="text" class="form-control input-value-style eno-typo-size-18px-1rem"
+                                    placeholder="Description" formControlName="description"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "profil.actif.label"
+                                | translateProfil
+                                }}</label>
+                            <div class="col-12 other-input-center">
+                                <label class="col-form-label  col-form-label-form input-label-style mr-1">NON</label>
+                                <label class="switch  input-label-style mr-1 mt-2">
+                                    <input type="checkbox" formControlName="actif"
+                                        class="input-value-style eno-typo-size-18px-1rem" />
+                                    <span></span>
+                                </label>
+                                <label class="col-form-label  col-form-label-form input-label-style">OUI</label>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="panel panel-default">
+                <div class="panel-body">
+                <h4 class="mt0">{{ 'profil.roles.label' | translateProfil }}</h4>
+                <hr/>
+                    <app-role [roleList]="rolesSelected" (rolesListSelected)="putRolesList($event)"></app-role>
+                </div>
+                </div> 
+
+
+
+                <!-- START BUTTONS -->
+
+            </div>
+            <div class="sumbit-btn" [ngClass]="{'sumbit-btn-drawer': _mode_ecran==this.mode_ecran.DRAWER}">
+                <div class="sumbit_btn_option">
+                    <button class="btn-1 btn btn-labeled button-primary-revert  mr-0 mb-1  float-left" type="button"
+                        debounceClick (debounceEvent)="updateProfil()">
+                        <i class="fal fa-save"></i>
+                        <span class="btn-title">{{ "common.command.save" | translate }}</span>
+                    </button>
+
+                    <!-- <button type="button" class="btn-2 btn btn-labeled button-primary-revert  mr-0 mb-1  float-left"
+                        nz-dropdown [nzDropdownMenu]="sumbit_btn_option" nzPlacement="bottomRight" [nzTrigger]="'click'"
+                        (nzVisibleChange)="upDownIcon=$event">
+                        <i nz-icon nzType="down" *ngIf="!upDownIcon" style="font-size: 1rem;"></i>
+                        <i nz-icon nzType="up" nzTheme="outline" *ngIf="upDownIcon"></i>
+                    </button> -->
+                    <nz-dropdown-menu #sumbit_btn_option="nzDropdownMenu">
+                        <ul nz-menu>
+                            <li nz-menu-item class=" btn-subline-parent">
+                                <div class="w-100 btn text-left btn-subline" debounceClick (debounceEvent)="
+            updateProfil()
+                        ">
+                                    <i class="fal fa-save mr-2"></i>
+                                    <span class="btn-title">{{ "common.command.saveAndNew" | translate }}</span>
+                                </div>
+                            </li>
+                            <!-- <li nz-menu-item class=" btn-subline-parent">
+            <div class="w-100 btn text-left btn-subline " (click)="reset()">
+                <i class="fas fa-undo  mr-2"></i>
+                <span> {{ "common.command.reset" | translate }}</span>
+            </div>
+        </li> -->
+                        </ul>
+                    </nz-dropdown-menu>
+                </div>
+
+
+                <button class="btn button-secondary-white-bg ml-2 mr-2  float-left" type="button" (click)="retour()">
+                    {{ "common.command.exit" | translate }}
+                </button>
+                <!-- <button class="btn btn-secondary ml-2 mr-2 button-primary float-right" debounceClick (debounceEvent)="
+            saveProfil(profilForm.value)
+        ">
+      <span class="btn-label span-float-left"><i class="fas fa-save"></i></span>
+      {{ "common.command.saveAndNew" | translate }}
+  </button> -->
+                <!-- <button class="btn button-secondary-white-bg ml-2 mr-2  float-right" id="reset" type="button" (click)="reset()">
+      <span class="btn-label span-float-left"><i class="fas fa-undo"></i></span>
+      {{ "common.command.reset" | translate }}
+  </button> -->
+            </div> <!-- END BUTTONS -->
+        </form>
+    </div>
+</div>

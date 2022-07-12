@@ -1,0 +1,1 @@
+Self RH est  un système de gestion de ressources humaines pour les établissements de santé

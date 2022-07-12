@@ -1,0 +1,114 @@
+<!-- START form for searching -->
+<ng-template #form_search>
+    <div class="card card-default col-12 ">
+        <div style="padding: 15px 15px 0px;">
+            <span class="eno-gray-1 eno-typo-size-18px-1rem font-weight-600">{{ 'common.legend.search' | translate }}</span>
+
+        </div>
+
+        <form [formGroup]="serviceForm" (keydown.enter)="search.emit('')" (submit)="search.emit('')">
+            <!-- <div class="card-body bt"> -->
+                <div class="enoLight card-body ng-scope border-radius-style border-style box-shadow-style " [collapse]="collapsedInfo">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group row  ">
+                                <label class="col-12 col-form-label font-weight-normal">{{
+                            'service.code.label' |
+                            translateService }}</label>
+                                <div class="col-12">
+                                    <ng-container *ngTemplateOutlet="code"></ng-container>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group row ">
+                                <label class="col-12 col-form-label font-weight-normal">{{
+                            'service.nom.label' |
+                            translateService }}</label>
+                                <div class="col-12">
+                                    <ng-container *ngTemplateOutlet="nom"></ng-container>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group row ">
+                                <label class="col-12 col-form-label font-weight-normal">{{
+                            'service.codeSIH.label' |
+                            translateService }}</label>
+                                <div class="col-12">
+                                    <ng-container *ngTemplateOutlet="codeSIH"></ng-container>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group row ">
+                                <label class="col-12 col-form-label font-weight-normal">{{
+                            'service.hopital.label' |
+                            translateService }}</label>
+                                <div class="col-12">
+                                    <ng-container *ngTemplateOutlet="hopital"></ng-container>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            <!-- </div> -->
+
+            <div class="card-footer text-right enoLight d-flex justify-content-between align-items-center" [collapse]="collapsedInfo">
+                <div class="text-left" *ngIf="!showMoreForm" style="color: #0052CC;cursor:pointer"></div>
+                <div class="text-left" *ngIf="showMoreForm" style="color: #0052CC;cursor:pointer"></div>
+                <div>
+                    <button class="btn ml-1 mr-2 button-secondary" type="button" (click)="reset.emit('')">
+                <i class="fal fa-undo mr-2"></i>
+                <span class="btn-title">{{ 'common.command.reset' | translate }}</span>
+            </button>
+                    <button class="btn btn-secondary ml-2 mr-2 button-primary" type="submit" [disabled]="!serviceForm.valid">
+                <i class="fal fa-search mr-2"></i>
+                <span class="btn-title">{{ 'common.command.search' | translate }}</span>
+            </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</ng-template>
+<!-- END form for searching -->
+
+<!-- all input of form -->
+
+
+<ng-template #nom>
+    <div [formGroup]="serviceForm">
+        <input type="text" class="form-control input-text-style input-style w-100 eno-typo-size-18px-1rem" placeholder="Nom" formControlName="nom">
+    </div>
+</ng-template>
+<ng-template #code>
+    <div [formGroup]="serviceForm">
+        <input type="text" class="form-control input-text-style input-style w-100 eno-typo-size-18px-1rem" placeholder="Code" formControlName="code">
+    </div>
+</ng-template>
+<ng-template #hopital>
+    <div [formGroup]="serviceForm">
+        <nz-select formControlName="hopital" nzShowSearch nzAllowClear nzPlaceHolder="Hôpital" class="w-100 form-control eno-typo-size-1">
+            <nz-option [nzLabel]="'common.select.notset' | translate" nzValue="Non défini"></nz-option>
+            <nz-option [nzLabel]="'common.text.yes' | translate" [nzValue]="true"></nz-option>
+            <nz-option [nzLabel]="'common.text.no' | translate" [nzValue]="false"></nz-option>
+        </nz-select>
+    </div>
+</ng-template>
+<ng-template #codeSIH>
+    <div [formGroup]="serviceForm">
+        <input type="text" class="form-control input-text-style input-style w-100 eno-typo-size-18px-1rem" placeholder="Code SIH" formControlName="codeSIH">
+    </div>
+</ng-template>
+<ng-template #default>
+    <div [formGroup]="serviceForm">
+        <nz-select formControlName="default" nzShowSearch nzAllowClear nzPlaceHolder="Par défaut" class="w-100 form-control eno-typo-size-1">
+            <nz-option [nzLabel]="'common.select.notset' | translate" nzValue="Non défini"></nz-option>
+            <nz-option [nzLabel]="'common.text.yes' | translate" [nzValue]="true"></nz-option>
+            <nz-option [nzLabel]="'common.text.no' | translate" [nzValue]="false"></nz-option>
+        </nz-select>
+    </div>
+</ng-template>
+<!-- end all input form -->

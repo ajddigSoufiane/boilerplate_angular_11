@@ -1,0 +1,92 @@
+{	
+	"dossier": {
+		"name": {
+			"title": "Dossier"
+		},
+		"list": {
+			"title": "Recherche dossier"
+		},
+		"edit": {
+			"title": "Editer dossier"
+		},
+		"add": {
+			"title": "Ajouter dossier"
+		},
+		"view": {
+			"title": "Consulter dossier"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations dossier"
+		},
+		"dateCreation": {
+			"label": "DateCreation"
+		},
+		"dateCreationFrom": {
+			"label": "DateCreation entre"
+		},
+		"dateCreationTo": {
+			"label": "Et"
+		},
+		"urgence": {
+			"label": "Urgence"
+		},
+		"statutDossier": {
+			"label": "StatutDossier"
+		},
+		"commentaire": {
+			"label": "Commentaire"
+		},
+		"dateValidation": {
+			"label": "DateValidation"
+		},
+		"dateValidationFrom": {
+			"label": "DateValidation entre"
+		},
+		"dateValidationTo": {
+			"label": "Et"
+		},
+		"nonLu": {
+			"label": "NonLu"
+		},
+		"nc": {
+			"label": "Nc"
+		},
+		"expert": {
+			"label": "Expert"
+		},
+		"imprimer": {
+			"label": "Imprimer"
+		},
+		"dossierGarde": {
+			"label": "DossierGarde"
+		},
+		"dateConsulation": {
+			"label": "DateConsulation"
+		},
+		"dateConsulationFrom": {
+			"label": "DateConsulation entre"
+		},
+		"dateConsulationTo": {
+			"label": "Et"
+		},
+		"demandeanalyse": {
+			"label": "Demandeanalyse"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		},
+		"consulterPar": {
+			"label": "User"
+		},
+		"validateur": {
+			"label": "User"
+		},
+		"creePar": {
+			"label": "User"
+		}
+	}
+
+}

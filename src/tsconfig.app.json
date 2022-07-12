@@ -1,0 +1,27 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": ["app/*"],
+      "@core/*": ["app/core/*"],
+      "@environments/*": ["environments/*"],
+      "@routes/*": ["app/routes/*"],
+      "@shared/*": ["app/shared/*"],
+      "@components":["app/shared/components/index"],
+      "@models": ["app/shared/models/index"],
+      "@services": ["app/shared/services/index"]
+    }, 
+    "types": [
+        "node"
+    ]
+  },
+  "files": [
+    "main.ts",
+    "polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
+}

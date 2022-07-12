@@ -1,0 +1,663 @@
+/* ========================================================================
+     Component: button-extra
+ ========================================================================== */
+
+//
+// Extension for Bootstrap buttons
+// ------------------------------------
+// BUTTONS LABEL mixin
+// --------------------------------------------------
+@mixin button-label-size($padding-vertical, $padding-horizontal, $border-radius) {
+    padding: $padding-vertical $padding-horizontal;
+    left: (-1 * $padding-horizontal);
+    border-radius: ($border-radius/*  - 1px */
+    ) 0 0 ($border-radius/*  - 1px */
+    );
+    &.btn-label-right {
+        left: auto;
+        right: (-1 * $padding-horizontal);
+        border-radius: 0 ($border-radius/*  - 1px */
+        ) ($border-radius/*  - 1px */
+        ) 0;
+    }
+}
+
+// New colors
+.btn-inverse {
+    @include button-variant($inverse, $inverse);
+}
+
+.btn-green {
+    @include button-variant($green, $green);
+}
+
+.btn-purple {
+    @include button-variant($purple, $purple);
+}
+
+.btn-pink {
+    @include button-variant($pink, $pink);
+}
+
+// Flat square button
+.btn-flat {
+    border-bottom-width: 1px;
+    border-radius: 0;
+    box-shadow: 0 0 0 #000;
+}
+
+// Extra size
+.btn-xs {
+    padding: 0.0625rem 0.3125rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+}
+
+.btn-xl {
+    padding: 20px 16px;
+    font-size: 18px;
+}
+
+// Button square
+.btn-square {
+    border-radius: 0;
+}
+
+// Button pill
+.btn-pill-left {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding-left: 18px;
+}
+
+.btn-pill-right {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-right: 18px;
+}
+
+// Rounded buttons
+.btn-oval {
+    @extend .btn-pill-right;
+    @extend .btn-pill-left;
+}
+
+// Labels for buttons
+// --------------------------------------------------
+.btn-labeled {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.btn-label {
+    position: relative;
+    background: transparent;
+    // background: rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    @include button-label-size($input-btn-padding-y, $input-btn-padding-x, $border-radius);
+}
+
+.btn-lg .btn-label {
+    @include button-label-size($input-btn-padding-y-lg, $input-btn-padding-x-lg, $border-radius-lg);
+}
+
+.btn-sm .btn-label {
+    @include button-label-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $border-radius-sm);
+}
+
+.btn-xs .btn-label {
+    @include button-label-size(1px, 5px, $border-radius-sm);
+}
+
+// Fixed width buttons
+// --------------------------------------------------
+$btn-fw-default: 80px;
+$btn-fw-sm: 40px;
+$btn-fw-md: 60px;
+$btn-fw-lg: 140px;
+.btn-fw {
+    min-width: $btn-fw-default;
+    &.btn-sm {
+        min-width: $btn-fw-sm;
+    }
+    &.btn-md {
+        min-width: $btn-fw-md;
+    }
+    &.btn-lg {
+        min-width: $btn-fw-lg;
+    }
+}
+
+// Button Circle
+// -----------------------------------
+.btn-circle {
+    $sz: 35px;
+    width: $sz;
+    height: $sz;
+    text-align: center;
+    font-size: 12px;
+    line-height: $sz;
+    border-radius: 500px;
+    padding: 0;
+    border: 0;
+    >* {
+        line-height: inherit !important;
+    }
+    &.btn-lg {
+        $sz-lg: 50px;
+        width: $sz-lg;
+        height: $sz-lg;
+        font-size: 18px;
+        line-height: $sz-lg;
+    }
+}
+
+// Button Outline
+// -----------------------------------
+.btn-outline {
+    &-inverse {
+        @include button-outline-variant($inverse);
+    }
+    &-green {
+        @include button-outline-variant($green);
+    }
+    &-purple {
+        @include button-outline-variant($purple);
+    }
+    &-pink {
+        @include button-outline-variant($pink);
+    }
+}
+
+.btn-enova-primary {
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    position: relative;
+    height: 2.25rem;
+    background: $eno-principale-color;
+    mix-blend-mode: normal;
+    box-shadow: 0px 6px 4px rgb(0 0 0 / 25%);
+    border-radius: 3px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.4px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #fff;
+    text-transform: capitalize;
+    border: none !important;
+}
+
+.btn-enova-primary:hover {
+    color: #fff;
+}
+
+
+/** start enova style */
+
+.height-button {
+    height: $input-height;
+}
+
+.btn-labeled {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.button-secondary-white-bg {
+    height: $input-height;
+    border: none;
+    font-weight: 400;
+    color: $eno-principale-color !important;
+    background-color: #FFF !important;
+    font-size: 1rem;
+}
+
+.button-secondary-white-bg:hover {
+    background-color: #FFF !important;
+    color: $eno-principale-color;
+    height: $input-height;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border: none;
+    font-weight: $font-weight-400;
+    font-size: $eno-typo-size-0;
+}
+
+.button-secondary {
+    height: $input-height;
+    border: none;
+    font-weight: $font-weight-400;
+    color: $eno-principale-color !important;
+    background-color: $eno-vertical !important;
+    font-size: $eno-typo-size-0;
+}
+
+.button-secondary:hover {
+    background: $eno-vertical !important;
+    background-color: $eno-vertical !important;
+    color: $eno-principale-color;
+    height: $input-height;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border: none;
+    font-weight: $font-weight-400;
+    font-size: $eno-typo-size-0;
+}
+
+.button-primary,
+.button-primary-revert:hover {
+    height: $input-height;
+    background: $eno-vertical !important;
+    color: $eno-principale-color !important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border: none;
+    font-weight: $font-weight-400;
+    font-size: $eno-typo-size-0;
+}
+
+.button-primary-revert,
+.button-primary:hover,
+.button-parent-no-bg:hover {
+    background: $eno-principale-color!important;
+    color: $eno-vertical!important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border: none;
+    font-weight: $font-weight-400;
+    font-size: $eno-typo-size-0;
+    height: $input-height;
+}
+
+.button-primary-revert-raduis {
+    background: $eno-principale-color!important;
+    color: $eno-vertical!important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border-radius: 32px;
+    border: none;
+    font-weight: bold;
+    font-size: $eno-typo-size-1;
+    padding: 10px;
+    line-height: 0;
+}
+
+.button-primary-revert-raduis:hover {
+    background: $eno-vertical !important;
+    color: $eno-principale-color !important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border-radius: 32px;
+    border: none;
+    font-weight: bold;
+    font-size: $eno-typo-size-1;
+    padding: 10px;
+}
+.button-danger,
+.button-danger-revert:hover {
+    height: $input-height;
+    background: $eno-vertical !important;
+    color: #a01b53 !important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border: none;
+    font-weight: $font-weight-400;
+    font-size: $eno-typo-size-0;
+}
+
+.button-danger-revert,
+.button-danger:hover,
+.button-parent-no-bg:hover {
+    background: #a01b53!important;
+    color: $eno-vertical!important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border: none;
+    font-weight: $font-weight-400;
+    font-size: $eno-typo-size-0;
+    height: $input-height;
+}
+
+.button-danger-revert-raduis {
+    background: #a01b53!important;
+    color: $eno-vertical!important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border-radius: 32px;
+    border: none;
+    font-weight: bold;
+    font-size: $eno-typo-size-1;
+    padding: 10px;
+    line-height: 0;
+}
+
+.button-danger-revert-raduis:hover {
+    background: $eno-vertical !important;
+    color: #a01b53 !important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border-radius: 32px;
+    border: none;
+    font-weight: bold;
+    font-size: $eno-typo-size-1;
+    padding: 10px;
+}
+.button-incomplete,
+.button-incomplete-revert:hover {
+    height: $input-height;
+    background: $eno-vertical !important;
+    color: #903911 !important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border: none;
+    font-weight: $font-weight-400;
+    font-size: $eno-typo-size-0;
+}
+
+.button-incomplete-revert,
+.button-incomplete:hover,
+.button-parent-no-bg:hover {
+    background: #903911!important;
+    color: $eno-vertical!important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border: none;
+    font-weight: $font-weight-400;
+    font-size: $eno-typo-size-0;
+    height: $input-height;
+}
+
+.button-incomplete-revert-raduis {
+    background: #903911!important;
+    color: $eno-vertical!important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border-radius: 32px;
+    border: none;
+    font-weight: bold;
+    font-size: $eno-typo-size-1;
+    padding: 10px;
+    line-height: 0;
+}
+
+.button-incomplete-revert-raduis:hover {
+    background: $eno-vertical !important;
+    color: #903911 !important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border-radius: 32px;
+    border: none;
+    font-weight: bold;
+    font-size: $eno-typo-size-1;
+    padding: 10px;
+}
+
+
+
+.upload-button {
+    background-color: $eno-secondaire-color;
+    border: 1px solid $eno-principale-color;
+    color: $eno-principale-color;
+    box-shadow: 1px 6px 4px 0px rgb(0 0 0 / 8%);
+    font-size: $eno-typo-size-1;
+}
+
+.upload-button:hover {
+    background-color: $eno-vertical;
+    border: 1px solid $eno-principale-color;
+    color: $eno-principale-color;
+    box-shadow: 1px 6px 4px 0px rgb(0 0 0 / 8%);
+    font-size: $eno-typo-size-1;
+}
+
+.btn-light-blue {
+    color: $eno-principale-color;
+    background-color: #f5fdff;
+    border-color: #abcbde;
+    height: 2.25rem;
+}
+
+// .button-primary:hover {
+//     border: 1px solid #fff;
+// }
+.button-alert-feedback {
+    background: #fff !important;
+    color: $eno-red-feedback-primary-0 !important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border: none;
+    font-weight: $font-weight-400;
+    font-size: $eno-typo-size-0;
+    height: $input-height;
+    border: 1px solid $eno-red-feedback-primary-0;
+}
+.button-success-feedback {
+    background: #fff !important;
+    color: $eno-green-feedback-primary-0 !important;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border: none;
+    font-weight: $font-weight-400;
+    font-size: $eno-typo-size-0;
+    height: $input-height;
+    border: 1px solid $eno-green-feedback-primary-0;
+}
+.eno-btn-line .status {
+    color: #0052CC;
+    cursor: pointer;
+    font-size: $eno-typo-size--1;
+}
+
+.eno-btn-line .status span {
+    text-decoration: underline;
+    font-size: $eno-typo-size-0;
+}
+
+.button-parent-no-bg {
+    height: 2.75rem;
+    background: $eno-vertical !important;
+    color: $eno-principale-color !important;
+    /* box-shadow: 0px 2px 4px rgb(0 0 0 / 25%); */
+    border: none;
+    font-weight: 400;
+    font-size: 1rem;
+    border: solid $eno-principale-color 1px;
+}
+
+.sumbit-btn {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 2px solid $eno-secondaire;
+}
+
+.sumbit-btn-drawer {
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid $eno-secondaire;
+    padding: 10px 0px;
+    text-align: right;
+    background: #fff;
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: 1;
+    /* height: initial; */
+    overflow: hidden;
+}
+
+//2 btn in one 
+.sumbit_btn_option .btn-1 {
+    border-radius: 3px 0px 0px 3px;
+    border-left: 1px solid #fff;
+}
+
+.sumbit_btn_option .btn-2 {
+    border-radius: 0px 3px 3px 0px;
+    border-left: 1px solid #fff;
+}
+
+.btn-subline {
+    font-weight: 400;
+    font-size: 1rem;
+    height: $input-height;
+    position: relative;
+    top: 8px;
+    padding: 0px;
+}
+
+.btn-subline-parent {
+    padding: 0px 12px;
+}
+
+
+/** end enova style */
+
+//  btn of table
+.ant-table-title .btn-light {
+    height: $input-height;
+    background: transparent !important;
+    color: $eno-principale-color !important;
+    box-shadow: none;
+    border: none;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.ant-table-title .btn-light:hover,
+.ant-table-title .btn-light-focused {
+    background: $eno-vertical !important;
+}
+
+.ant-table-title .btn-red {
+    background: #fff !important;
+    color: $eno-red-feedback-primary-0 !important;
+    box-shadow: none;
+    border: none;
+    font-weight: 400;
+    font-size: 1rem;
+    height: $input-height;
+    border: none !important;
+    border-radius: 0px;
+}
+
+.ant-table-title .btn-red:hover {
+    background: $eno-red-feedback-primary-0 !important;
+    color: #fff!important;
+}
+
+.container-form {
+    position: relative;
+    z-index: 0;
+    top: -2px;
+}
+
+.btn-light-focused {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-light:not(:disabled):not(.disabled):active:focus,
+.btn-light:not(:disabled):not(.disabled).active:focus,
+.show>.btn-light.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+
+/** start section of mobile ***/
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* CSS */
+    button i {
+        margin-right: 0.5rem;
+    }
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+    button i {
+        margin-right: 0.5rem;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+    button .btn-title {
+        font-size: 0rem !important;
+    }
+    button i {
+        font-size: $eno-typo-size-0 !important;
+        margin: 0px !important;
+    }
+    button i:nth-child(n+2) {
+        font-size: 0rem !important;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS */
+    button .btn-title {
+        font-size: 0rem !important;
+    }
+    button i {
+        font-size: $eno-typo-size-0 !important;
+        margin: 0px !important;
+    }
+    button i:nth-child(n+2) {
+        font-size: 0rem !important;
+    }
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* CSS */
+    button .btn-title {
+        font-size: 0rem !important;
+    }
+    button i {
+        font-size: $eno-typo-size-0 !important;
+        margin: 0px !important;
+    }
+    button i:nth-child(n+2) {
+        font-size: 0rem !important;
+    }
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* CSS */
+    button .btn-title {
+        font-size: 0rem !important;
+    }
+    button i {
+        font-size: $eno-typo-size-0 !important;
+        margin: 0px !important;
+    }
+    button i:nth-child(n+2) {
+        font-size: 0rem !important;
+    }
+}
+
+
+/** start section of mobile ***/

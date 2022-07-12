@@ -1,0 +1,83 @@
+{
+    "typeDocument": {
+        "name": {
+            "title": "Type document"
+        },
+        "list": {
+            "title": "Recherche type document"
+        },
+        "edit": {
+            "title": "Editer type document"
+        },
+        "add": {
+            "title": "Ajouter type document"
+        },
+        "view": {
+            "title": "Consulter type document"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations type document"
+        },
+        "nom": {
+            "label": "Nom"
+        },
+        "prenom": {
+            "label": "Prénom"
+        },
+        "username": {
+            "label": "Nom d'type document"
+        },
+        "password": {
+            "label": "Mot de passe"
+        },
+        "enabled": {
+            "label": "Activer"
+        },
+        "resetPassword": {
+            "label": "Réinitialiser le mot de passe"
+        },
+        "oldPassword": {
+            "label": "Ancien mot de passe"
+        },
+        "newPassword": {
+            "label": "Nouveau mot de passe"
+        },
+        "personnel": {
+            "label": "Personnel"
+        },
+        "etablissement": {
+            "label": "Etablissement"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        },
+        "service": {
+            "label": "Service"
+        },
+        "matricule": {
+            "label": "Matricule"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "libelle": {
+            "label": "Libelle"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "procedure": {
+            "label": "Procédure"
+        },
+        "hl7": {
+            "label": "hl7"
+        }
+    }
+
+}

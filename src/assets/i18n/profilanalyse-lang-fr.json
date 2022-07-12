@@ -1,0 +1,101 @@
+{
+    "profilanalyse": {
+        "name": {
+            "title": "Profilanalyse"
+        },
+        "list": {
+            "title": "Recherche profilanalyse"
+        },
+        "edit": {
+            "title": "Editer profilanalyse"
+        },
+        "add": {
+            "title": "Ajouter profilanalyse"
+        },
+        "view": {
+            "title": "Consulter profilanalyse"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations profilanalyse"
+        },
+        "intituleP": {
+            "label": "intituleP"
+        },
+        "intituleCR": {
+            "label": "intituleCR"
+        },
+        "ordreP": {
+            "label": "OrdreP"
+        },
+        "ordreCR": {
+            "label": "OrdreCR"
+        },
+        "griserLabo": {
+            "label": "GriserLabo"
+        },
+        "griserPresc": {
+            "label": "GriserPresc"
+        },
+        "nombreB": {
+            "label": "NombreB"
+        },
+        "quotationB": {
+            "label": "QuotationB"
+        },
+        "commentaire": {
+            "label": "Commentaire"
+        },
+        "commentaireP": {
+            "label": "CommentaireP"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "nombreB1": {
+            "label": "NombreB1"
+        },
+        "nombreB2": {
+            "label": "NombreB2"
+        },
+        "nombreB3": {
+            "label": "NombreB3"
+        },
+        "nombreB4": {
+            "label": "NombreB4"
+        },
+        "delai": {
+            "label": "Delai"
+        },
+        "instrunctionPrelev": {
+            "label": "InstrunctionPrelev"
+        },
+        "instrunctionPrelevHtml": {
+            "label": "InstrunctionPrelevHtml"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "destination": {
+            "label": "Destination"
+        },
+        "typeEchantilon": {
+            "label": "TypeEchantilon"
+        },
+        "tarifprelevement": {
+            "label": "Tarifprelevement"
+        },
+        "discipline": {
+            "label": "Discipline"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    }
+
+}

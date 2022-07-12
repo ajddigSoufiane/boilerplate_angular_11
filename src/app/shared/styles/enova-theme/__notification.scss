@@ -1,0 +1,32 @@
+.notification_error {
+    background-color: #FFEBED;
+}
+
+.notification_error .anticon.ant-notification-notice-icon-error,
+.notification_error .notification_icon_error {
+    color: #E01F3D;
+}
+
+.notification_success {
+    background-color: #F3FCE9;
+}
+
+.notification_success .anticon.ant-notification-notice-icon-success {
+    color: #83A431;
+}
+
+.notification_warning {
+    background-color: #FFFDE9;
+}
+
+.notification_warning .anticon.ant-notification-notice-icon-warning {
+    color: #FDDC0D;
+}
+
+.notification_info {
+    background-color: #E3F0F8;
+}
+
+.notification_info .anticon.ant-notification-notice-icon-info {
+    color: #2A5A9D;
+}

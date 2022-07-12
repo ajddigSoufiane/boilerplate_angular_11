@@ -1,0 +1,199 @@
+{	
+	"nonConformite": {
+		"name": {
+			"title": "NonConformite"
+		},
+		"list": {
+			"title": "Recherche nonConformite"
+		},
+		"edit": {
+			"title": "Editer nonConformite"
+		},
+		"add": {
+			"title": "Ajouter nonConformite"
+		},
+		"view": {
+			"title": "Consulter nonConformite"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations nonConformite"
+		},
+		"numero": {
+			"label": "Numéro"
+		},
+		"date": {
+			"label": "Date"
+		},
+		"dateFrom": {
+			"label": "Date entre"
+		},
+		"dateTo": {
+			"label": "Et"
+		},
+		"commentaire": {
+			"label": "Commentaire"
+		},
+		"dossier": {
+			"label": ""
+		},
+		"demandeanalyse": {
+			"label": ""
+		},
+		"utilisateur": {
+			"label": "User"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		},
+		"motifNonConformites": {
+			"label": "MotifNonConformites"
+		},
+		"echantillons": {
+			"label": "Echantillons"
+		}
+	},
+	"echantillon": {
+		"name": {
+			"title": "Echantillon"
+		},
+		"add": {
+			"title": "Ajouter echantillon"
+		},
+		"view": {
+			"title": "Consulter echantillon"
+		},
+		"legend": {
+			"info": "Informations echantillon"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"datePrelev": {
+			"label": "DatePrelev"
+		},
+		"datePrelevTo": {
+			"label": "DatePrelev entre"
+		},
+		"datePrelevFrom": {
+			"label": "Et"
+		},
+		"datePec": {
+			"label": "DatePec"
+		},
+		"datePecTo": {
+			"label": "DatePec entre"
+		},
+		"datePecFrom": {
+			"label": "Et"
+		},
+		"dateSaisie": {
+			"label": "DateSaisie"
+		},
+		"dateSaisieTo": {
+			"label": "DateSaisie entre"
+		},
+		"dateSaisieFrom": {
+			"label": "Et"
+		},
+		"statutEchantillon": {
+			"label": "StatutEchantillon"
+		},
+		"dateEnvoi": {
+			"label": "DateEnvoi"
+		},
+		"dateEnvoiTo": {
+			"label": "DateEnvoi entre"
+		},
+		"dateEnvoiFrom": {
+			"label": "Et"
+		},
+		"dateReception": {
+			"label": "DateReception"
+		},
+		"dateReceptionTo": {
+			"label": "DateReception entre"
+		},
+		"dateReceptionFrom": {
+			"label": "Et"
+		},
+		"instrPrelev": {
+			"label": "InstrPrelev"
+		},
+		"nombreEchantillon": {
+			"label": "NombreEchantillon"
+		},
+		"commentaire": {
+			"label": "Commentaire"
+		},
+		"dateAnnulation": {
+			"label": "DateAnnulation"
+		},
+		"dateAnnulationTo": {
+			"label": "DateAnnulation entre"
+		},
+		"dateAnnulationFrom": {
+			"label": "Et"
+		},
+		"methodeanalyse": {
+			"label": "Methodeanalyse"
+		},
+		"destination": {
+			"label": "Destination"
+		},
+		"typeEchantilon": {
+			"label": "TypeEchantilon"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		},
+		"dossier": {
+			"label": "Dossier"
+		},
+		"pecPar": {
+			"label": "User"
+		},
+		"preleveur": {
+			"label": "User"
+		}
+	},	"motifNonConformite": {
+		"name": {
+			"title": "MotifNonConformite"
+		},
+		"add": {
+			"title": "Ajouter motifNonConformite"
+		},
+		"view": {
+			"title": "Consulter motifNonConformite"
+		},
+		"legend": {
+			"info": "Informations motifNonConformite"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"bloquant": {
+			"label": "Bloquant"
+		},
+		"actions": {
+			"label": "Actions"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"hl7": {
+			"label": "Hl7"
+		},
+		"naturenonconformite": {
+			"label": ""
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+}

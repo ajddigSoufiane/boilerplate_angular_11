@@ -1,0 +1,31 @@
+.ant-modal .ant-modal-header {
+    // border-bottom: none;
+    margin-left: 20px;
+    padding-left: 0px;
+    margin-right: 20px;
+    padding-right: 0px;
+    padding-top: 1.30rem;
+    padding-bottom: 1.30rem;
+}
+
+.ant-modal .ant-modal-header .ant-modal-title {
+    font-size: $eno-typo-size-1;
+    color: $eno-principale-color;
+    font-weight: 600;
+}
+
+.ant-modal-body {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.ant-modal-footer {
+    margin-left: 20px;
+    padding-left: 0px;
+    margin-right: 20px;
+    padding-right: 0px;
+}
+
+.ant-modal-close {
+    top: 5px;
+}

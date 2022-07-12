@@ -1,0 +1,116 @@
+{	
+	"echantillon": {
+		"name": {
+			"title": "Echantillon"
+		},
+		"list": {
+			"title": "Recherche echantillon"
+		},
+		"edit": {
+			"title": "Editer echantillon"
+		},
+		"add": {
+			"title": "Ajouter echantillon"
+		},
+		"view": {
+			"title": "Consulter echantillon"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations echantillon"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"datePrelev": {
+			"label": "DatePrelev"
+		},
+		"datePrelevFrom": {
+			"label": "DatePrelev entre"
+		},
+		"datePrelevTo": {
+			"label": "Et"
+		},
+		"datePec": {
+			"label": "DatePec"
+		},
+		"datePecFrom": {
+			"label": "DatePec entre"
+		},
+		"datePecTo": {
+			"label": "Et"
+		},
+		"dateSaisie": {
+			"label": "DateSaisie"
+		},
+		"dateSaisieFrom": {
+			"label": "DateSaisie entre"
+		},
+		"dateSaisieTo": {
+			"label": "Et"
+		},
+		"statutEchantillon": {
+			"label": "StatutEchantillon"
+		},
+		"dateEnvoi": {
+			"label": "DateEnvoi"
+		},
+		"dateEnvoiFrom": {
+			"label": "DateEnvoi entre"
+		},
+		"dateEnvoiTo": {
+			"label": "Et"
+		},
+		"dateReception": {
+			"label": "DateReception"
+		},
+		"dateReceptionFrom": {
+			"label": "DateReception entre"
+		},
+		"dateReceptionTo": {
+			"label": "Et"
+		},
+		"instrPrelev": {
+			"label": "InstrPrelev"
+		},
+		"nombreEchantillon": {
+			"label": "NombreEchantillon"
+		},
+		"commentaire": {
+			"label": "Commentaire"
+		},
+		"dateAnnulation": {
+			"label": "DateAnnulation"
+		},
+		"dateAnnulationFrom": {
+			"label": "DateAnnulation entre"
+		},
+		"dateAnnulationTo": {
+			"label": "Et"
+		},
+		"methodeanalyse": {
+			"label": "Methodeanalyse"
+		},
+		"destination": {
+			"label": "Destination"
+		},
+		"typeEchantilon": {
+			"label": "TypeEchantilon"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		},
+		"dossier": {
+			"label": "Dossier"
+		},
+		"pecPar": {
+			"label": "User"
+		},
+		"preleveur": {
+			"label": "User"
+		}
+	}
+
+}

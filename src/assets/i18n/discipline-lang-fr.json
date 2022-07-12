@@ -1,0 +1,74 @@
+{
+    "discipline": {
+        "name": {
+            "title": "Discipline"
+        },
+        "list": {
+            "title": "Recherche discipline"
+        },
+        "edit": {
+            "title": "Editer discipline"
+        },
+        "add": {
+            "title": "Ajouter discipline"
+        },
+        "view": {
+            "title": "Consulter discipline"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations discipline"
+        },
+        "intituleP": {
+            "label": "intituleP"
+        },
+        "intituleV": {
+            "label": "intituleV"
+        },
+        "intituleCR": {
+            "label": "intituleCR"
+        },
+        "intituleCRHtml": {
+            "label": "intituleCRHtml"
+        },
+        "ordreP": {
+            "label": "OrdreP"
+        },
+        "ordreCR": {
+            "label": "OrdreCR"
+        },
+        "ordreV": {
+            "label": "OrdreV"
+        },
+        "pageBreakBeforeCr": {
+            "label": "PageBreakBeforeCr"
+        },
+        "marginTop": {
+            "label": "MarginTop"
+        },
+        "marginBottom": {
+            "label": "MarginBottom"
+        },
+        "marginLeft": {
+            "label": "MarginLeft"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "descriptionCR": {
+            "label": "DescriptionCR"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    }
+
+}

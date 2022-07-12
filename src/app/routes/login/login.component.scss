@@ -1,0 +1,268 @@
+@import "../../shared/styles/enova-theme/variables.scss";
+#main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: normal;
+    background-size: cover !important;
+    font-family: 'Poppins';
+    height: 100vh;
+}
+
+.login-content {
+    // box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    padding: 20px 56px;
+    background: #fff;
+    min-width: 37%;
+    border-radius: 0px;
+    overflow-x: auto;
+    // transform: translateX(-42%);
+}
+
+
+
+.login-header {
+    padding: 110px 0 50px 0px;
+    .title {
+        font-size: $eno-typo-size-4;
+        color: $eno-primaire;
+        margin-bottom: 12px;
+    }
+    .small-title {
+        font-size: $eno-typo-size-0;
+        color: $eno-secondaire;
+    }
+}
+
+.submit-login-btn {
+    height: 3.1875rem;
+    box-shadow: none;
+}
+
+.label-form {
+    font-size: $eno-typo-size-0;
+    color: $eno-secondaire;
+}
+
+
+.form-control {
+    border: 1px solid #ccd0d4;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.input-lg {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 1.3333333;
+    border-radius: 3px;
+}
+
+.m-b-15 {
+    margin-bottom: 15px;
+}
+
+.m-b-30 {
+    margin-bottom: 30px;
+}
+
+.p-b-40 {
+    padding-bottom: 40px;
+}
+
+.m-b-40 {
+    margin-bottom: 40px;
+}
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #000;
+    height: fit-content;
+    border-top: 1px solid #e4eaec;
+    z-index: 109;
+    >p {
+        margin: 0;
+    }
+    background: #ffffffde;
+}
+
+.login-button {
+    padding-top: 10px;
+    .btn {
+        font-size: $eno-typo-size-1
+    }
+}
+
+.group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.login-input {
+    font-size: $eno-typo-size-0;
+    padding: 10px 10px 10px 5px !important;
+    display: block;
+    width: 100%;
+    border: 1px solid $eno-principale-color !important;
+    background: transparent;
+    border-radius: 5px;
+    height: 3.1875rem;
+    box-shadow: none;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+
+/* BOTTOM BARS ================================= */
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before,
+.bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264ae;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.field-icon {
+    float: right;
+    margin-top: -34px;
+    position: relative;
+    font-size: 1.4em;
+    z-index: 2;
+    cursor: pointer;
+    left: -12px;
+    top: -2px;
+}
+
+
+/* active state */
+
+input:focus~.bar:before,
+input:focus~.bar:after,
+
+/* active state */
+
+select:focus~.bar:before,
+select:focus~.bar:after {
+    width: 50%;
+}
+
+
+/* HIGHLIGHTER ================================== */
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+/** parti mobile ***/
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* CSS */
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+    .login-content {
+        min-width: 45%;
+        // transform: translateX(-42%);
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS */
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* CSS */
+    .login-content {
+        min-width: 48%;
+        // transform: translateX(-42%);
+    }
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* CSS */
+    .img-logo-login {
+        text-align: center;
+    }
+    .login-content {
+        min-width: 100%;
+        // transform: translateX(-42%);
+    }
+}

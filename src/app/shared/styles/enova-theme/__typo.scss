@@ -1,0 +1,200 @@
+/* ========================================================================
+     Component: typo
+ ========================================================================== */
+
+
+/*
+@font-face{
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('~source-sans-pro/WOFF2/TTF/SourceSansPro-Light.ttf.woff2') format('woff2'),
+         url('~source-sans-pro/WOFF/OTF/SourceSansPro-Light.otf.woff') format('woff'),
+         url('~source-sans-pro/OTF/SourceSansPro-Light.otf') format('opentype'),
+         url('~source-sans-pro/TTF/SourceSansPro-Light.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('~source-sans-pro/WOFF2/TTF/SourceSansPro-Regular.ttf.woff2') format('woff2'),
+         url('~source-sans-pro/WOFF/OTF/SourceSansPro-Regular.otf.woff') format('woff'),
+         url('~source-sans-pro/OTF/SourceSansPro-Regular.otf') format('opentype'),
+         url('~source-sans-pro/TTF/SourceSansPro-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('~source-sans-pro/WOFF2/TTF/SourceSansPro-It.ttf.woff2') format('woff2'),
+         url('~source-sans-pro/WOFF/OTF/SourceSansPro-It.otf.woff') format('woff'),
+         url('~source-sans-pro/OTF/SourceSansPro-It.otf') format('opentype'),
+         url('~source-sans-pro/TTF/SourceSansPro-It.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('~source-sans-pro/WOFF2/TTF/SourceSansPro-Semibold.ttf.woff2') format('woff2'),
+         url('~source-sans-pro/WOFF/OTF/SourceSansPro-Semibold.otf.woff') format('woff'),
+         url('~source-sans-pro/OTF/SourceSansPro-Semibold.otf') format('opentype'),
+         url('~source-sans-pro/TTF/SourceSansPro-Semibold.ttf') format('truetype');
+}url('~assets/enova-theme/typo/Poppins/Poppins-Regular.woff2') format('woff2'),
+*/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('~assets/enova-theme/typo/Poppins/Poppins-Regular.ttf') format('ttf'), url('~assets/enova-theme/typo/Poppins/Poppins-Light.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('~assets/enova-theme/typo/roboto/regular/roboto-regular-webfont.woff2') format('woff2'), url('~assets/enova-theme/typo/roboto/regular/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('~assets/enova-theme/typo/roboto/medium/roboto-medium-webfont.woff2') format('woff2'), url('~assets/enova-theme/typo/roboto/medium/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('~assets/enova-theme/typo/roboto/bold/roboto-bold-webfont.woff2') format('woff2'), url('~assets/enova-theme/typo/roboto/bold/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'barlow_semi_condensedsemibold';
+    src: url('~assets/enova-theme/typo/barlow/semibold/barlowsemicondensed-semibold-webfont.woff2') format('woff2'), url('~assets/enova-theme/typo/barlow/semibold/barlowsemicondensed-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'barlow_semi_condensedblack';
+    src: url('~assets/enova-theme/typo/barlow/semi_condensedblack/barlowsemicondensed-black-webfont.woff2') format('woff2'), url('~assets/enova-theme/typo/barlow/semi_condensedblack/barlowsemicondensed-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('~assets/enova-theme/typo/barlow/regular/barlowsemicondensed-regular-webfont.woff2') format('woff2'), url('~assets/enova-theme/typo/barlow/regular/barlowsemicondensed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: $body-color;
+    font-size: $eno-typo-size-0; // 14px
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-bottom: 0.65625rem;
+}
+
+h1,
+.h1 {
+    font-size: 2.25rem; // 36px
+}
+
+h2,
+.h2 {
+    font-size: 1.875rem; // 30px
+}
+
+h3,
+.h3 {
+    font-size: 1.5rem; // 24px
+}
+
+h4,
+.h4 {
+    font-size: 1.125rem; // 18px
+}
+
+h5,
+.h5 {
+    font-size: .875rem;
+}
+
+h6,
+.h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin-bottom: .65rem; // ~10px
+}
+
+
+/* enova style : Typography size */
+
+.eno-typo-size--3 {
+    font-size: $eno-typo-size--3
+}
+
+.eno-typo-size--2 {
+    font-size: $eno-typo-size--2
+}
+
+.eno-typo-size--1 {
+    font-size: $eno-typo-size--1
+}
+
+.eno-typo-size-0 {
+    font-size: $eno-typo-size-0
+}
+
+.eno-typo-size-1 {
+    font-size: $eno-typo-size-1
+}
+
+.eno-typo-size-2 {
+    font-size: $eno-typo-size-2
+}
+
+.eno-typo-size-3 {
+    font-size: $eno-typo-size-3
+}
+
+.eno-typo-size-4 {
+    font-size: $eno-typo-size-4
+}
+
+.eno-typo-size-5 {
+    font-size: $eno-typo-size-5
+}
+
+
+/* end  */

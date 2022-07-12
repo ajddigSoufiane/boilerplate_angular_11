@@ -1,0 +1,44 @@
+{
+    "specliate": {
+        "name": {
+            "title": "Specliate"
+        },
+        "list": {
+            "title": "Recherche specliate"
+        },
+        "edit": {
+            "title": "Editer specliate"
+        },
+        "add": {
+            "title": "Ajouter specliate"
+        },
+        "view": {
+            "title": "Consulter specliate"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations specliate"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    }
+
+}

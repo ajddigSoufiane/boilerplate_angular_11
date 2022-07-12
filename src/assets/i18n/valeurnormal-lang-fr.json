@@ -1,0 +1,83 @@
+{	
+	"valeurnormal": {
+		"name": {
+			"title": "Valeurnormal"
+		},
+		"list": {
+			"title": "Recherche valeurnormal"
+		},
+		"edit": {
+			"title": "Editer valeurnormal"
+		},
+		"add": {
+			"title": "Ajouter valeurnormal"
+		},
+		"view": {
+			"title": "Consulter valeurnormal"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations valeurnormal"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"sex": {
+			"label": "Sex"
+		},
+		"ageMin": {
+			"label": "AgeMin"
+		},
+		"ageMax": {
+			"label": "AgeMax"
+		},
+		"uniteage": {
+			"label": "Uniteage"
+		},
+		"refBas": {
+			"label": "RefBas"
+		},
+		"refHaut": {
+			"label": "RefHaut"
+		},
+		"bornesBas": {
+			"label": "BornesBas"
+		},
+		"bornesHaut": {
+			"label": "BornesHaut"
+		},
+		"dseuil": {
+			"label": "Dseuil"
+		},
+		"dabs": {
+			"label": "Dabs"
+		},
+		"dvalue": {
+			"label": "Dvalue"
+		},
+		"djours": {
+			"label": "Djours"
+		},
+		"lameInf": {
+			"label": "LameInf"
+		},
+		"lameSup": {
+			"label": "LameSup"
+		},
+		"pardefaut": {
+			"label": "Pardefaut"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"hl7": {
+			"label": "Hl7"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}

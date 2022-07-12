@@ -1,0 +1,68 @@
+{
+    "service": {
+        "name": {
+            "title": "Service"
+        },
+        "list": {
+            "title": "Recherche service"
+        },
+        "edit": {
+            "title": "Editer service"
+        },
+        "add": {
+            "title": "Ajouter service"
+        },
+        "view": {
+            "title": "Consulter service"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations service"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "intituleHtml": {
+            "label": "intituleHtml"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "telephone": {
+            "label": "Téléphone"
+        },
+        "adresse": {
+            "label": "Adresse"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "etablissement": {
+            "label": "Etablissement"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        },
+        "codeSIH": {
+            "label": "Code SIH"
+        },
+        "nom": {
+            "label": "Nom"
+        },
+        "hopital": {
+            "label": "Hôpital"
+        },
+        "default": {
+            "label": "Par défaut"
+        }
+    }
+
+}

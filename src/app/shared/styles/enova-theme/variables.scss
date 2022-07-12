@@ -1,0 +1,229 @@
+/* enova style : Typography size */
+
+
+/* Couleur texte primaire*/
+
+$eno-primaire: #0A1217;
+
+/* Couleur texte secondaire */
+
+$eno-secondaire: #828282;
+
+/* Couleur primaire principale */
+
+$eno-principale-color :#005792;
+
+/* Couleur secondaire */
+
+$eno-secondaire-color: #F5FDFF;
+
+/* Arrière plan du menu vertical*/
+
+$eno-vertical :#FCFCFC;
+
+/* Cutoms purple colors for theme*/
+
+// $eno-primaire: #0F0832;
+$eno-purple-2: #2E1E7D;
+$eno-purple-3: #423B9E;
+$eno-purple-4: #8184CB;
+$eno-purple-5: #E9E7FC;
+// Cutoms GRAY colors for theme 
+$eno-gray-1: #08080A;
+$eno-gray-2: #19191D;
+$eno-gray-3: #39393D;
+$eno-gray-4: #57575C;
+$eno-gray-6: #939398;
+$eno-gray-7: #B3B3B8;
+$eno-gray-8: #D7D7DC;
+$eno-gray-9: #E7E7ED;
+// $eno-secondaire-color: #F1F1F7;
+$eno-gray-11: #FCFCFF;
+// Cutoms TAG BLUE colors for theme
+$eno-blue-primary-0: #2A5A9D;
+$eno-blue-1: #2A5A9D;
+$eno-blue-2: #397BC1;
+$eno-blue-3: #5498D4;
+$eno-blue-4: #93C1E6;
+$eno-blue-5: #BBD9F0;
+$eno-blue-6: #E3F0F8;
+// Cutoms TAG purple light colors for theme
+$eno-purple-light-primary-0: #5D1E7D;
+$eno-purple-light-1: #42166C;
+$eno-purple-light-2: #5D1E7D;
+$eno-purple-light-3: #7E288F;
+$eno-purple-light-4: #9B47A4;
+$eno-purple-light-5: #C490C9;
+$eno-purple-light-6: #F0E4F1;
+// Cutoms TAG purple lighter colors for theme
+$eno-purple-lighter-primary-0: #7D1E6D;
+$eno-purple-lighter-1: #7D1E6D;
+$eno-purple-lighter-2: #BB2283;
+$eno-purple-lighter-3: #E52192;
+$eno-purple-lighter-4: #E469BB;
+$eno-purple-lighter-5: #EFBEE1;
+$eno-purple-lighter-6: #F8E5F3;
+// Cutoms TAG green colors for theme
+$eno-green-primary-0: #83A431;
+$eno-green-1: #83A431;
+$eno-green-2: #8FBC3B;
+$eno-green-3: #A6E54E;
+$eno-green-4: #BEEE82;
+$eno-green-5: #E2F7C9;
+$eno-green-6: #F3FCE9;
+// Cutoms  green colors for feedback
+$eno-green-feedback-primary-0: #2B8983;
+// Cutoms  yallow colors for feedback
+$eno-yallow-feedback-primary-0: #903911;
+// Cutoms  RED colors for feedback
+$eno-red-feedback-primary-0: #A01B53;
+// Cutoms  blue colors for feedback
+$eno-blue-feedback-primary-0: #204496;
+$eno-blue-feedback-second-0: #4ea1ec;
+
+/* Typography size */
+
+$eno-typo-size--3: 0.512rem;
+$eno-typo-size--2: 0.64rem;
+$eno-typo-size--1: 0.8rem;
+$eno-typo-size-0: 1rem;
+$eno-typo-size-1: 1.25rem;
+$eno-typo-size-2: 1.563rem;
+$eno-typo-size-3: 1.953rem;
+$eno-typo-size-4: 2.441rem;
+$eno-typo-size-5: 3.052rem;
+
+/* end enova style */
+
+// Cutoms Gray colors for theme
+$gray-darker: #232735;
+$gray-dark: #1A114A;
+$gray: #dde6e9;
+$gray-light: #e4eaec;
+$gray-lighter: #edf1f2;
+// Cutoms Gray colors for theme
+$gray-darker: #232735;
+$gray-dark: #1A114A;
+$gray: #dde6e9;
+$gray-light: #e4eaec;
+$gray-lighter: #edf1f2;
+// Custom brand colors for theme
+$inverse: #131e26;
+$purple: #2c1d7c;
+$pink: #f532e5;
+$yellow: #fad732;
+$green: #37bc9b;
+$primary: #5d9cec;
+$secondary: #fff;
+$success: #27c24c;
+$info: #1991ff;
+$warning: #ff902b;
+$danger: #f05050;
+$dark: #1A114A;
+// Custom color variants
+$amountOfLight: 10%;
+$primary-light: lighten($primary, $amountOfLight);
+$success-light: lighten($success, $amountOfLight);
+$info-light: lighten($info, $amountOfLight);
+$warning-light: lighten($warning, $amountOfLight);
+$danger-light: lighten($danger, $amountOfLight);
+$inverse-light: lighten($inverse, $amountOfLight);
+$green-light: lighten($green, $amountOfLight);
+$pink-light: lighten($pink, $amountOfLight);
+$purple-light: lighten($purple, $amountOfLight);
+$yellow-light: lighten($yellow, $amountOfLight);
+$primary-dark: darken($primary, $amountOfLight);
+$success-dark: darken($success, $amountOfLight);
+$info-dark: darken($info, $amountOfLight);
+$warning-dark: darken($warning, $amountOfLight);
+$danger-dark: darken($danger, $amountOfLight);
+$inverse-dark: darken($inverse, $amountOfLight);
+$green-dark: darken($green, $amountOfLight);
+$pink-dark: darken($pink, $amountOfLight);
+$purple-dark: darken($purple, $amountOfLight);
+$yellow-dark: darken($yellow, $amountOfLight);
+// Theme variables
+// used for sidebars and content spacing
+$navbar-height: 55px;
+// Button secondary redefinition style for theme
+$btn-secondary-color: #333;
+$btn-secondary-bg: #fff;
+$btn-secondary-border: $eno-principale-color;
+// Top Border color for custom default cards (.card-default)
+$card-default-border-color: #cfdbe2;
+// ---------------------
+// Utilities variables
+// ---------------------
+$text-alpha: rgba(255, 255, 255, .5);
+$text-alpha-inverse: rgba(0, 0, 0, .5);
+$font-size-base: 1rem;
+$text-sm: $font-size-base * 0.74375;
+$text-md: $font-size-base * 1.6625;
+$text-lg: $font-size-base * 2.625;
+$border-color: rgba(0, 0, 0, .12);
+$wd-xxs: 60px;
+$wd-xs: 90px;
+$wd-sm: 150px;
+$wd-sd: 200px; // sd == standard
+$wd-md: 240px;
+$wd-lg: 280px;
+$wd-xl: 320px;
+$wd-xxl: 360px;
+$wd-wide: 100%;
+$wd-auto: auto;
+$wd-zero: 0;
+// ---------------------
+// Bootstrap 4 Variables Override
+// ---------------------
+// Color system
+$colors: ( "purple": $purple, "pink": $pink, "yellow": $yellow, "green": $green, "primary": $primary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, 'inverse': $inverse, 'primary-light': $primary-light, 'primary-dark': $primary-dark, 'success-light': $success-light, 'success-dark': $success-dark, 'info-light': $info-light, 'info-dark': $info-dark, 'warning-light': $warning-light, 'warning-dark': $warning-dark, 'danger-light': $danger-light, 'danger-dark': $danger-dark, 'green-light': $green-light, 'green-dark': $green-dark, 'pink-light': $pink-light, 'pink-dark': $pink-dark, 'purple-light': $purple-light, 'purple-dark': $purple-dark, 'inverse-light': $inverse-light, 'inverse-dark': $inverse-dark, 'yellow-light': $yellow-light, 'yellow-dark': $yellow-dark, );
+$theme-colors: ( "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger);
+// Body
+$body-bg: $eno-vertical;
+$body-color: $eno-gray-1;
+$border-radius: .25rem;
+$border-radius-lg: .375rem;
+$line-height-base: 1.528571429;
+$headings-line-height: 1.1;
+$text-muted: #909FA7;
+// Tables
+$table-accent-bg: #fafbfc;
+$table-hover-bg: #fafbfc;
+$table-border-color: #eee;
+// Buttons + Forms
+$input-btn-padding-y: .375rem;
+$input-btn-padding-x: 1rem;
+$input-btn-padding-y-sm: .3125rem;
+$input-btn-padding-x-sm: .625rem;
+$input-btn-padding-y-lg: .625rem;
+$input-btn-padding-x-lg: 1.25rem;
+$input-height: 2.75rem; // 35px
+// Forms
+$input-disabled-bg: $gray-lighter;
+$input-border-color: $gray;
+$input-focus-border-color: #66afe9;
+$input-placeholder-color: #b7bac9;
+$form-feedback-icon-valid: none;
+$form-feedback-icon-invalid: none;
+// Dropdowns
+$dropdown-border-color: #e1e1e1;
+// Navs
+$nav-tabs-link-active-bg: #fff;
+// Jumbotron
+$jumbotron-bg: #fcfcfc;
+// List group
+$list-group-border-color: #e4eaec;
+// Image thumbnails
+$thumbnail-padding: .125rem;
+// Breadcrumbs
+$breadcrumb-bg: #fafafa;
+$breadcrumb-divider-color: #c1c2c3;
+$breadcrumb-active-color: $body-color;
+//
+$border-radius: 0.125rem;
+$font-weight-400: 400;
+$font-weight-600: 600;
+//table
+$tr-height: 3.75rem;
+// shdow form
+$box-shadow: 0px 1px 3px rgb(0 0 0 / 15%);

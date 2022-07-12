@@ -1,0 +1,52 @@
+.ant-collapse {
+    color: rgba(0, 0, 0, 0.85);
+    background-color: $eno-vertical;
+    border: 1px solid $eno-vertical;
+}
+
+.ant-collapse>.ant-collapse-item {
+    border-bottom: 1px solid $eno-vertical;
+}
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header {
+    color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+}
+
+.ant-collapse-content {
+    color: rgba(0, 0, 0, 0.85);
+    background-color: $eno-secondaire-color;
+    border-top: 1px solid $eno-vertical;
+    box-shadow: 0px 0px 3px rgb(0 0 0 / 20%);
+}
+
+.ant-collapse-borderless {
+    background-color: #fafafa;
+}
+
+.ant-collapse-borderless>.ant-collapse-item {
+    border-bottom: 1px solid $eno-vertical;
+}
+
+.ant-collapse-borderless>.ant-collapse-item>.ant-collapse-content {
+    background-color: transparent;
+}
+
+.ant-collapse-ghost {
+    background-color: transparent;
+}
+
+.ant-collapse-ghost>.ant-collapse-item>.ant-collapse-content {
+    background-color: transparent;
+}
+
+.ant-collapse .ant-collapse-item-disabled>.ant-collapse-header,
+.ant-collapse .ant-collapse-item-disabled>.ant-collapse-header>.arrow {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.collapse-disable {
+    padding: 12px;
+    border: 1px solid #d7d7dc;
+    box-shadow: 0px 0px 1px rgb(0 0 0 / 25%);
+}

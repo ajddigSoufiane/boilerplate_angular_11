@@ -1,0 +1,145 @@
+<div>
+    <div class="pb-3">
+        <label class="
+        font-weight-bold
+        col-form-label col-form-label-form
+        input-label-style
+      ">
+      Create nouvel list
+    </label>
+
+        <span class="eno-btn-line float-right" *ngIf="!readOnly" (click)="addRow()">
+      <div class="text-left status">
+        <span>
+          {{ "common.command.add" | translate }}
+        </span>
+    </div>
+    </span>
+    <span class="eno-btn-line float-right mr-2" nz-popconfirm nzPopconfirmPlacement="topLeft" [nzPopconfirmTitle]="'common.message.confirm.deleteAll' | translate" nzOkText="Oui" nzCancelText="Non" (nzOnConfirm)="deletAllRow()" *ngIf="
+        !readOnly &&
+        utilisateurList &&
+        utilisateurList.length > 0 &&
+        hasSelectElement('utilisateurList')
+      ">
+      <div class="text-left status delete-btn">
+        <span>
+          {{ "common.command.delete" | translate }}
+        </span>
+</div>
+</span>
+</div>
+
+<div>
+    <div class="table-responsive modal-resulta enoLight">
+        <ng-template #dataSize>
+            <span class="mr-2">
+          {{ total }} {{ "common.label.totalRow" | translate }}
+        </span>
+        </ng-template>
+        <nz-table #basicTable [nzSize]="'middle'" class="label-style" [ngClass]="{ 'table-form': !readOnly }" [nzSize]="'middle'" nzBordered nzShowSizeChanger [nzShowTotal]="dataSize" [nzLoading]="loading" [nzPageSize]="10" [nzData]="utilisateurList" [nzPageSizeOptions]="[10, 50, 100]">
+            <thead>
+                <tr>
+                    <th *ngIf="!readOnly" class="text-center" style="width: 5%" [nzChecked]="isCheckAll(basicTable.data)" (nzCheckedChange)="selectOrDeselectAll($event, basicTable.data)" nzShowCheckbox></th>
+                    <th class="column">
+                        {{ "utilisateur.code.label" | translateUtilisateur }}
+                    </th>
+                    <th class="column">
+                        {{ "utilisateur.nom.label" | translateUtilisateur }}
+                    </th>
+                    <th class="column">
+                      {{ "utilisateur.specialite.label" | translateUtilisateur }}
+                  </th>
+                  <th class="column">
+                    {{ "utilisateur.activeSih.label" | translateUtilisateur }}
+                </th>
+                <th class="column">
+                  {{ "utilisateur.activeValab.label" | translateUtilisateur }}
+              </th>
+                    <th nzRight="0px" class="pl-3 pr-3 ant-action column" *ngIf="!readOnly">
+                        {{ "common.label.actions" | translate }}
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let item of basicTable.data; let indx = index">
+                    <tr>
+                        <td *ngIf="!readOnly" class="text-center" nzShowCheckbox [(nzChecked)]="item.selectedObject"></td>
+                        <td>
+                            <ng-container *ngIf="!editCache[item.id_].edit; else codeInputTpl">
+                                {{ item.code }}
+                            </ng-container>
+                            <ng-template #codeInputTpl>
+                                <input type="text" class="form-control input-value-style" nz-input [(ngModel)]="editCache[item.id_].data.code" />
+                            </ng-template>
+                        </td>
+                        <td>
+                            <ng-container *ngIf="!editCache[item.id_].edit; else libelleInputTpl">
+                                {{ item.libelle }}
+                            </ng-container>
+                            <ng-template #libelleInputTpl>
+                                <input type="text" nz-input class="form-control input-value-style" [(ngModel)]="editCache[item.id_].data.libelle" />
+                            </ng-template>
+                        </td>
+                        <td *ngIf="!readOnly">
+                            <div class="editable-row-operations">
+                                <ng-container *ngIf="!editCache[item.id_].edit; else saveTpl">
+                                    <!-- <a (click)="startEdit(item.id_)"> {{ "common.command.edit" | translate }}</a> -->
+                                    <!-- <span class="eno-btn-line ">
+                      <div class="text-left status" (click)="startEdit(item.id_)">
+                        <span>
+                          {{ "common.command.edit" | translate }}
+                        </span>
+                      </div>
+                    </span> -->
+                                    <i nz-icon nzType="ellipsis" nzTheme="outline" nz-dropdown [nzDropdownMenu]="menuAction_" [nzPlacement]="'bottomCenter'"></i>
+                                    <nz-dropdown-menu #menuAction_="nzDropdownMenu">
+                                        <ul nz-menu>
+                                            <!-- <li nz-menu-item (click)="viewUtilisateur(item)">{{ 'common.command.visualiser' | translate }}</li> -->
+                                            <li nz-menu-item (click)="startEdit(item.id_)">
+                                                {{ "common.command.edit" | translate }}
+                                            </li>
+                                        </ul>
+                                    </nz-dropdown-menu>
+                                </ng-container>
+                                <ng-template #saveTpl>
+                                    <!-- <a (click)="saveEdit(item.id_)"> {{ "common.command.save" | translate }}</a> -->
+                                    <span class="eno-btn-line">
+                      <div
+                        class="text-left status mr-1"
+                        (click)="saveEdit(item.id_)"
+                      >
+                        <span>
+                          {{ "common.command.save" | translate }}
+                        </span>
+                            </div>
+                            </span>
+                            <span class="eno-btn-line">
+                      <div
+                        class="text-left status"
+                        nz-popconfirm
+                        nzPopconfirmPlacement="topLeft"
+                        [nzPopconfirmTitle]="
+                          'common.message.confirm.annuler' | translate
+                        "
+                        nzOkText="Oui"
+                        nzCancelText="Non"
+                        (nzOnConfirm)="cancelEdit(item.id_)"
+                        [nzIcon]="null"
+                      >
+                        <span>
+                          {{ "common.command.cancel" | translate }}
+                        </span>
+    </div>
+    </span>
+    </ng-template>
+</div>
+</td>
+</tr>
+</ng-container>
+</tbody>
+</nz-table>
+</div>
+</div>
+
+<!-- END card-->
+</div>

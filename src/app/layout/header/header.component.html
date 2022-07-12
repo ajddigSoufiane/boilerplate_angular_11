@@ -1,0 +1,161 @@
+<nz-layout>
+    <nz-content>
+        <ng-container *ngTemplateOutlet="content_logo"></ng-container>
+        <ng-container *ngIf="!parent.isMobileDevice()">
+            <ul nz-menu nzMode="horizontal" class="header-menu">
+                <!-- <li nz-menu-item routerLink='/boileplate/acceuil' [nzMatchRouter]="false" [nzSelected]="isSelectedUrl('/acceuil')">Acceuil</li> -->
+                <li nz-menu-item routerLink='/boileplate' [nzMatchRouter]="false" [nzSelected]="isSelectedUrl('/boileplate')">Mon Espace</li>
+                <li *ngIf="currentUser?.employe?.manager == true" nz-menu-item routerLink='/boileplate/espace_manager/demande_entrante/redirect' [nzMatchRouter]="false" [nzSelected]="isSelectedUrl('/espace_manager')">Espace Responsable</li>
+                <li *ngIf="hasCategorieRole('REFERENTIEL')" nz-menu-item routerLink='/referentiel' [nzMatchRouter]="false" [nzSelected]="isSelectedUrl('/referentiel')">Référentiel</li>
+            </ul>
+        </ng-container>
+        <ng-container *ngIf="parent.isMobileDevice()">
+            <i *ngIf="!parent.isCollapsed" class="parametrage float-left" nz-icon nzType="menu-unfold" (click)="this.isCollapsedToggel()"></i>
+            <i *ngIf="parent.isCollapsed" class="parametrage float-left" nz-icon nzType="menu-fold" (click)="this.isCollapsedToggel()"></i>
+
+        </ng-container>
+    </nz-content>
+
+    <nz-sider nzWidth="200px">
+        <i class="parametrage login_" nz-icon nzType="logout" style="cursor: pointer; " (click)="logout()"></i>
+        <i class="parametrage" nz-icon nzType="user" style="cursor: pointer; " nz-dropdown [nzPlacement]="'bottomRight'" [nzDropdownMenu]="menu" [nzTrigger]="'click'"></i>
+        <!-- <i class="parametrage" nz-icon nzType="bell" nz-dropdown [nzPlacement]="'bottomRight'" [nzDropdownMenu]="menuNotification" [nzTrigger]="'click'"></i> -->
+    </nz-sider>
+</nz-layout>
+
+
+
+
+<nz-dropdown-menu #menu="nzDropdownMenu">
+    <ul nz-menu nzSelectable>
+        <div class="h4  text-center border-bottom p-1">
+            <small class="text-muted"><b>{{ user?.nomComplet }}</b></small>
+        </div>
+        <li *ngIf="currentUser?.employe?.manager == true || hasRole('ROLE_READ_UTILISATEUR') || hasRole('ROLE_READ_PROFIL')" routerLink='/administration' nz-menu-item><i nz-icon nzType="user"></i>Administration</li>
+        <li *ngIf="hasRole('ROLE_CHANGE_PASSWORD_UTILISATEUR')" (click)="isUpdatePasswordVisible=!isUpdatePasswordVisible" nz-menu-item><i nz-icon nzType="lock"></i>Changer mon mot de passe</li>
+        <!-- <li (click)="linkAdmin()" nz-menu-item><i nz-icon nzType="setting"></i>{{'menu.administration.title'| translate}}</li> -->
+    </ul>
+</nz-dropdown-menu>
+<nz-dropdown-menu #menuNotification="nzDropdownMenu">
+    <ul nz-menu nzSelectable>
+        <div class="h4  text-center border-bottom p-1">
+            <strong class="p-2"> notifications </strong>
+        </div>
+        <li nz-menu-item><i nz-icon nzType="lock"></i>notification 1</li>
+        <li nz-menu-item><i nz-icon nzType="setting"></i>notification 2</li>
+    </ul>
+</nz-dropdown-menu>
+
+<!-- 
+<ng-container *ngIf="!parent.isMobileDevice()">
+    <i *ngIf="!parent.isCollapsed" class="trigger collapse-menu fal fa-outdent eno-purple-primary-0" (click)="this.isCollapsedToggel()"></i>
+    <i *ngIf="parent.isCollapsed" class="trigger collapse-menu-inverst fal fa-indent eno-purple-primary-0" (click)="this.isCollapsedToggel()"></i>
+    <app-bread-crumb class="d-inline-block w-50"></app-bread-crumb>
+</ng-container>
+<ng-container *ngIf="parent.isMobileDevice()">
+    <ng-container *ngTemplateOutlet="content_logo"></ng-container>
+    <i style="    top: -10px;
+    position: relative;" *ngIf="!parent.isCollapsed" class="trigger collapse-menu fal fa-outdent eno-purple-primary-0" (click)="this.isCollapsedToggel()"></i>
+    <i style="    top: -10px;
+    position: relative;" *ngIf="parent.isCollapsed" class="trigger collapse-menu-inverst fal fa-indent eno-purple-primary-0" (click)="this.isCollapsedToggel()"></i>
+    <app-bread-crumb class="d-inline-block w-50" style="
+            position: relative;
+            bottom: 6px;
+        "></app-bread-crumb>
+</ng-container> -->
+
+<nz-modal [(nzVisible)]="isUpdatePasswordVisible" [nzMaskClosable]="false" (nzOnCancel)="isUpdatePasswordVisible=false" (nzOnOk)="updatePassword()" nzOkText="Changer" [nzOkDisabled]="updatePasswordForm?.invalid" [nzOkLoading]="isUpdatePasswordLoading"
+    nzTitle="Changer mon mot de passe">
+
+
+    <form nz-form [formGroup]="updatePasswordForm" (ngSubmit)="submitForm()">
+
+        <nz-form-item>
+            <nz-form-label [nzSm]="12" [nzXs]="24" nzFor="oldPassword" nzRequired>Mot de passe actuel</nz-form-label>
+            <nz-form-control [nzSm]="12" [nzXs]="24" nzErrorTip="Veuillez saisir votre mot de passe!">
+                <input nz-input type="password" id="oldPassword" formControlName="oldPassword" />
+            </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+            <nz-form-label [nzSm]="12" [nzXs]="24" nzFor="newPassword" nzRequired>Nouveau mot de passe</nz-form-label>
+            <nz-form-control [nzSm]="12" [nzXs]="24" nzErrorTip="Veuillez saisir votre nouveau mot de passe!">
+                <input nz-input type="password" id="newPassword" formControlName="newPassword" (ngModelChange)="updateConfirmValidator()" />
+            </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+            <nz-form-label [nzSm]="12" [nzXs]="24" nzFor="checkPassword" nzRequired>Confirmer mot de passe
+            </nz-form-label>
+            <nz-form-control [nzSm]="12" [nzXs]="24" [nzErrorTip]="errorTpl">
+                <input nz-input type="password" formControlName="checkPassword" id="checkPassword" />
+                <ng-template #errorTpl let-control>
+                    <ng-container *ngIf="control.hasError('required')">
+                        Veuillez confirmer votre mot de passe!
+                    </ng-container>
+                    <ng-container *ngIf="control.hasError('confirm')">
+                        Les deux mots de passe que vous saisissez sont incohérents!
+                    </ng-container>
+                </ng-template>
+            </nz-form-control>
+        </nz-form-item>
+
+
+    </form>
+
+
+</nz-modal>
+
+
+
+
+
+<!-- ------------------------------------------------ -->
+<!-- START Top Navbar old one-->
+
+
+<!--                   UNUSED                          -->
+<!-- ------------------------------------------------ -->
+
+
+
+<nav class="navbar topnavbar" role="navigation" *ngIf="false">
+    <!-- START navbar header-->
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/home">
+            <div class="brand-logo">
+                <img class="img-fluid" src="assets/img/logo.png" alt="App Logo" />
+            </div>
+            <div class="brand-logo-collapsed">
+                <img class="img-fluid" src="assets/img/logo6.png" alt="App Logo" />
+            </div>
+        </a>
+    </div>
+    <!-- END navbar header-->
+    <!-- START Left navbar-->
+
+    <ul class="navbar-nav mr-auto flex-row">
+
+
+        <li class="nav-item" id="colappsedoption">
+
+            <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
+            <a class="nav-link d-none d-md-block d-lg-block d-xl-block" trigger-resize="" (click)="toggleCollapsedSideabar()" *ngIf="!isCollapsedText()">
+                <em class="fas fa-bars"></em>
+            </a>
+            <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->
+            <a class="nav-link sidebar-toggle d-md-none" (click)="settings.toggleLayoutSetting('asideToggled'); $event.stopPropagation()">
+                <em class="fas fa-bars"></em>
+            </a>
+
+        </li>
+
+        <app-bread-crumb></app-bread-crumb>
+
+
+    </ul>
+    <!-- END Left navbar-->
+    <app-navsearch [visible]="getNavSearchVisible()" (onclose)="setNavSearchVisible(false)"></app-navsearch>
+
+</nav>
+<!-- END Top Navbar-->

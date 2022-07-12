@@ -1,0 +1,76 @@
+{
+    "typeConge": {
+        "name": {
+            "title": "Type conge"
+        },
+        "list": {
+            "title": "Recherche type conge"
+        },
+        "edit": {
+            "title": "Editer type conge"
+        },
+        "add": {
+            "title": "Ajouter type conge"
+        },
+        "view": {
+            "title": "Consulter type conge"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations type conge"
+        },
+        "nom": {
+            "label": "Nom"
+        },
+        "prenom": {
+            "label": "Prénom"
+        },
+        "username": {
+            "label": "Nom d'type conge"
+        },
+        "password": {
+            "label": "Mot de passe"
+        },
+        "enabled": {
+            "label": "Activer"
+        },
+        "resetPassword": {
+            "label": "Réinitialiser le mot de passe"
+        },
+        "oldPassword": {
+            "label": "Ancien mot de passe"
+        },
+        "newPassword": {
+            "label": "Nouveau mot de passe"
+        },
+        "personnel": {
+            "label": "Personnel"
+        },
+        "etablissement": {
+            "label": "Etablissement"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        },
+        "service": {
+            "label": "Service"
+        },
+        "matricule": {
+            "label": "Matricule"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "libelle": {
+            "label": "Libelle"
+        },
+        "actif": {
+            "label": "Actif"
+        },"hl7":{
+            "label":"hl7"
+        }
+    }
+
+}

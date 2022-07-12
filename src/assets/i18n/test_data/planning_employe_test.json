@@ -1,0 +1,21 @@
+{
+    "id": 11,
+    "label": "Bloc 1",
+    "createdOn": "13/09/2021 10:26",
+    "createdBy": "admin",
+    "libelle": "Bloc 1", 
+    "ordre": 4,
+    "actif": true, 
+    "cycleEmployesList": [{
+        "id": 61,
+        "label": "cycle employe 1",
+        "createdOn": "02/09/2021 13:11",
+        "updatedOn": "13/09/2021 10:26",
+        "createdBy": "admin",
+        "updatedBy": "admin",
+        "actif": true,
+        "code": "S1-PGM",
+        "libelle": "cycle employe 1",
+        "ordre": 4
+    }] 
+}

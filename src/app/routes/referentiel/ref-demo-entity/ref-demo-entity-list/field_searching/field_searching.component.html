@@ -1,0 +1,221 @@
+<!-- START form for searching -->
+<ng-template #form_search>
+    <div class="card card-default col-12 ">
+        <div class="title_search">
+            <span class="eno-gray-1 eno-typo-size-1 font-weight-600">{{ 'common.legend.search' | translate }}</span>
+
+        </div>
+
+        <form [formGroup]="refDemoEntityForm" (keydown.enter)="search.emit('')" (submit)="search.emit('')">
+            <!-- <div class="card-body bt"> -->
+
+            <div class="enoLight card-body ng-scope border-radius-style border-style box-shadow-style " [collapse]="collapsedInfo">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="form-group row  ">
+                            <label class="col-12 col-form-label font-weight-normal">{{
+                        'refDemoEntity.code.label' |
+                        translateRefDemoEntity }}</label>
+                            <div class="col-12">
+                                <ng-container *ngTemplateOutlet="code"></ng-container>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="form-group row ">
+                            <label class="col-12 col-form-label font-weight-normal">{{
+                        'refDemoEntity.libelle.label' |
+                        translateRefDemoEntity }}</label>
+                            <div class="col-12">
+                                <ng-container *ngTemplateOutlet="libelleLike"></ng-container>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="form-group row  ">
+                            <label class="col-12 col-form-label font-weight-normal">Actif</label>
+                            <div class="col-12  ">
+                                <!-- <select formControlName="actif" class="w-100 form-control ">
+                            <option value=''>{{ 'common.select.notset' | translate }}</option>
+                            <option [value]='true'>{{ 'common.text.yes' | translate }}</option>
+                            <option [value]='false'>{{ 'common.text.no' | translate }}</option>
+                        </select> -->
+
+                                <ng-container *ngTemplateOutlet="actif"></ng-container>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="form-group row  ">
+                            <label class="col-12 col-form-label font-weight-normal">HI7</label>
+                            <div class="col-12 select-input">
+
+                                <ng-container *ngTemplateOutlet="hl7"></ng-container>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div *ngIf="showMoreForm">
+                    <div class="row">
+
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group row  ">
+                                <label class="col-12 col-form-label font-weight-normal">Date</label>
+                                <div class="col-12 select-input">
+                                    <!-- nzFormat="dd/MM/yyyy HH:mm" [nzShowTime]="{ nzFormat: 'HH:mm' }" -->
+                                    <ng-container *ngTemplateOutlet="dateBetween; context: { $implicit: 'from' }"></ng-container>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group row  ">
+                                <label class="col-12 col-form-label font-weight-normal">Et</label>
+                                <div class="col-12 select-input">
+                                    <!-- nzFormat="dd/MM/yyyy HH:mm" [nzShowTime]="{ nzFormat: 'HH:mm' }" -->
+                                    <ng-container *ngTemplateOutlet="dateBetween; context: { $implicit: 'to' }"></ng-container>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group row ">
+                                <label class="col-12 col-form-label font-weight-normal">{{
+                            'refDemoEntity.list_.label' |
+                            translateRefDemoEntity }}</label>
+                                <div class="col-12">
+                                    <ng-container *ngTemplateOutlet="convention"></ng-container>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group row ">
+                                <label class="col-12 col-form-label font-weight-normal">{{
+                            'refDemoEntity.listMultiple_.label' |
+                            translateRefDemoEntity }}</label>
+                                <div class="col-12">
+                                    <ng-container *ngTemplateOutlet="convention_multip"></ng-container>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group row">
+                                <label class="col-12 col-form-label font-weight-normal">Checkbox</label>
+                                <div class="col-12 other-input-center">
+                                    <!-- [placeholder]="'patient.textarea.label' |  translateDemandeExterne" -->
+                                    <ng-container *ngTemplateOutlet="parametres"></ng-container>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- </div> -->
+
+            <div class="card-footer text-right enoLight d-flex justify-content-between align-items-center" [collapse]="collapsedInfo">
+                <div class="text-left" *ngIf="!showMoreForm" style="color: #0052CC;cursor:pointer">+ <span style="text-decoration: underline;font-size: 14.4px;" (click)="showMoreForm=!showMoreForm"> Plus des filtres</span></div>
+                <div class="text-left" *ngIf="showMoreForm" style="color: #0052CC;cursor:pointer">- <span style="text-decoration: underline;font-size: 14.4px;" (click)="showMoreForm=!showMoreForm"> Moins de filtres</span></div>
+                <div>
+                    <button class="btn ml-1 mr-2 button-secondary" type="button" (click)="reset.emit('')">
+                <i class="fal fa-undo mr-2"></i>
+                <span class="btn-title">{{ 'common.command.reset' | translate }}</span>
+            </button>
+                    <button class="btn btn-secondary ml-2 mr-2 button-primary" type="submit" [disabled]="!refDemoEntityForm.valid">
+                <i class="fal fa-search mr-2"></i>
+                <span class="btn-title">{{ 'common.command.search' | translate }}</span>
+            </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</ng-template>
+<!-- END form for searching -->
+
+<!-- all input of form -->
+<ng-template #convention_multip>
+    <div [formGroup]="refDemoEntityForm">
+        <nz-select [compareWith]="nzCompareSelectedByID" nzMode="multiple" nzPlaceHolder="convention tag" formControlName="convention_multip" nzShowSearch nzAllowClear class="w-100 form-control eno-typo-size-1" (nzOpenChange)="loadConventionList()">
+            <nz-option *ngFor="let item of conventionList" [nzLabel]="item.value" [nzValue]="item"></nz-option>
+        </nz-select>
+    </div>
+
+</ng-template>
+<ng-template #convention>
+    <div [formGroup]="refDemoEntityForm">
+        <nz-select [compareWith]="nzCompareSelectedByID" nzPlaceHolder="convention" formControlName="convention" nzShowSearch nzAllowClear class="w-100 form-control eno-typo-size-1" (nzOpenChange)="loadConventionList()">
+            <nz-option *ngFor="let item of conventionList" [nzLabel]="item.value" [nzValue]="item"></nz-option>
+        </nz-select>
+    </div>
+</ng-template>
+<ng-template #dateBetween let-mode>
+    <div [formGroup]="refDemoEntityForm">
+        <ng-container [ngSwitch]="mode">
+            <ng-container *ngSwitchCase="'from'">
+                <!-- <nz-range-picker formControlName="dateBetweenFrom"></nz-range-picker> -->
+                <nz-date-picker formControlName="dateBetweenFrom" [nzFormat]="nzDateConfig.dateTime" class="form-control eno-typo-size-1" nzShowTime></nz-date-picker>
+
+            </ng-container>
+            <ng-container *ngSwitchCase="'to'">
+                <!-- <nz-range-picker formControlName="dateBetweenTo"></nz-range-picker> -->
+                <nz-date-picker formControlName="dateBetweenTo" [nzFormat]="nzDateConfig.dateTime" class="form-control eno-typo-size-1" nzShowTime></nz-date-picker>
+
+            </ng-container>
+            <ng-container *ngSwitchCase="'two_input'">
+                <label class="font-weight-bold col-form-label  col-form-label-form input-label-style"> Date : </label>
+                <nz-date-picker formControlName="dateBetweenFrom" [nzFormat]="nzDateConfig.dateTime" class="form-control eno-typo-size-1" nzShowTime></nz-date-picker>
+                <label class="font-weight-bold col-form-label  col-form-label-form input-label-style"> Et : </label>
+                <nz-date-picker formControlName="dateBetweenTo" [nzFormat]="nzDateConfig.dateTime" class="form-control eno-typo-size-1" nzShowTime></nz-date-picker>
+            </ng-container>
+            <!-- 
+                if you  want show date in inline block see ng-zorro
+                 <nz-range-picker nzInline [(ngModel)]="rangeDate" (ngModelChange)="onChange($event)" ></nz-range-picker> -->
+        </ng-container>
+    </div>
+</ng-template>
+<ng-template #hl7>
+    <div [formGroup]="refDemoEntityForm">
+        <input type="text" class="form-control input-text-style input-style eno-typo-size-1" placeholder="HI7" formControlName="hl7">
+    </div>
+
+</ng-template>
+<ng-template #actif>
+    <div [formGroup]="refDemoEntityForm">
+        <nz-select formControlName="actif" nzShowSearch nzAllowClear nzPlaceHolder="actif" class="w-100 form-control eno-typo-size-1">
+            <nz-option [nzLabel]="'common.select.notset' | translate" nzValue="Non défini"></nz-option>
+            <nz-option [nzLabel]="'common.text.yes' | translate" [nzValue]="true"></nz-option>
+            <nz-option [nzLabel]="'common.text.no' | translate" [nzValue]="false"></nz-option>
+        </nz-select>
+    </div>
+</ng-template>
+<ng-template #code>
+    <div [formGroup]="refDemoEntityForm">
+        <input type="text" class="form-control input-text-style input-style w-100 eno-typo-size-1" placeholder="code" formControlName="code">
+    </div>
+</ng-template>
+<ng-template #libelleLike>
+    <div [formGroup]="refDemoEntityForm">
+        <input type="text" class="form-control input-text-style input-style w-100 eno-typo-size-1" placeholder="libelleLike" formControlName="libelleLike">
+    </div>
+</ng-template>
+<ng-template #parametres>
+    <div [formGroup]="refDemoEntityForm">
+        <nz-checkbox-group class="w-100 eno-typo-size-1" formControlName="parametres">
+            <div>
+                <span *ngFor="let item of parametresList">
+                  <label nz-checkbox [nzValue]="item.id"  class="eno-typo-size-1" >
+                  {{ item.label }}
+                  </label>
+              </span>
+            </div>
+        </nz-checkbox-group>
+    </div>
+</ng-template>
+<!-- end all input form -->

@@ -1,0 +1,47 @@
+.breadcrumb {
+    // background: rgba(245, 245, 245, 1);
+    border: 0px solid rgba(245, 245, 245, 1);
+    border-radius: 0px;
+    display: flex;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    margin: -6px 0px !important;
+    padding: 0px 24px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 45px;
+    width: 99%;
+    // background: rgb(250, 251, 252);
+    border: 0px solid rgba(245, 245, 245, 1);
+    border-radius: 0px;
+    display: flex;
+    top: -5px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 45px;
+    width: 99%;
+}
+
+.breadcrumb span {
+    font-size: 14.4px;
+}
+
+.breadcrumb a {
+    color: #252526;
+}
+
+.breadcrumb a:hover {
+    color: rgba(42, 100, 150, 1);
+}
+
+.breadcrumb>.active {
+    color: #6fdc98;
+}
+
+.breadcrumb>span+span:before {
+    color: rgba(81, 88, 92, 1);
+    content: "> ";
+}

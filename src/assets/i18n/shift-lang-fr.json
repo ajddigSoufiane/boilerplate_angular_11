@@ -1,0 +1,87 @@
+{
+    "shift": {
+        "name": {
+            "title": "Shift"
+        },
+        "list": {
+            "title": "Recherche shift"
+        },
+        "edit": {
+            "title": "Editer shift"
+        },
+        "add": {
+            "title": "Ajouter shift"
+        },
+        "view": {
+            "title": "Consulter shift"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations shift"
+        },
+
+        "code": {
+            "label": "Code"
+        },
+        "enabled": {
+            "label": "Activer"
+        },
+        "resetPassword": {
+            "label": "Réinitialiser le mot de passe"
+        },
+        "oldPassword": {
+            "label": "Ancien mot de passe"
+        },
+        "newPassword": {
+            "label": "Nouveau mot de passe"
+        },
+        "personnel": {
+            "label": "Personnel"
+        },
+        "etablissement": {
+            "label": "Etablissement"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "libelle": {
+            "label": "Libelle"
+        },
+        "heureDebut": {
+            "label": "Heure début"
+        },
+        "heureFin": {
+            "label": "Heure fin"
+        },
+        "duree": {
+            "label": "Durée"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "horaireList": {
+            "label": "Horaires"
+        },
+        "horaireRamadan": {
+            "label": "Horaire ramadan"
+        },
+        "ordreAffichage": {
+            "label": "Ordre d'affichage"
+        },
+        "debutValidite": {
+            "label": "Début validité"
+        },
+        "finValidite": {
+            "label": "Fin validité"
+        },
+        "apercu": {
+            "label": "Aperçu horaire"
+        }
+    }
+
+}

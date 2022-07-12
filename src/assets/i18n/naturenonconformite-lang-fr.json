@@ -1,0 +1,44 @@
+{	
+	"naturenonconformite": {
+		"name": {
+			"title": "Naturenonconformite"
+		},
+		"list": {
+			"title": "Recherche naturenonconformite"
+		},
+		"edit": {
+			"title": "Editer naturenonconformite"
+		},
+		"add": {
+			"title": "Ajouter naturenonconformite"
+		},
+		"view": {
+			"title": "Consulter naturenonconformite"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations naturenonconformite"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"hl7": {
+			"label": "Hl7"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}

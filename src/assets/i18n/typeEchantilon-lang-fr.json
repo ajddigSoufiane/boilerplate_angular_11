@@ -1,0 +1,50 @@
+{
+    "typeEchantilon": {
+        "name": {
+            "title": "TypeEchantilon"
+        },
+        "list": {
+            "title": "Recherche typeEchantilon"
+        },
+        "edit": {
+            "title": "Editer typeEchantilon"
+        },
+        "add": {
+            "title": "Ajouter typeEchantilon"
+        },
+        "view": {
+            "title": "Consulter typeEchantilon"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations typeEchantilon"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "instruction": {
+            "label": "Instruction"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "typeContenant": {
+            "label": "TypeContenant"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    }
+
+}

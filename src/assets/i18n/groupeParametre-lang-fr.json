@@ -1,0 +1,83 @@
+{
+    "groupeParametre": {
+        "name": {
+            "title": "GroupeParametre"
+        },
+        "list": {
+            "title": "Recherche groupeParametre"
+        },
+        "edit": {
+            "title": "Editer groupeParametre"
+        },
+        "add": {
+            "title": "Ajouter groupeParametre"
+        },
+        "view": {
+            "title": "Consulter groupeParametre"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations groupeParametre"
+        },
+        "intituleP": {
+            "label": "intituleP"
+        },
+        "intituleV": {
+            "label": "intituleV"
+        },
+        "intituleCR": {
+            "label": "intituleCR"
+        },
+        "intituleCRHtml": {
+            "label": "intituleCRHtml"
+        },
+        "ordreP": {
+            "label": "OrdreP"
+        },
+        "ordreCR": {
+            "label": "OrdreCR"
+        },
+        "ordreV": {
+            "label": "OrdreV"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "descriptionCR": {
+            "label": "DescriptionCR"
+        },
+        "visibleEtiquette": {
+            "label": "VisibleEtiquette"
+        },
+        "pageBreakAfterCr": {
+            "label": "PageBreakAfterCr"
+        },
+        "marginTop": {
+            "label": "MarginTop"
+        },
+        "marginBottom": {
+            "label": "MarginBottom"
+        },
+        "marginLeft": {
+            "label": "MarginLeft"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "parent": {
+            "label": "GroupeParametre"
+        },
+        "discipline": {
+            "label": ""
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    }
+
+}

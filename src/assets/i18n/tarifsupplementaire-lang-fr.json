@@ -1,0 +1,50 @@
+{	
+	"tarifsupplementaire": {
+		"name": {
+			"title": "Tarifsupplementaire"
+		},
+		"list": {
+			"title": "Recherche tarifsupplementaire"
+		},
+		"edit": {
+			"title": "Editer tarifsupplementaire"
+		},
+		"add": {
+			"title": "Ajouter tarifsupplementaire"
+		},
+		"view": {
+			"title": "Consulter tarifsupplementaire"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations tarifsupplementaire"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"valeur": {
+			"label": "Valeur"
+		},
+		"modecalcul": {
+			"label": "Modecalcul"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"hl7": {
+			"label": "Hl7"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}

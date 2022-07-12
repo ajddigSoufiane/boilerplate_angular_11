@@ -1,0 +1,228 @@
+<!-- soufiane :  this component juste help you to copy input field to use in new Entity -->
+<div style="padding: 12px 15px;">
+    <div class="mr-1 mb-3  search-button title-style-ref  mr-0 pb-2 pos-ntw-btn">
+        <b class="pos-ntw-btn">
+            {{
+            'utilisateur.add.title' |
+            translateUtilisateur }}</b>
+        <div style="clear: both;"></div>
+    </div>
+    <div>
+        <form [formGroup]="utilisateurForm" class="form-validate" (submit)="saveUtilisateur(utilisateurForm.value)"
+            novalidate="">
+            <div class="card card-default enoLight card-body ng-scope border-radius-style pb-2-rem mb-1">
+                <div class="row">
+                    <!-- start input text -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row required">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "utilisateur.nom.label"
+                                | translateUtilisateur
+                                }}</label>
+                            <div class="col-12">
+                                <input type="text" class="form-control input-value-style eno-typo-size-18px-1rem"
+                                    [placeholder]="'utilisateur.nom.label'| translateUtilisateur" formControlName="nom" />
+                                <span class="message-requird" *ngIf="
+                                    utilisateurForm.controls['nom'].hasError(
+                                    'required'
+                                    ) &&
+                                    (utilisateurForm.controls['nom'].dirty ||
+                                    utilisateurForm.controls['nom'].touched)
+                                ">{{ "common.message.required" | translate }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row required">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "utilisateur.prenom.label"
+                                | translateUtilisateur
+                                }}</label>
+                            <div class="col-12">
+                                <input type="text" class="form-control input-value-style eno-typo-size-18px-1rem"
+                                [placeholder]="'utilisateur.prenom.label'| translateUtilisateur" formControlName="prenom" />
+                                <span class="message-requird" *ngIf="
+                                        utilisateurForm.controls['prenom'].hasError(
+                                        'required'
+                                        ) &&
+                                        (utilisateurForm.controls['prenom'].dirty ||
+                                        utilisateurForm.controls['prenom'].touched)
+                                    ">{{ "common.message.required" | translate }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- start input text -->
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row ">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "utilisateur.cin.label"
+                                | translateUtilisateur
+                                }}</label>
+                            <div class="col-12">
+
+                                <input type="text" class="form-control input-value-style eno-typo-size-18px-1rem"
+                                    placeholder="CIN" formControlName="cin" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row ">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "utilisateur.adresse.label"
+                                | translateUtilisateur
+                                }}</label>
+                            <div class="col-12">
+
+                                <input type="text" class="form-control input-value-style eno-typo-size-18px-1rem"
+                                    placeholder="Adresse" formControlName="adresse" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "utilisateur.email.label"
+                                | translateUtilisateur
+                                }}</label>
+                            <div class="col-12">
+
+                                <input type="text" class="form-control input-value-style eno-typo-size-18px-1rem"
+                                    placeholder="Email" formControlName="email" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row required">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "utilisateur.username.label"
+                                | translateUtilisateur
+                                }}</label>
+                            <div class="col-12">
+
+                                <input type="text" class="form-control input-value-style eno-typo-size-18px-1rem"
+                                    placeholder="Nom d'utilisateur" formControlName="username" />
+                                <span class="message-requird" *ngIf="
+                                    utilisateurForm.controls['username'].hasError(
+                                    'required'
+                                    ) &&
+                                    (utilisateurForm.controls['username'].dirty ||
+                                    utilisateurForm.controls['username'].touched)
+                                ">{{ "common.message.required" | translate }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row required">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">{{
+                                "utilisateur.profil.label"
+                                | translateUtilisateur
+                                }}</label>
+                            <div class="col-12">
+
+                                <nz-select nzPlaceHolder="Profil" formControlName="profil" nzShowSearch nzAllowClear
+                                    class="w-100 form-control eno-typo-size-0">
+                                    <nz-option *ngFor="let item of profilList" [nzLabel]="item.label" [nzValue]="item">
+                                    </nz-option>
+                                </nz-select>
+                                <span class="message-requird" *ngIf="
+                                    utilisateurForm.controls['profil'].hasError(
+                                    'required'
+                                    ) &&
+                                    (utilisateurForm.controls['profil'].dirty ||
+                                    utilisateurForm.controls['profil'].touched)
+                                ">{{ "common.message.required" | translate }}</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="form-group row required">
+                            <label class="col-12  col-form-label  col-form-label-form input-label-style">
+                                {{
+                                "utilisateur.employe.label"
+                                | translateUtilisateur
+                                }} </label>
+                            <div class="col-12">
+
+                                <nz-select nzServerSearch nzShowSearch [nzFilterOption]="nzFilterOption"
+                                    [nzShowArrow]="false" (nzOnSearch)="getEmploye($event)"
+                                    formControlName="employe" class="w-100 form-control eno-typo-size-0 border-error"
+                                    nzPlaceHolder="Employé" nzAllowClear>
+                                    <nz-option *ngFor="let item of employeList" [nzLabel]="item.civilite+' '+item.nom+ ' '+ item.prenom+' ('+item.matricule+')'"
+                                        [nzValue]="item" [compareWith]="nzCompareSelectedByID"></nz-option>
+                                </nz-select>
+
+
+                                <span class="message-requird" *ngIf="
+                                    utilisateurForm.controls['employe'].hasError(
+                                    'required'
+                                    ) &&
+                                    (utilisateurForm.controls['employe'].dirty ||
+                                    utilisateurForm.controls['employe'].touched)
+                                ">{{ "common.message.required" | translate }}</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- START BUTTONS -->
+
+            </div>
+            <div class="sumbit-btn" [ngClass]="{'sumbit-btn-drawer': _mode_ecran==this.mode_ecran.DRAWER}">
+                <div class="sumbit_btn_option">
+                    <button class="btn-1 btn btn-labeled button-primary-revert  mr-0 mb-1  float-left" type="button"
+                        debounceClick (debounceEvent)="saveUtilisateur(utilisateurForm.value,saveAndQuit)">
+                        <i class="fal fa-save"></i>
+                        <span class="btn-title">{{ "common.command.save" | translate }}</span>
+                    </button>
+
+                    <button type="button" class="btn-2 btn btn-labeled button-primary-revert  mr-0 mb-1  float-left"
+                        nz-dropdown [nzDropdownMenu]="sumbit_btn_option" nzPlacement="bottomRight" [nzTrigger]="'click'"
+                        (nzVisibleChange)="upDownIcon=$event">
+                        <i nz-icon nzType="down" *ngIf="!upDownIcon" style="font-size: 1rem;"></i>
+                        <i nz-icon nzType="up" nzTheme="outline" *ngIf="upDownIcon"></i>
+                    </button>
+                    <nz-dropdown-menu #sumbit_btn_option="nzDropdownMenu">
+                        <ul nz-menu>
+                            <li nz-menu-item class=" btn-subline-parent">
+                                <div class="w-100 btn text-left btn-subline" debounceClick (debounceEvent)="
+                saveUtilisateur(utilisateurForm.value,false,saveAndNew)
+                            ">
+                                    <i class="fal fa-save mr-2"></i>
+                                    <span class="btn-title">{{ "common.command.saveAndNew" | translate }}</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nz-dropdown-menu>
+                </div>
+
+
+                <button class="btn button-secondary-white-bg ml-2 mr-2  float-left" type="button" (click)="retour()">
+                    {{ "common.command.exit" | translate }}
+                </button>
+                <!-- <button class="btn btn-secondary ml-2 mr-2 button-primary float-right" debounceClick (debounceEvent)="
+                saveUtilisateur(utilisateurForm.value)
+            ">
+          <span class="btn-label span-float-left"><i class="fas fa-save"></i></span>
+          {{ "common.command.saveAndNew" | translate }}
+      </button> -->
+                <!-- <button class="btn button-secondary-white-bg ml-2 mr-2  float-right" id="reset" type="button" (click)="reset()">
+          <span class="btn-label span-float-left"><i class="fas fa-undo"></i></span>
+          {{ "common.command.reset" | translate }}
+      </button> -->
+            </div> <!-- END BUTTONS -->
+        </form>
+    </div>
+</div>

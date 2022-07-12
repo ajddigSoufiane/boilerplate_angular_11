@@ -1,0 +1,172 @@
+/* ========================================================================
+     Component: cards
+ ========================================================================== */
+
+.card {
+    margin-bottom: 1.25rem; //20px
+}
+
+//
+// Adds support to use more components inside cards
+//
+.card {
+    .table {
+        margin-bottom: 0;
+        >thead>tr>th {
+            border-top: 0;
+        }
+    }
+    &.card-transparent {
+        border: 0;
+        background-color: transparent;
+        box-shadow: 0 0 0 #000;
+        .card-header,
+        .card-body {
+            background-color: transparent;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+.card-flat {
+    margin: 0 !important;
+    border: 0;
+}
+
+.card-columns-2 {
+    column-count: 1;
+    @include media-breakpoint-up(md) {
+        column-count: 2;
+    }
+}
+
+.card-header {
+    >a[data-tool] {
+        display: inline-block;
+        color: #fff;
+        width: 2em;
+        text-align: center;
+    }
+    .card-default & {
+        >a[data-tool] {
+            color: #c1c2c3;
+        }
+    } // right floated labels adjust position
+    >.badge.float-right {
+        margin-top: 3px;
+        +.badge.float-right {
+            margin-right: 10px;
+        }
+    }
+}
+
+.card-footer {
+    .pagination {
+        margin: 0;
+    }
+    .radial-bar {
+        margin-bottom: 0;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.ant-list-vertical .ant-list-item {
+    align-items: initial;
+    border: 1px solid #d7d7dc;
+    padding: 13px;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    margin-bottom: 15px;
+}
+
+.ant-list-item .ant-list-item-meta .ant-list-item-meta-avatar .ant-avatar {
+    border: 1px solid $eno-principale-color;
+    width: 50px;
+    height: 50px;
+    border-radius: 9px;
+}
+
+.ant-list-item-meta-description {
+    line-height: 1;
+}
+
+//styles cards
+.header-card {
+    color: rgb(64 129 173);
+}
+
+.shadow-card {
+    box-shadow: 0px 1px 5px #F5FDFF;
+}
+
+.label-card {
+    color: #828282;
+    font-size: 1rem;
+}
+
+.size-labels {
+    font-size: 1rem;
+}
+
+.width-card {
+    width: 80% !important;
+}
+
+.text-styles {
+    font-size: 1rem !important;
+    color: #0A1217 !important;
+}
+
+::ng-deep .ant-menu-item-group-title {
+    font-size: 1rem !important;
+    color: #0A1217 !important;
+}
+
+::ng-deep .ant-menu-item-group-title {
+    font-size: 1rem !important;
+    color: #0A1217 !important;
+}
+
+// ::ng-deep .ant-card-head-title {
+//     font-size: 1.5rem !important;
+//     color: #0A1217 !important;
+// }
+
+.hr-styles {
+    position: relative;
+    margin-top: -25px;
+    margin-bottom: 30px;
+}
+
+.card-shadow-out {
+    box-shadow: 0px 0px 9px 2px rgb(0 0 0 / 8%);
+}
+
+.card-shadow-in {
+    box-shadow: inset 0px 0px 9px 2px rgb(0 0 0 / 8%);
+}
+
+.card-blue {
+    background-color: $eno-secondaire-color;
+}
+
+.card-title-style {
+    padding-bottom: 5px;
+    border-bottom: 1px solid $eno-secondaire;
+    font-size: $eno-typo-size-1;
+    color: $eno-primaire;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color:#005792;
+}
+.ant-tabs-ink-bar{
+    background:#005792;
+}
+::ng-deep .ant-card-head-title{
+    color: #828282 !important;
+}
+

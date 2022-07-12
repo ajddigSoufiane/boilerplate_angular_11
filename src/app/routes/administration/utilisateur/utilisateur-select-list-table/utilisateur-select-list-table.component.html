@@ -1,0 +1,172 @@
+<div>
+    <div class="pb-3">
+        <label class=" font-weight-bold col-form-label  col-form-label-form input-label-style"> Multiple select eager
+      List</label>
+        <!-- START card-->
+
+        <!-- <button *ngIf="!readOnly" class="btn btn-secondary ml-2 mr-2 button-primary float-right" (click)="loadUtilisateurList();openUtilisateurModalView()" type="button"><i class="fa fa-plus"></i>
+        {{ 'common.command.add' | translate }}</button> -->
+        <span class="eno-btn-line float-right" *ngIf="!readOnly" (click)="loadUtilisateurList();openUtilisateurModalView()">
+      <div class="text-left status">
+        <span>
+          {{ 'common.command.add' | translate }}
+        </span>
+    </div>
+    </span>
+    <span class="eno-btn-line float-right mr-2" (click)="removeAlltem()" *ngIf="!readOnly && utilisateurList && utilisateurList.length>0 && hasSelectElement('utilisateurList')">
+      <div class="text-left status delete-btn">
+        <span>
+          {{ 'common.command.delete' | translate }}
+        </span>
+</div>
+</span>
+
+
+</div>
+
+
+
+
+<div>
+    <div class="table-responsive modal-resulta enoLight">
+        <ng-template #dataSize>
+            <span class="mr-2">
+          {{total}} {{ 'common.label.totalRow' | translate }}
+        </span>
+        </ng-template>
+        <nz-table #basicTable [nzSize]="'middle'" [ngClass]="{'table-form': !readOnly}" [nzSize]="'middle'" nzBordered nzShowSizeChanger [nzShowTotal]="dataSize" [nzLoading]="loading" [nzPageSize]="10" [nzData]="utilisateurList" [nzPageSizeOptions]="[10, 50,100]">
+            <thead>
+                <tr>
+                    <th *ngIf="!readOnly" class="text-center" style='width:5%' [nzChecked]="isCheckAll(basicTable.data)" (nzCheckedChange)="selectOrDeselectAll($event,basicTable.data)" nzShowCheckbox></th>
+                    <th class="column ant-code">
+                        {{ 'utilisateur.code.label' | translateUtilisateur }}
+                    </th>
+                    <th class="column">
+                        {{ 'utilisateur.libelle.label' | translateUtilisateur }}
+                    </th>
+                    <!-- <th nzRight="0px" class=" pl-3 pr-3 ant-action">{{ 'common.label.actions' | translate }}
+                    </th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let item of basicTable.data;let indx=index">
+                    <tr>
+                        <td *ngIf="!readOnly" class="text-center" nzShowCheckbox [(nzChecked)]="item.selectedObject"></td>
+                        <td>{{item.code}}</td>
+                        <td>{{item.libelle}}</td>
+                        <!-- <td style="width:5%;" class="text-center">
+                            <button *ngIf="!readOnly" class="btn btn-danger btn-xs" title="remove" (click)="removeItem(item)">
+                                <span class="fa fa-times"></span>
+                            </button>
+                        </td> -->
+                    </tr>
+                </ng-container>
+            </tbody>
+        </nz-table>
+    </div>
+</div>
+
+<!-- END card-->
+
+<!-- START modal card-->
+<nz-modal [(nzVisible)]="utilisateurModal" [nzMaskClosable]="false" nzWrapClassName="vertical-center-modal" nzWidth="60%" [nzTitle]="'utilisateur.add.title' | translateUtilisateur " [nzContent]="bodyUtilisateur" (nzOnCancel)="closeUtilisateurModalView()">
+    <!-- <ng-template #headerUtilisateur>
+
+            <h4 class="">{{ 'utilisateur.add.title' | translateUtilisateur }}</h4>
+
+        </ng-template> -->
+
+    <ng-template #bodyUtilisateur>
+
+
+
+
+        <div class="row">
+            <div class="col-4 filter-modal">
+                <div [formGroup]="formGroupFilter">
+                    <div class="filter-modal-title">
+                        <span class="filter-modal-title-1">{{ 'common.command.filter' | translate }}</span>
+                        <i nz-icon nzType="sync" nzTheme="outline" class="float-right filter-modal-title-2" (click)="reset()"></i>
+                    </div>
+                    <div class="row  mt-2">
+                        <div class="col-12 ">
+                            <div class="form-group row ">
+                                <label class="col-12 col-form-label  col-form-label-form font-weight-bold ">
+                    Code
+                  </label>
+                                <div class="col-12  ">
+                                    <input type="text" class="form-control input-text-style input-style" formControlName="code">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="form-group row ">
+                                <label class="col-12 col-form-label  col-form-label-form font-weight-bold ">
+                    libelle
+                  </label>
+                                <div class="col-12  ">
+                                    <input type="text" class="form-control input-text-style input-style" formControlName="libelle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="">
+                            <input [(ngModel)]="nameFilter" class="form-control" type="text" placeholder="{{ 'common.command.filter' | translate }}" />
+                        </div> -->
+                </div>
+
+            </div>
+            <div class="col-8" style=" height: 60vh; overflow-y: auto; ">
+                <!--   -->
+                <nz-table #selectUtilisateur_ [nzSize]="'middle'" [nzPageSize]="5" [nzData]="allUtilisateurList | UtilisateurSelectListTableFilter:formGroupFilter.value.libelle:formGroupFilter.value.code" [nzPageSizeOptions]="[5,10,20]">
+                    <thead>
+                        <tr>
+                            <th nzLeft="0px" class="text-center" style='width:5%' [nzChecked]="isCheckAll(selectUtilisateur_.data)" (nzCheckedChange)="selectOrDeselectAll($event,selectUtilisateur.data)" nzShowCheckbox></th>
+                            <th class="column">
+                                {{ 'utilisateur.code.label' | translateUtilisateur }}
+                            </th>
+                            <th class="column">
+                                {{ 'utilisateur.libelle.label' | translateUtilisateur }}
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <ng-container *ngFor="let item of selectUtilisateur_.data; let ndx = index">
+                            <tr>
+
+                                <td nzShowCheckbox class="text-center" nzLeft="0px" [(nzChecked)]="item.selectedObject">
+                                </td>
+
+                                <td>{{ item.code }}</td>
+                                <td>{{ item.libelle }}</td>
+                            </tr>
+                        </ng-container>
+                    </tbody>
+                </nz-table>
+
+            </div>
+
+            <!-- <div class="card-footer text-right">
+                    <button class="btn btn-info ml-1 mr-1" type="button" [disabled]="!allUtilisateurList || allUtilisateurList.length == 0" (click)="addUtilisateurSelected();closeUtilisateurModalView()">
+                      <span class=""><i class="fa fa-save"></i></span> {{ 'common.command.add' | translate }}</button>
+                    <button class="btn btn-default ml-1 mr-1" type="button" (click)="closeUtilisateurModalView()">
+                      <i class="fa fa-reply mr-1"></i>{{ 'common.command.close' | translate }}</button>
+                </div> -->
+
+        </div>
+    </ng-template>
+    <div *nzModalFooter>
+
+        <button class="btn ml-1 mr-2 button-secondary-white-bg" type="button" (click)="closeUtilisateurModalView()">
+        <!-- <i class="fal fa-undo mr-2"></i> -->
+        <span  >{{ 'common.command.close' | translate }}</span>
+      </button>
+
+        <button class="btn btn-labeled button-primary-revert ml-2 mr-2 " [disabled]="!allUtilisateurList || allUtilisateurList.length == 0" (click)="addUtilisateurSelected();closeUtilisateurModalView()" type="button">
+        <!-- <i class="fal fa-search mr-2"></i> -->
+        <span  >{{ 'common.command.add' | translate }}</span>
+      </button>
+    </div>
+</nz-modal>
+<!-- END modal card-->
+</div>

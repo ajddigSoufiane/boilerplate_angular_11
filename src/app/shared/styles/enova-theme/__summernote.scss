@@ -1,0 +1,144 @@
+// Summernote
+.summernote {
+    +.note-editor {
+        background-image: none !important;
+        margin-top: 0;
+        &.note-frame {
+            border-color: $gray-light;
+            &.fullscreen {
+                margin-top: 0;
+                @include media-breakpoint-up(md) {
+                    top: $navbar-hg;
+                    left: $aside-wd;
+                    right: 0;
+                    width: auto !important;
+                }
+            }
+        }
+    }
+}
+
+// .note-editable {
+//     font-family: 'Poppins' !important;
+// }
+// Summernote fullscreen layout support
+.aside-collapsed {
+    .summernote+.note-editor.note-frame.fullscreen {
+        @include media-breakpoint-up(md) {
+            left: $aside-wd-collapsed;
+        }
+    }
+}
+
+.aside-collapsed-text {
+    .summernote+.note-editor.note-frame.fullscreen {
+        @include media-breakpoint-up(md) {
+            left: $aside-wd-collapsed-text;
+        }
+    }
+}
+
+.aside-float {
+    .summernote+.note-editor.note-frame.fullscreen {
+        @include media-breakpoint-up(md) {
+            margin-left: 30px;
+        }
+    }
+}
+
+// BS4 suppor for summernote
+// https://github.com/summernote/summernote/issues/1324
+.panel-heading {
+    @extend .card-header;
+}
+
+.note-btn-group {
+    .btn-default {
+        @extend .btn-secondary;
+    }
+    .dropdown-menu {
+        >li {
+            >a {
+                display: block;
+                padding: 3px 20px;
+                clear: both;
+                font-weight: normal;
+                line-height: 1.42857143;
+                color: #333;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.note-popover .popover-content .note-color .dropdown-toggle,
+.note-editor .panel-heading.note-toolbar .note-color .dropdown-toggle {
+    width: 20px;
+    padding-left: 1px;
+}
+
+.note-editable {
+    margin-top: 10px;
+}
+
+.input-label-style .btn-primary.disabled,
+.btn-primary:disabled {
+    padding: 2px;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable[contenteditable="false"] {
+    background-color: $eno-vertical !important;
+    margin-top: 0px;
+}
+
+.remove-scroll-summer-note .note-editor.note-airframe .note-editing-area .note-editable,
+.note-editor.note-frame .note-editing-area .note-editable {
+    overflow: hidden!important;
+}
+
+.mode_view_summer_note .note-editor.note-frame .note-editing-area,
+.note-editor.note-airframe .note-editing-area {
+    overflow: hidden;
+    pointer-events: none!important;
+}
+
+.note-editable {
+    font-size: $eno-typo-size-0;
+}
+
+.note-toolbar {
+    padding: 10px 5px;
+    border-bottom: 1px solid #e2e2e2;
+    color: #333;
+    background-color: #F1F1F7;
+    border-color: #ddd;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.note-editor {
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 15%);
+}
+
+.note-toolbar {
+    padding: 10px 5px;
+    border-bottom: 1px solid #e2e2e2;
+    color: #333;
+    background-color: $eno-vertical;
+    border-color: #ddd;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.sumernote-form .note-toolbar {
+    background-color: $eno-secondaire-color;
+}
+
+.note-resizebar {
+    background-color: #fff;
+}
+
+.note-editor.note-frame,
+.note-editor.note-airframe {
+    border: none;
+}

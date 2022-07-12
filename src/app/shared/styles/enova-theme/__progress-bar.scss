@@ -1,0 +1,32 @@
+nz-progress.progress-square .ant-progress-bg {
+    // width: 75% !important;
+    border-radius: 0px !important;
+    height: 20px !important;
+    background-color: $eno-principale-color !important;
+}
+
+nz-progress.progress-square .ant-progress-inner {
+    border-radius: 0px !important;
+    background-color: #ffffff !important;
+    box-shadow: inset 6px 0px 7px 0px rgb(0 0 0 / 50%)
+}
+
+.progress-percentage {
+    color: $eno-principale-color;
+    font-weight: 600;
+}
+/*
+*
+* @version 1
+* @author c.oildhammou
+* @description : L'ajout des pointiers au niveau des progress-bar 
+*/
+nz-progress.progress-square .ant-progress-success-bg {
+    border-radius: 0px !important;
+    height: 20px !important;
+    background-color: $eno-principale-color !important;
+}
+
+nz-progress.progress-square-indector .ant-progress-success-bg { 
+    border-right: 1px dashed #fff;
+}

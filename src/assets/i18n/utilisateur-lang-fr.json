@@ -1,0 +1,81 @@
+{	
+	"utilisateur": {
+		"name": {
+			"title": "Utilisateur",
+			"titlePlural": "Utilisateurs"
+		},
+		"list": {
+			"title": "Recherche utilisateur"
+		},
+		"edit": {
+			"title": "Editer utilisateur"
+		},
+		"add": {
+			"title": "Ajouter utilisateur"
+		},
+		"view": {
+			"title": "Consulter utilisateur"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations utilisateur"
+		},
+		"nom": {
+			"label": "Nom"
+		},
+		"prenom": {
+			"label": "Prénom"
+		},
+		"username": {
+			"label": "Nom d'utilisateur"
+		},
+		"password": {
+			"label": "Mot de passe"
+		},
+		"enabled": {
+			"label": "Activer"
+		},
+		"resetPassword": {
+			"label": "Réinitialiser le mot de passe"
+		},
+		"oldPassword": {
+			"label": "Ancien mot de passe"
+		},
+		"newPassword": {
+			"label": "Nouveau mot de passe"
+		},
+		"personnel": {
+			"label": "Personnel"
+		},
+		"etablissement": {
+			"label": "Etablissement"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		},
+		"service": {
+			"label": "Service"
+		},
+		"cin": {
+			"label": "CIN"
+		},
+		"email": {
+			"label": "Email"
+		},
+		"adresse": {
+			"label": "Adresse"
+		},
+		"profil": {
+			"label": "Profil"
+		},
+		"employe": {
+			"label": "Employé"
+		},
+		"actif": {
+			"label": "Actif"
+		}
+	}
+
+}

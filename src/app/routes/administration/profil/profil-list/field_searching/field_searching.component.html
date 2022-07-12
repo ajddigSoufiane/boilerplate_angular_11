@@ -1,0 +1,109 @@
+<!-- START form for searching -->
+<ng-template #form_search>
+    <div class="card card-default col-12 ">
+        <div style="padding: 15px 15px 0px;">
+            <span class="eno-gray-1 eno-typo-size-18px-1rem font-weight-600">{{ 'common.legend.search' | translate }}</span>
+
+        </div>
+
+        <form [formGroup]="profilForm" (keydown.enter)="search.emit('')" (submit)="search.emit('')">
+            <!-- <div class="card-body bt"> -->
+                <div class="enoLight card-body ng-scope border-radius-style border-style box-shadow-style " [collapse]="collapsedInfo">
+                    <div class="row">
+                       <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group row  ">
+                                <label class="col-12 col-form-label font-weight-normal">{{
+                            'profil.code.label' |
+                            translateProfil }}</label>
+                                <div class="col-12">
+                                    <ng-container *ngTemplateOutlet="code"></ng-container>
+    
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group row ">
+                                <label class="col-12 col-form-label font-weight-normal">{{
+                            'profil.libelle.label' |
+                            translateProfil }}</label>
+                                <div class="col-12">
+                                    <ng-container *ngTemplateOutlet="libelle"></ng-container>
+                                </div>
+                            </div>
+                        </div>
+                    <!--     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group row  ">
+                                <label class="col-12 col-form-label font-weight-normal">{{
+                            'profil.description.label' |
+                            translateProfil }}</label>
+                                <div class="col-12">
+                                    <ng-container *ngTemplateOutlet="description"></ng-container>
+    
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="form-group row  ">
+                                <label class="col-12 col-form-label font-weight-normal">{{
+                            'profil.actif.label' |
+                            translateProfil }}</label>
+                                <div class="col-12">
+                                    <ng-container *ngTemplateOutlet="actif"></ng-container>
+    
+                                </div>
+                            </div>
+                        </div>  -->
+                    </div>
+          
+    
+                </div>
+            <!-- </div> -->
+
+            <div class="card-footer text-right enoLight d-flex justify-content-between align-items-center" [collapse]="collapsedInfo">
+                <div class="text-left" *ngIf="!showMoreForm" style="color: #0052CC;cursor:pointer"><span style="text-decoration: underline;font-size: 14.4px;" (click)="showMoreForm=!showMoreForm"> </span></div>
+                <div class="text-left" *ngIf="showMoreForm" style="color: #0052CC;cursor:pointer"> <span style="text-decoration: underline;font-size: 14.4px;" (click)="showMoreForm=!showMoreForm"> </span></div>
+                <div>
+                    <button class="btn ml-1 mr-2 button-secondary" type="button" (click)="reset.emit('')">
+                <i class="fal fa-undo mr-2"></i>
+                <span class="btn-title">{{ 'common.command.reset' | translate }}</span>
+            </button>
+                    <button class="btn btn-secondary ml-2 mr-2 button-primary" type="submit" [disabled]="!profilForm.valid">
+                <i class="fal fa-search mr-2"></i>
+                <span class="btn-title">{{ 'common.command.search' | translate }}</span>
+            </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</ng-template>
+<!-- END form for searching -->
+
+<!-- all input of form -->
+
+
+<ng-template #libelle>
+    <div [formGroup]="profilForm">
+        <input type="text" class="form-control input-text-style input-style w-100 eno-typo-size-18px-1rem" placeholder="Libelle" formControlName="libelleLike">
+    </div>
+</ng-template>
+<ng-template #description>
+    <div [formGroup]="profilForm">
+        <input type="text" class="form-control input-text-style input-style w-100 eno-typo-size-18px-1rem" placeholder="Description" formControlName="description">
+    </div>
+</ng-template>
+<ng-template #code>
+    <div [formGroup]="profilForm">
+        <input type="text" class="form-control input-text-style input-style w-100 eno-typo-size-18px-1rem" placeholder="Code" formControlName="codeLike">
+    </div>
+</ng-template>
+<ng-template #actif>
+    <div [formGroup]="profilForm">
+        <nz-select formControlName="actifLike" style="font-size: 1.25rem;" nzShowSearch nzAllowClear nzPlaceHolder="Actif" class="form-control input-style w-100 eno-typo-size-18px-1rem">
+            <nz-option style="font-size: 1rem;" [nzLabel]="'common.select.notset' | translate" nzValue="Non défini"></nz-option>
+            <nz-option style="font-size: 1rem;" [nzLabel]="'common.text.yes' | translate" [nzValue]="true"></nz-option>
+            <nz-option style="font-size: 1rem;" [nzLabel]="'common.text.no' | translate" [nzValue]="false"></nz-option>
+        </nz-select>
+    </div>
+</ng-template>
+<!-- end all input form -->

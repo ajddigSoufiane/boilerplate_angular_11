@@ -1,0 +1,200 @@
+<div style="padding: 12px 15px;">
+    <div class="mr-1 mb-3  search-button title-style-ref  mr-0" style="padding-bottom: 5px;">
+        <b class="pos-w-btn"> 
+            {{ 'refDemoEntity.view.title' | translateRefDemoEntity }}</b>
+        <!-- <button class="float-right mr-0 mb-1 btn btn-labeled height-button   border-radius-style button-primary-revert" type="button" routerLink="/referentiel/refDemoEntity/add">
+     
+            <i nz-icon nzType="plus"  class="mr-2" ></i>
+            {{ 'common.command.add' | translate }}
+        </button> -->
+        <button class="btn btn-secondary ml-2 mr-2 button-primary  mr-0 mb-1  float-right" type="button " (click)="editRefDemoEntity(refDemoEntity)">
+            <!-- <span class="btn-label "><i class="fas fa-edit "></i></span>-->
+            
+            <i class="fal fa-edit  "></i>
+            <span class="btn-title">{{ 'common.command.edit' | translate }} </span>
+          </button>
+        <button class="btn ml-2 mr-2 float-right button-alert-feedback" type="button " (click)="deleteRefDemoEntity(refDemoEntity.id) ">
+            <!-- <span class="btn-label "><i class="fas fa-trash "></i></span>
+            {{ 'common.command.delete' | translate }} -->
+            <i class="fal fa-trash   "></i>
+            <span class="btn-title">{{ 'common.command.delete' | translate }}</span>
+          </button>
+        <div style="clear: both;"></div>
+    </div>
+    <div>
+        <div class="card card-default  card-body ng-scope border-radius-style pb-2-rem mb-1 form-view">
+            <div class=row>
+
+                <div class="col-12">
+                    <!--creation date lainaire  -->
+                    <div>
+                        <nz-date-picker class="float-right mb-2" nzMode="month" [(ngModel)]="selectedDate" (ngModelChange)="onChange($event)"></nz-date-picker>
+                    </div>
+                    <nz-calendar [nzFullscreen]="false" class="line-calendar" [(ngModel)]="selectedDate">
+                        <ng-container *nzDateCell="let date">
+                            <div>{{getDayName(date)}}</div>
+                        </ng-container>
+                    </nz-calendar>
+                </div>
+            </div>
+            <div class=row>
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">{{ 'refDemoEntity.libelle.label' | translateRefDemoEntity }}</label>
+                        <div class="col-12 input-label-style">
+                            <!-- {{ refDemoEntity?.libelle }} -->
+                            <input value="{{ refDemoEntity?.libelle }}" type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-1" disabled="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">{{ 'refDemoEntity.code.label' | translateRefDemoEntity }}</label>
+                        <div class="col-12 input-label-style">
+                            <input value="{{ refDemoEntity?.code }}" type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-1" disabled="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=row>
+                <!-- file -->
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">File</label>
+                        <div class="col-12 input-label-style">
+                            <span *ngIf="refDemoEntity  && refDemoEntity.fileName" title="Télécharger" class="btn  upload-button" (click)="downLoadFile(refDemoEntity)">
+                                     <i class="fa fa-download mr-2"></i>   <span>{{ "common.command.download" | translate }}</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- file -->
+            </div>
+            <div class=row>
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">{{ 'refDemoEntity.actif.label' | translateRefDemoEntity }}</label>
+                        <div class="col-12 input-label-style">
+                            <span *ngIf="refDemoEntity.actif"> <input value="{{ 'common.text.yes' | translate }}"  type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-1" disabled=""></span>
+                            <span *ngIf="!refDemoEntity.actif"> <input value="{{ 'common.text.no' | translate }}"  type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-1" disabled=""></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">Radio</label>
+                        <div class="col-12 input-label-style">
+                            <input value="Radio" type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-1" disabled="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=row>
+
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">Select</label>
+                        <div class="col-12 input-label-style">
+                            <input value="{{ refDemoEntity?.convention?.value }}" type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-1" disabled="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">Checkbox</label>
+                        <div class="col-12 input-label-style">
+                            <!-- <span *ngFor="let item of refDemoEntity?.parametres" class="mr-2"> 
+                                 <i nz-icon nzType="check-square" nzTheme="outline"></i>
+                                {{ item.displayText }} 
+                            </span> -->
+                            <!-- <input type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-1" disabled=""> -->
+                            <span class="form-control   input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-1">
+                               <ng-container *ngFor="let item of refDemoEntity?.parametres;let first = first;">
+                                {{ item.displayText }} 
+                               <ng-container *ngIf="!first">,</ng-container>
+                               
+                                </ng-container>
+                            </span>
+
+                            <!-- </input> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=row>
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">Date</label>
+                        <div class="col-12 input-label-style">
+                            <input value="{{ refDemoEntity.date }}" type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-1" disabled="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">Timer</label>
+                        <div class="col-12 input-label-style">
+                            <input value="{{ refDemoEntity.timer }}" type="text" class="form-control input-value-style ng-pristine ng-valid ng-touched form-control-view-data eno-typo-size-1" disabled="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">Textarea</label>
+                        <div class="col-12 input-label-style">
+                            <textarea disabled rows="3" cols="2" class="form-control form-control-textarea-view input-value-style form-control-view-data eno-typo-size-1" placeholder="Textarea">
+                                {{refDemoEntity.textarea}}
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group row">
+                        <label class="col-12 font-weight-bold col-form-label  col-form-label-form input-label-style">Textarea</label>
+                        <div class="col-12 input-label-style">
+                            <div class="remove-scroll-summer-note" [(ngModel)]="refDemoEntity.summernote" [ngxSummernote]="configReadOnly">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- start  Multiple select eager List -->
+                <div class="col-12">
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <app-ref-demo-entity-select-list-table [readOnly]="true" [refDemoEntityList]="refDemoEntity.refDemoEntitysSelected"></app-ref-demo-entity-select-list-table>
+                        </div>
+                    </div>
+                </div>
+                <!-- end  Multiple select eager List -->
+            </div>
+            <div class="row">
+                <!-- start  create nouvel list -->
+                <div class="col-12">
+                    <div class="form-group row">
+
+                        <div class="col-12">
+                            <app-ref-demo-entity-form-add-list-table [readOnly]="true" [idItem]="refDemoEntity.id"></app-ref-demo-entity-form-add-list-table>
+                        </div>
+                    </div>
+                </div>
+                <!-- end create nouvel list-->
+            </div>
+        </div>
+        <!-- START BUTTONS -->
+        <div class="sumbit-btn" [ngClass]="{'sumbit-btn-drawer': _mode_ecran==this.mode_ecran.DRAWER}">
+
+            <button class="btn button-secondary-white-bg ml-2 mr-2  float-left" type="button " (click)="retour() ">
+                <span class="btn-title">{{ 'common.command.exit' | translate }}</span>
+            </button>
+        </div>
+    </div>
+</div>

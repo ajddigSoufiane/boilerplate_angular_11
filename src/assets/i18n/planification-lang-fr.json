@@ -1,0 +1,349 @@
+{
+    "planification": {
+        "name": {
+            "title": "Planification"
+        },
+        "recapitulatif": {
+            "title": "Récapitulatif"
+        },
+        "list": {
+            "title": "Recherche categoriePersonnel"
+        },
+        "edit": {
+            "title": "Editer categoriePersonnel"
+        },
+        "add": {
+            "title": "Ajouter categoriePersonnel"
+        },
+        "view": {
+            "title": "Consulter categoriePersonnel"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations categoriePersonnel"
+        },
+        "libelle": {
+            "label": "Libellé"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "dateDebut": {
+            "label": "Date de debut"
+        },
+        "dateFin": {
+            "label": "Date de fin"
+        },
+        "motif": {
+            "label": "Motif"
+        },
+        "fichier": {
+            "label": "Fichier"
+        },
+        "fichierName": {
+            "label": "fichierName"
+        },
+        "valider":{
+            "label":"Confirmer planning"
+        },
+        "fichierCheksum": {
+            "label": "fichierCheksum"
+        },
+        "reponse": {
+            "label": "Réponse"
+        },
+        "statutconge": {
+            "label": "Statut de conge"
+        },
+        "dateReponse": {
+            "label": "Date de réponse"
+        },
+        "employe": {
+            "label": "Employé"
+        },
+        "typeConge": {
+            "label": "Type de conge"
+        },
+        "validateur": {
+            "label": "Validateur"
+        },
+        "order": {
+            "label": "Order"
+        },
+        "de-a": {
+            "label": "De-à"
+        },
+        "duree": {
+            "label": "Durée (j)"
+        },
+        "type": {
+            "label": "Type"
+        },
+        "statut": {
+            "label": "statut"
+        },
+        "conge-annuel": {
+            "label": "Congé annuel"
+        },
+        "conge-exceptionnel": {
+            "label": "Congé exceptionnel"
+        },
+        "apercu": {
+            "label": "Aperçu"
+        },
+        "de": {
+            "label": "De"
+        },
+        "a": {
+            "label": "à"
+        },
+        "demander_conge": {
+            "label": "Demander congé"
+        },
+        "de_a": {
+            "label": "De - à"
+        },
+        "motif_conge": {
+            "label": "Motif congé"
+        },
+        "simulation": {
+            "label": "Simulation"
+        },
+        "date": {
+            "label": "Date"
+        },
+        "demandeEntrante": {
+            "label": "Demandes entrantes"
+        },
+        "demandeList": {
+            "label": "Liste des demandes"
+        },
+        "par": {
+            "label": "Par"
+        },
+        "le": {
+            "label": "Le"
+        },
+        "soldeAnnuel": {
+            "label": "Solde annuel actuel"
+        },
+        "soldeExceptionnelle": {
+            "label": "Solde annuel exceptionnel"
+        },
+        "apercuCongeDemande": {
+            "label": "Aperçu congé demandé"
+        },
+        "detail": {
+            "label": "Détail"
+        },
+        "demandePar": {
+            "label": "Demandé par"
+        },
+        "justtificatif": {
+            "label": "Justificatif"
+        },
+        "valideConge": {
+            "label": "Valider congé"
+        },
+        "repondre_a_la_demande_conge": {
+            "label": "Répondre à la demande congé"
+        },
+        "repondre_a_la_demande_attestation_de_travail": {
+            "label": "Répondre à la demande attestation de travail"
+        },
+        "sortieAnnuel": {
+            "label": "Sortie annuelle"
+        },
+        "absence-annuel": {
+            "label": "ABSENCE ANNUELLE (H)"
+        },
+        "valideSortie": {
+            "label": "Valider sortie"
+        },
+        "typeDocument": {
+            "label": "Type document"
+        },
+        "pret": {
+            "label": "Prêt"
+        },
+        "incomplete": {
+            "label": "Incomplete"
+        },
+        "typeDocumentEtmotif": {
+            "label": "Type document et motif"
+        },
+        "infornmerCollborateur": {
+            "label": "Informer collaborateur"
+        }, 
+        "nombreSemaine": {
+            "label": "Nombre de semaine"
+        },
+        "shift": {
+            "label": "Shift"
+        }
+    },
+    "mes_demande": {
+        "name": {
+            "title": "CategoriePersonnel"
+        },
+        "list": {
+            "title": "Recherche categoriePersonnel"
+        },
+        "edit": {
+            "title": "Editer categoriePersonnel"
+        },
+        "add": {
+            "title": "Ajouter categoriePersonnel"
+        },
+        "view": {
+            "title": "Consulter categoriePersonnel"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations categoriePersonnel"
+        },
+        "libelle": {
+            "label": "Libellé"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        },
+        "service": {
+            "label": "SERVICE"
+        },
+        "matricule": {
+            "label": "MATRICULE"
+        },
+        "voir_dossier": {
+            "label": "Voir dossier"
+        }
+    },
+    "demandeSortie": {
+        "name": {
+            "title": "Demandes de sortie"
+        },
+        "order": {
+            "label": "ORDRE"
+        },
+        "de-a": {
+            "label": "DE-A"
+        },
+        "jour": {
+            "label": "JOUR"
+        },
+        "duree": {
+            "label": "DUREE (h)"
+        },
+        "motif": {
+            "label": "MOTIF"
+        },
+        "statut": {
+            "label": "STATUT"
+        },
+        "reponse": {
+            "label": "REPONSE"
+        },
+        "absence_annuelle": {
+            "label": "ABSENCE ANNUELLE (H)"
+        },
+        "date": {
+            "label": "DATE"
+        },
+        "apercu": {
+            "label": "Aperçu"
+        },
+        "de": {
+            "label": "De"
+        },
+        "a": {
+            "label": "à"
+        },
+        "recapitulatif": {
+            "title": "Récapitulatif"
+        },
+        "demander_autorisation_sortie": {
+            "label": "Demander autorisation sortie"
+        },
+        "fichier_joint": {
+            "label": "Fichier joint"
+        },
+        "autorisation_annuelle": {
+            "label": "Autorisation annuelle"
+        },
+        "annuler": {
+            "label": "Annuler"
+        },
+        "validerConge": {
+            "label": "Valider congé"
+        }
+    },
+    "demandeDocument": {
+        "statistique": {
+            "title": "Statistiques"
+        },
+        "duree-moyenne": {
+            "label": "DUREE MOYENNE DE REPONSE"
+        },
+        "nombreDocument": {
+            "label": "NOMBRE DOCUMENTS EN ATTENTE"
+        },
+        "demander-document": {
+            "label": "Demande de document"
+        },
+        "type-document": {
+            "label": "Type document"
+        },
+        "nombre-exemplaire": {
+            "label": "Nombres d'exemplaires"
+        },
+        "justificatif": {
+            "label": "Justificatif"
+        },
+        "commentaire": {
+            "label": "Commentaire"
+        },
+        "annuler": {
+            "label": "Quitter"
+        },
+        "envoyer-demande": {
+            "label": "Envoyer demande"
+        },
+        "ordre": {
+            "label": "ORDRE"
+        },
+        "type-demande": {
+            "label": "TYPE DEMANDE"
+        },
+        "exemplaires": {
+            "label": "EXEMPLAIRES"
+        },
+        "justificatif-tableau": {
+            "label": "JUSTIFICATIF"
+        },
+        "statut": {
+            "label": "STATUT"
+        },
+        "reponse": {
+            "label": "REPONSE"
+        },
+        "demandes_documents": {
+            "label": "Demandes documents"
+        }
+    }
+}

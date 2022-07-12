@@ -1,0 +1,80 @@
+{	
+	"employe": {
+		"name": {
+			"title": "Employé"
+		},
+		"list": {
+			"title": "Recherche employe"
+		},
+		"edit": {
+			"title": "Editer employe"
+		},
+		"add": {
+			"title": "Ajouter employe"
+		},
+		"view": {
+			"title": "Consulter employe"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations employe"
+		},
+		"hl7": {
+			"label": "hl7"
+		},
+		"nom": {
+			"label": "Nom"
+		},
+		"prenom": {
+			"label": "Prénom"
+		},
+		"username": {
+			"label": "Nom d'employe"
+		},
+		"password": {
+			"label": "Mot de passe"
+		},
+		"enabled": {
+			"label": "Activer"
+		},
+		"resetPassword": {
+			"label": "Réinitialiser le mot de passe"
+		},
+		"oldPassword": {
+			"label": "Ancien mot de passe"
+		},
+		"newPassword": {
+			"label": "Nouveau mot de passe"
+		},
+		"personnel": {
+			"label": "Personnel"
+		},
+		"etablissement": {
+			"label": "Etablissement"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		},
+		"service": {
+			"label": "Service"
+		},
+		"matricule": {
+			"label": "Matricule"
+		},
+		"sexe": {
+			"label": "Sexe"
+		},
+		"dateNaissance": {
+			"label": "Date de naissance"
+		},
+		"profil": {
+			"label": "Profil"
+		},
+		"actif": {
+			"label": "Actif"
+		}
+	}
+
+}

@@ -1,0 +1,422 @@
+.ant-table-pagination.ant-pagination,
+.ant-table-container thead tr,
+.ant-table-container tbody tr {
+    height: $tr-height;
+    margin: 0px;
+}
+
+.ant-table-container thead th {
+    text-align: left;
+}
+
+.ant-table-pagination.ant-pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.ant-table-container .ant-table-column-title {
+    text-align: left;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.ant-table-container .ant-table-column-sorters {
+    float: left;
+}
+
+.ant-table-container .ant-table-column-sorters,
+.ant-table-container table>thead>tr:first-child th {
+    font-size: $eno-typo-size-0;
+    color: $eno-secondaire;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.ant-table-container .ant-table-column-sorter-inner .anticon {
+    color: $eno-gray-6;
+}
+
+.ant-table-column-sorter-down.active,
+.ant-table-column-sorter-up.active {
+    color: $eno-primaire !important;
+}
+
+.ant-table-container .ant-table-column-sorter-full {
+    margin-top: -.65em;
+}
+
+.ant-table .ant-table-tbody>tr>td {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.ant-table .ant-action,
+.ant-table .ant-actif {
+    width: 100px;
+}
+
+.ant-table .ant-code {
+    width: 200px;
+}
+
+tbody tr.ant-table-row.ng-star-inserted {
+    cursor: pointer;
+}
+
+.ant-pagination-item-active {
+    font-weight: 500;
+    background: #fff;
+    border-color: rgb(0 87 146 / 60%);
+}
+
+.ant-pagination-options-size-changer.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+    border-color: rgb(0 87 146 / 60%);
+}
+
+.ant-pagination-item-active:focus,
+.ant-pagination-item-active:hover,
+.ant-pagination-next:hover button,
+.ant-pagination-prev:hover button {
+    border-color: rgb(0 87 146 / 60%);
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background-color: $eno-secondaire-color;
+}
+
+.ant-select .ant-select-arrow .anticon:not(.ant-select-suffix) {
+    margin-top: -12px !important;
+}
+
+.ant-select-arrow,
+.ant-select-clear {
+    margin-top: -8px;
+}
+
+.ant-table-tbody>tr.ant-table-row:hover>td {
+    background: $eno-vertical;
+}
+
+.ant-table-cell .fa-circle-alert {
+    color: $eno-red-feedback-primary-0!important;
+    font-size: $eno-typo-size--1;
+}
+
+.ant-table-cell .fa-circle-success {
+    color: $eno-green-feedback-primary-0 !important;
+    font-size: $eno-typo-size--1;
+}
+
+.eno-resultat {
+    font-size: $eno-typo-size-1;
+    color: $eno-primaire;
+    font-weight: 400;
+    height: $input-height;
+    margin-bottom: 1.5rem;
+}
+
+.eno-resultat span {
+    position: relative;
+    top: 10px;
+}
+
+.ant-table-thead>tr>th {
+    font-weight: 500;
+    text-align: left;
+    background: $eno-vertical;
+    transition: background .3s ease;
+}
+
+.ant-table-thead th.ant-table-column-sort,
+.ant-tabs-dropdown-menu-item:hover,
+.ant-table-thead th.ant-table-column-has-sorters:hover {
+    background: $eno-vertical;
+}
+
+.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon,
+.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon {
+    color: rgb(0 87 146 / 60%);
+}
+
+.ant-pagination-next:focus .ant-pagination-item-link,
+.ant-pagination-next:hover .ant-pagination-item-link,
+.ant-pagination-prev:focus .ant-pagination-item-link,
+.ant-pagination-prev:hover .ant-pagination-item-link {
+    color: rgb(0 87 146 / 60%);
+}
+
+.ant-table-selection {
+    text-align: center;
+}
+
+// .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tbody>tr>td,
+// .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tfoot>tr>td,
+// .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tfoot>tr>th,
+// .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>thead>tr>th,
+// .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>td,
+// .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tfoot>tr>td,
+// .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tfoot>tr>th,
+// .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>thead>tr>th,
+// .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tbody>tr>td,
+// .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tfoot>tr>td,
+// .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tfoot>tr>th,
+// .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>thead>tr>th {
+//     border-right: 1px solid $eno-gray-7;
+// }
+// .ant-table-tbody>tr>td {
+//     border-bottom: 1px solid $eno-gray-7;
+// }
+.ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tbody>tr>td,
+.ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tfoot>tr>td,
+.ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tfoot>tr>th,
+.ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>thead>tr>th,
+.ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>td,
+.ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tfoot>tr>td,
+.ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tfoot>tr>th,
+.ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>thead>tr>th,
+.ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tbody>tr>td,
+.ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tfoot>tr>td,
+.ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tfoot>tr>th,
+.ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>thead>tr>th {
+    border-right: 1px solid #f0f0f0;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgb(240, 240, 240);
+}
+
+.ant-table-title {
+    padding: 0px !important;
+}
+
+.ant-table-total {
+    line-height: 41px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.ant-table-title .card {
+    margin-bottom: 1.25rem;
+    border-radius: 0px;
+}
+
+//this style for table injected in table
+.table-form .ant-table-thead>tr>th,
+.table-form .ant-table-pagination {
+    background: $eno-vertical;
+}
+
+.table-form .ant-table-thead th.ant-table-column-sort,
+.table-form .ant-tabs-dropdown-menu-item:hover,
+.table-form .ant-table-thead th.ant-table-column-has-sorters:hover {
+    background: $eno-secondaire-color;
+}
+
+.ant-table-filter-column .ant-table-filter-column-title {
+    position: relative;
+    display: flex;
+    justify-content: inherit;
+    align-items: end;
+    left: -20px;
+}
+
+.ant-table-filter-trigger.active {
+    color: $eno-principale-color;
+}
+
+.ant-table-filter-trigger.active {
+    color: $eno-principale-color;
+}
+
+.ant-table-tbody .ant-table-measure-now {
+    display: none;
+}
+
+.ant-table-filter-trigger-container .anticon.anticon-search {
+    font-size: $eno-typo-size-0
+}
+
+.nz-table-header-custom {
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+.nz-table-header-custom .nz-table-header-tag {
+    height: $input-height;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: $eno-secondaire-color;
+}
+
+.ant-table-cell-fix-left,
+.ant-table-cell-fix-right {
+    background: #fff;
+}
+
+.action-fa-ellipsis-v {
+    font-weight: 300;
+    font-size: $eno-typo-size-0;
+    color: $eno-secondaire;
+}
+
+
+/** start section of mobile ***/
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* CSS */
+    .nz-table-header-custom .nz-table-header-total {
+        margin-left: 10px;
+        flex: 1;
+    }
+    .nz-table-header-custom .nz-table-header-tag {
+        width: auto !important;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        flex: 2 2 20%;
+    }
+    .nz-table-header-custom .nz-table-header-btn {
+        flex: 2 2 10%;
+    }
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+    .nz-table-header-custom .nz-table-header-total {
+        margin-left: 10px;
+        flex: 1;
+    }
+    .nz-table-header-custom .nz-table-header-tag {
+        width: auto !important;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        flex: 2 2 20%;
+    }
+    .nz-table-header-custom .nz-table-header-btn {
+        flex: 2 2 10%;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+    .nz-table-header-custom .nz-table-header-total {
+        margin-left: 10px;
+        flex: 1;
+    }
+    .nz-table-header-custom .nz-table-header-tag {
+        width: auto !important;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        flex: 2 2 16%;
+    }
+    .nz-table-header-custom .nz-table-header-btn {
+        flex: 1 2 4%;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS */
+    .nz-table-header-custom .nz-table-header-total {
+        margin-left: 10px;
+        flex: 1;
+    }
+    .nz-table-header-custom .nz-table-header-tag {
+        width: auto !important;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        flex: 2 2 20%;
+    }
+    .nz-table-header-custom .nz-table-header-btn {
+        flex: 2 2 10%;
+    }
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* CSS */
+    .nz-table-header-custom {
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+    }
+    .nz-table-header-custom .nz-table-header-total {
+        width: 100% !important;
+        margin-left: 15px;
+        text-align: center;
+    }
+    .nz-table-header-custom .nz-table-header-tag {
+        width: 100% !important;
+        border-right: 0px !important;
+        border-left: 0px !important;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .nz-table-header-custom .nz-table-header-btn {
+        width: 100% !important;
+    }
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* CSS */
+    .nz-table-header-custom {
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+    }
+    .nz-table-header-custom .nz-table-header-total {
+        width: 100% !important;
+        margin-left: 15px;
+        text-align: center;
+    }
+    .nz-table-header-custom .nz-table-header-tag {
+        width: 100% !important;
+        border-right: 0px !important;
+        border-left: 0px !important;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .nz-table-header-custom .nz-table-header-btn {
+        width: 100% !important;
+    }
+}
+
+
+/** start section of mobile ***/

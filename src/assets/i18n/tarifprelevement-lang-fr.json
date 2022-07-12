@@ -1,0 +1,47 @@
+{	
+	"tarifprelevement": {
+		"name": {
+			"title": "Tarifprelevement"
+		},
+		"list": {
+			"title": "Recherche tarifprelevement"
+		},
+		"edit": {
+			"title": "Editer tarifprelevement"
+		},
+		"add": {
+			"title": "Ajouter tarifprelevement"
+		},
+		"view": {
+			"title": "Consulter tarifprelevement"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations tarifprelevement"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"nbr": {
+			"label": "Nbr"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"hl7": {
+			"label": "Hl7"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}

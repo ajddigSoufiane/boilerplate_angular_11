@@ -1,0 +1,50 @@
+{
+    "automate": {
+        "name": {
+            "title": "Automate"
+        },
+        "list": {
+            "title": "Recherche automate"
+        },
+        "edit": {
+            "title": "Editer automate"
+        },
+        "add": {
+            "title": "Ajouter automate"
+        },
+        "view": {
+            "title": "Consulter automate"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations automate"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "numSerie": {
+            "label": "NumSerie"
+        },
+        "fabricant": {
+            "label": "Fabricant"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    }
+
+}

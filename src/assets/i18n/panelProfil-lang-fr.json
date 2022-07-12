@@ -1,0 +1,138 @@
+{
+    "panelProfil": {
+        "name": {
+            "title": "PanelProfil"
+        },
+        "list": {
+            "title": "Recherche panelProfil"
+        },
+        "edit": {
+            "title": "Editer panelProfil"
+        },
+        "add": {
+            "title": "Ajouter panelProfil"
+        },
+        "view": {
+            "title": "Consulter panelProfil"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations panelProfil"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "ordre": {
+            "label": "Ordre"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        },
+        "profilanalyses": {
+            "label": "Profilanalyses"
+        }
+    },
+    "profilanalyse": {
+        "name": {
+            "title": "Profilanalyse"
+        },
+        "add": {
+            "title": "Ajouter profilanalyse"
+        },
+        "view": {
+            "title": "Consulter profilanalyse"
+        },
+        "legend": {
+            "info": "Informations profilanalyse"
+        },
+        "intituleP": {
+            "label": "intituleP"
+        },
+        "intituleCR": {
+            "label": "intituleCR"
+        },
+        "ordreP": {
+            "label": "OrdreP"
+        },
+        "ordreCR": {
+            "label": "OrdreCR"
+        },
+        "griserLabo": {
+            "label": "GriserLabo"
+        },
+        "griserPresc": {
+            "label": "GriserPresc"
+        },
+        "nombreB": {
+            "label": "NombreB"
+        },
+        "quotationB": {
+            "label": "QuotationB"
+        },
+        "commentaire": {
+            "label": "Commentaire"
+        },
+        "commentaireP": {
+            "label": "CommentaireP"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "nombreB1": {
+            "label": "NombreB1"
+        },
+        "nombreB2": {
+            "label": "NombreB2"
+        },
+        "nombreB3": {
+            "label": "NombreB3"
+        },
+        "nombreB4": {
+            "label": "NombreB4"
+        },
+        "delai": {
+            "label": "Delai"
+        },
+        "instrunctionPrelev": {
+            "label": "InstrunctionPrelev"
+        },
+        "instrunctionPrelevHtml": {
+            "label": "InstrunctionPrelevHtml"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "destination": {
+            "label": "Destination"
+        },
+        "typeEchantilon": {
+            "label": "TypeEchantilon"
+        },
+        "tarifprelevement": {
+            "label": "Tarifprelevement"
+        },
+        "discipline": {
+            "label": "Discipline"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    }
+}

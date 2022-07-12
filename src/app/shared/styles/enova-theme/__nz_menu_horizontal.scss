@@ -1,0 +1,23 @@
+.ant-menu {
+    background: $eno-vertical !important;
+    width: 100%;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-active,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-open,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-active,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-open,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-selected,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu:hover {
+    color: $eno-principale-color !important;
+    border-bottom: 2px solid $eno-principale-color !important;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item,
+.ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu {
+    font-size: $eno-typo-size-1;
+    font-weight: 500;
+    color: $eno-secondaire;
+}

@@ -1,0 +1,78 @@
+.wrapper_menu {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    .sidebar {
+        //Global style
+        ul {
+            border-right: none;
+            li {
+                border-right: 0;
+                color: #D5D4D8;
+                position: relative;
+                background: #231a53;
+            }
+        }
+        //Spécifique style
+        //Menu Niveau 1
+        .ant-menu>li>.ant-menu-submenu-title {
+            background: #160F3D;
+            margin-bottom: 0px;
+            height: auto;
+            width: 100%;
+            line-height: 2.6rem;
+            margin: 0;
+            padding: 0;
+            padding-left: .5em !important;
+            border-bottom: 1px solid #056184;
+            // font-family: 'robotomedium';
+            font-family: "Poppins";
+            font-size: .846rem;
+            .anticon {
+                position: relative;
+                top: 0px;
+            }
+        }
+        //Menu Niveau 2
+        .ant-menu>li>ul>ul>li>.ant-menu-submenu-title {
+            padding-left: 1.75em !important;
+        }
+        .ant-menu>li>ul>ul>li>.ant-menu-submenu-title,
+        .ant-menu>li>ul>ul>li {
+            width: 100%;
+            margin: 0px;
+            height: auto;
+            line-height: 2.6rem;
+            background: #231A53;
+            font-size: .842rem;
+            border-bottom: 1px solid #0D3253;
+            &:last-child {
+                border-bottom: none;
+            }
+            .anticon {
+                position: relative;
+                top: -2px;
+                font-size: 11px;
+                margin-right: 5px;
+            }
+        }
+        //Menu Niveau 3
+        .ant-menu>li>ul>ul>li>ul>ul>li {
+            width: 100%;
+            margin: 0px;
+            line-height: 2.5rem;
+            padding-left: 2.7em !important;
+            background: #231A53;
+            border-bottom: 1px solid #0D3253;
+            height: auto;
+            font-size: .836rem;
+            position: relative;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    .navbar-brand {
+        padding: 0px;
+        margin: 0px;
+    }
+}

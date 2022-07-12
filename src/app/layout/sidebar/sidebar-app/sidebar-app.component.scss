@@ -1,0 +1,51 @@
+@import "../../../shared/styles/enova-theme/variables.scss";
+.title_general {
+    width: 90%;
+    text-align: left;
+    flex-grow: 1;
+    height: 29px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #18185e;
+}
+
+.wrapper .titlePage {
+    text-align: center;
+    border-bottom: 1px solid #c3c3c3;
+    margin: 2px 0px 7px 0px;
+    font-size: 14px;
+    color: #1a0f4a;
+    text-transform: uppercase;
+}
+
+.wrapper .titlePage .titlePage__content {
+    position: relative;
+    top: -1px;
+    background-color: $eno-vertical;
+    padding: 0px 8px;
+}
+
+.main_icon {
+    width: 7%;
+    position: relative;
+    top: 3px;
+    flex-grow: 1;
+    height: 23px;
+}
+
+.titlePage__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.title_menu {
+    font-size: $eno-typo-size-0 !important;
+    font-weight: 600;
+    color: $eno-secondaire;
+}
+
+::ng-deep .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+    background: #FCFCFC !important;
+}

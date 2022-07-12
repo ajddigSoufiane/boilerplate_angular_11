@@ -1,0 +1,457 @@
+{
+    "demande": {
+        "title": {
+            "label": "Liste des demandes"
+        },
+        "name": {
+            "title": "DemandeEntree"
+        },
+
+        "list": {
+            "title": "Recherche demandeEntree"
+        },
+        "edit": {
+            "title": "Modifier demandeEntree"
+        },
+        "add": {
+            "title": "Ajouter une entrée"
+        },
+        "view": {
+            "title": "Consulter demandeEntree"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations demandeEntree"
+        },
+        "n_demande": {
+            "label": "N° demande"
+        },
+        "n_dossier": {
+            "label": "N° dossier"
+        },
+        "service": {
+            "label": "Service"
+        },
+        "date_demande_entre": {
+            "label": "Date demande entre"
+        },
+        "date_demande": {
+            "label": "Date demande"
+        },
+        "analyses_echantillion": {
+            "label": "Analyses échantillion"
+        },
+        "imprime": {
+            "label": "Imprimé"
+        },
+        "nouvelle_demande": {
+            "label": "Nouvelle demande"
+        },
+        "nouvelle_demande_interne": {
+            "label": " Nouvelle demande interne"
+        },
+        "archive": {
+            "label": "Archivé"
+        },
+        "statut_demande": {
+            "label": "Statut demande"
+        },
+
+        "actif": {
+            "label": "Actif"
+        },
+        "affiliation": {
+            "label": "N° d'affiliation"
+        },
+        "dateSouhaitee": {
+            "label": "date transfert souhaitée"
+        },
+        "dateSouhaiteeFrom": {
+            "label": "date transfert souhaitée entre"
+        },
+        "dateSouhaiteeTo": {
+            "label": "Et"
+        },
+        "typeHospitalisation": {
+            "label": "Type hospitalisation"
+        },
+
+        "dateRecusation": {
+            "label": "Date demande"
+        },
+        "dateRecusationFrom": {
+            "label": "Date demande entre"
+        },
+        "dateRecusationTo": {
+            "label": "Et"
+        },
+        "etat": {
+            "label": "Etat"
+        },
+        "origine": {
+            "label": "Origine"
+        },
+        "motifRecusation": {
+            "label": "Motif admission / transfert"
+        },
+        "demandePar": {
+            "label": "Demande Par"
+        },
+        "admission": {
+            "label": "Admission"
+        },
+        "numeroDossier": {
+            "label": "N°Dossier"
+        },
+        "source": {
+            "label": "Service d'origine"
+        },
+        "cible": {
+            "label": "Cible"
+        },
+        "nomComplet": {
+            "label": "Nom patient"
+        }
+    },
+    "patient": {
+        "title": {
+            "label": "Information patient"
+        },
+        "choisir_patient": {
+            "label": "Choisir un patient"
+        },
+        "dossierPatient": {
+            "label": "Dossier patient"
+        },
+        "addEntree": {
+            "label": "Ajouter entrée"
+        },
+        "choixDemande": {
+            "label": "Choisir une demande d'entrée"
+        },
+        "questionTitle": {
+            "label": "Veuillez choisir une admission ou une demande de transfert pour créer une entrée"
+        },
+        "name": {
+            "title": "DemandeEntree"
+        },
+
+        "list": {
+            "title": "Recherche demandeEntree"
+        },
+        "edit": {
+            "title": "Modifier demandeEntree"
+        },
+        "add": {
+            "title": "Ajouter une entrée"
+        },
+        "view": {
+            "title": "Consulter demandeEntree"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations demandeEntree"
+        },
+        "dateNaissance": {
+            "label": "Date de naissance"
+        },
+        "convention": {
+            "label": "Convention"
+        },
+        "renseignements_cliniques": {
+            "label": "Renseignements cliniques"
+        },
+        "cin": {
+            "label": "CIN"
+        },
+        "civilite": {
+            "label": "Civilité"
+        },
+        "nom": {
+            "label": "Nom"
+        },
+        "prenom": {
+            "label": "Prenom"
+        },
+        "genre": {
+            "label": "Genre"
+        },
+        "age": {
+            "label": "Age"
+        },
+        "email": {
+            "label": "Email"
+        },
+        "telephone1": {
+            "label": "Téléphone 1"
+        },
+        "telephone2": {
+            "label": "Téléphone 2"
+        },
+        "adresse": {
+            "label": "Adresse"
+        },
+        "autres": {
+            "label": "Autres"
+        },
+        "recevoir_resultats_par_mail": {
+            "label": "Recevoir résultats par mail"
+        },
+        "commentaire_dossier": {
+            "label": "Commentaire dossier"
+        },
+        "n_ordonnance": {
+            "label": "N° ordonnace"
+        },
+        "n_hospitalisation": {
+            "label": "N° hospitalisation"
+        },
+        "telephone": {
+            "label": "Téléphone"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "affiliation": {
+            "label": "N° d'affiliation"
+        },
+        "dateSouhaitee": {
+            "label": "date transfert souhaitée"
+        },
+        "dateSouhaiteeFrom": {
+            "label": "date transfert souhaitée entre"
+        },
+        "dateSouhaiteeTo": {
+            "label": "Et"
+        },
+        "typeHospitalisation": {
+            "label": "Type hospitalisation"
+        },
+
+        "dateRecusation": {
+            "label": "Date demande"
+        },
+        "dateRecusationFrom": {
+            "label": "Date demande entre"
+        },
+        "dateRecusationTo": {
+            "label": "Et"
+        },
+        "etat": {
+            "label": "Etat"
+        },
+        "origine": {
+            "label": "Origine"
+        },
+        "motifRecusation": {
+            "label": "Motif admission / transfert"
+        },
+        "demandePar": {
+            "label": "Demande Par"
+        },
+        "admission": {
+            "label": "Admission"
+        },
+        "numeroDossier": {
+            "label": "N°Dossier"
+        },
+        "source": {
+            "label": "Service d'origine"
+        },
+        "cible": {
+            "label": "Cible"
+        },
+        "nomComplet": {
+            "label": "Nom & Prénom"
+        },
+        "ipp": {
+            "label": "IPP"
+        },
+        "synthese": {
+            "label": "Synthèse"
+        },
+        "validate": {
+            "label": "Valider"
+        },
+        "quit": {
+            "label": "Quitter"
+        }
+    },
+    "correspondant_prescription": {
+        "title": {
+            "label": "Correspondant / Prescription"
+        },
+        "choisir_patient": {
+            "label": "Choisir un patient"
+        },
+        "informations": {
+            "label": "Informations"
+        },
+        "dossierPatient": {
+            "label": "Dossier patient"
+        },
+        "sous_traitance": {
+            "label": "sous_traitance"
+        },
+        "hospitalise": {
+            "label": "hospitalisé ?"
+        },
+        "etablissment_prescripteur": {
+            "label": "Etablissment prescripteur"
+        },
+        "service_prescripteur": {
+            "label": "Service prescripteur"
+        },
+        "medecin_prescripteur": {
+            "label": "Médecin(s) Prescripteur(s)"
+        },
+        "recevoir_resultats": {
+            "label": "Recevoir résultats par mail ?"
+        }
+    },
+    "infomations_dossier": {
+        "title": {
+            "label": "Infomations dossier"
+        },
+        "hositalise": {
+            "label": "Hositalisé ?"
+        },
+        "ordonnance": {
+            "label": "Ordonnance"
+        },
+        "commentaire_dossier": {
+            "label": "Commentaire dossier"
+        },
+        "prelevement": {
+            "label": "Prélèvement"
+        },
+        "prelevement_effectué": {
+            "label": "Prélèvement effectué ?"
+        },
+        "preleveur": {
+            "label": "Prélèveur"
+        },
+        "date_prelevment": {
+            "label": "Date du prélèvment"
+        },
+        "service_prescripteur": {
+            "label": "Service prescripteur"
+        },
+        "medecin_prescripteur": {
+            "label": "Médecin(s) Prescripteur(s)"
+        },
+        "recevoir_resultats": {
+            "label": "Recevoir résultats par mail ?"
+        }
+    },
+    "analyses_facturation": {
+        "title": {
+            "label": "Analyses et facturation"
+        },
+        "analyses": {
+            "label": "Analyses "
+        },
+        "deviss": {
+            "label": "DH"
+        },
+        "espece": {
+            "label": "Espèce"
+        },
+        "cheque": {
+            "label": "Chèque"
+        },
+        "trafis_supplementaires": {
+            "label": "Trafis supplémentaires "
+        },
+        "trafis": {
+            "label": "Trafis"
+        },
+        "informations_supplementaires": {
+            "label": "Informations supplémentaires"
+        },
+        "date_retrait_resultats": {
+            "label": "Date de retrait des résultats "
+        },
+        "prelevment_effectue": {
+            "label": "Prélèvment effectué ?  "
+        },
+        "facturation": {
+            "label": "Facturation "
+        },
+        "montants_verses": {
+            "label": "Montants versés "
+        },
+        "banque": {
+            "label": "Banque"
+        },
+        "reference": {
+            "label": "Référence"
+        },
+        "mode_reglement": {
+            "label": "mode de réglement "
+        },
+        "paye_organisme": {
+            "label": "Payé par l'organisme"
+        },
+        "montant_du": {
+            "label": "Montant dû "
+        },
+        "remise": {
+            "label": "Remise "
+        },
+        "resete_payer": {
+            "label": "Resete à payer "
+        },
+        "total": {
+            "label": "Total "
+        },
+        "nombre_b": {
+            "label": "Nombre de b"
+        },
+        "parametres": {
+            "label": "Paramètres"
+        },
+        "destination": {
+            "label": "Destination"
+        },
+        "remise_percentage": {
+            "label": "Remise %"
+        },
+        "majoration_percentage": {
+            "label": "Majoration %"
+        },
+        "date_retrait": {
+            "label": "Date de retrait"
+        }
+    },
+    "rct_renseigner": {
+        "title": {
+            "label": "Rct à renseigner"
+        },
+        "analyses": {
+            "label": "Analyses"
+        },
+        "cr_anapath": {
+            "label": "CR ANAPATH"
+        },
+        "nom_champ_texte_1": {
+            "label": "Nom du champ Texte"
+        },
+        "nom_champ_texte_2": {
+            "label": "Nom du champ Texte"
+        },
+        "symptomatique": {
+            "label": "Symptomatique"
+        },
+        "nom_champ_long_texte": {
+            "label": "Nom du champ long texte"
+        },
+        "rct": {
+            "label": "Nom du champ long texte"
+        }
+    }
+}

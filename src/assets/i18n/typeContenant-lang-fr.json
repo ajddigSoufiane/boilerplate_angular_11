@@ -1,0 +1,53 @@
+{
+    "typeContenant": {
+        "name": {
+            "title": "TypeContenant"
+        },
+        "list": {
+            "title": "Recherche typeContenant"
+        },
+        "edit": {
+            "title": "Editer typeContenant"
+        },
+        "add": {
+            "title": "Ajouter typeContenant"
+        },
+        "view": {
+            "title": "Consulter typeContenant"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations typeContenant"
+        },
+        "intitule": {
+            "label": "Intitulé"
+        },
+        "codeCouleur": {
+            "label": "CodeCouleur"
+        },
+        "volume": {
+            "label": "Volume"
+        },
+        "uniteVolume": {
+            "label": "UniteVolume"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "instruction": {
+            "label": "Instruction"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "hl7": {
+            "label": "Hl7"
+        },
+        "laboratoire": {
+            "label": "Laboratoire"
+        }
+    }
+
+}

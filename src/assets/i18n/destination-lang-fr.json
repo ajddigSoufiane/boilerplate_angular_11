@@ -1,0 +1,50 @@
+{	
+	"destination": {
+		"name": {
+			"title": "Destination"
+		},
+		"list": {
+			"title": "Recherche destination"
+		},
+		"edit": {
+			"title": "Editer destination"
+		},
+		"add": {
+			"title": "Ajouter destination"
+		},
+		"view": {
+			"title": "Consulter destination"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations destination"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"activeLisToLis": {
+			"label": "ActiveLisToLis"
+		},
+		"prefix": {
+			"label": "Prefix"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"hl7": {
+			"label": "Hl7"
+		},
+		"laboratoire": {
+			"label": "Laboratoire"
+		}
+	}
+
+}
